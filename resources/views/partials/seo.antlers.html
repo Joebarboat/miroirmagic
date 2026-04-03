@@ -1,0 +1,11 @@
+<meta name="description" content="{{ meta_description }}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ meta_title ?? title }}" />
+{{ if meta_description }}
+    <meta property="og:description" content="{{ meta_description }}" />
+{{ /if }}
+{{ if og_image }}
+    <meta property="og:image" content="{{ og_image:url }}" />
+{{ else }}
+    <meta property="og:image" content="https://miroirmagic.fr/assets/og-images/miroir-og.png" />
+{{ /if }}

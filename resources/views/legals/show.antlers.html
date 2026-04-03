@@ -1,0 +1,50 @@
+<!-- TERMS PAGE
+                     ============================================= -->
+<section id="terms-page"
+    class="gr--whitesmoke pb--80 xl:!pb-[80px] lg:max-xl:!pb-[60px] md:max-lg:!pb-[50px] inner-page-hero division !pt-[40px] md:!pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] md:max-lg:pt-[70px]">
+    <div class="container">
+        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+            <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                <!-- INNER PAGE TITLE -->
+                <div
+                    class="inner-page-title !text-center xl:!mb-[80px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[45px] sm:max-md:!mb-[50px] xsm:max-sm:!mb-[50px]">
+                    <h1
+                        class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !mb-0 md:max-lg:!mb-0 sm:max-md:!mb-0 xsm:max-sm:!mb-0 leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                        {{ $title }}
+                    </h1>
+                </div>
+
+                <!-- TEXT BLOCK -->
+                <div class="txt-block legal-info">
+                    <article>
+
+                        {{ $content }}
+
+                    </article>
+                </div>
+                <!-- END TEXT BLOCK -->
+
+                {{ if current_uri == "/plan-du-site" }}
+                    <div class="sitemap">
+                        <ul>
+                        {{ collection:pages }}
+                        <li><a href="{{ url }}">{{ title }}</a></li>
+                        {{ if title == "Blog"}}
+                            <ul>
+                            {{ collection:blog }}
+                                <li><a href="{{ url }}">{{ title }}</a></li>
+                            {{ /collection:blog }}
+                            </ul>
+                        {{/if}}
+                        {{ /collection:pages }}
+                        </ul>
+                    </div>
+                {{ /if }}
+
+            </div>
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End container -->
+</section>
+<!-- END TERMS PAGE -->

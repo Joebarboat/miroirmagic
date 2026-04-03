@@ -1,0 +1,62 @@
+{{ if hero_enabled }}
+<!-- Hero Section with responsive spacing optimized for mobile -->
+<section id="hero-dynamic" class="gr--whitesmoke inner-page-hero"
+    style="padding-top: 85px; padding-bottom: 20px; position: relative; width: 100%;">
+
+    <!-- Responsive padding override -->
+    <style>
+        /* Mobile: minimal padding while clearing header */
+        @media (max-width: 767px) {
+            #hero-dynamic {
+                padding-top: 85px !important;
+                padding-bottom: 20px !important;
+            }
+        }
+
+        /* Tablet: moderate padding */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            #hero-dynamic {
+                padding-top: 140px !important;
+                padding-bottom: 25px !important;
+            }
+        }
+
+        /* Desktop: generous padding */
+        @media (min-width: 1024px) {
+            #hero-dynamic {
+                padding-top: 200px !important;
+                padding-bottom: 30px !important;
+            }
+        }
+    </style>
+    <div class="container">
+
+        <!-- TITLE SECTION (Only shows if hero_title is explicitly set) -->
+        {{ if hero_title }}
+        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+            <div class="md:w-10/12 lg:max-xl:w-8/12 xl:w-8/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                <div class="section-title !text-center mb-[30px] md:mb-[45px] lg:mb-[50px]">
+                    <h1
+                        class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                        {{ hero_title }}
+                    </h1>
+                </div>
+            </div>
+        </div>
+        {{ /if }}
+
+        <!-- IMAGE SECTION (Only shows if hero_image exists) -->
+        {{ if hero_image }}
+        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+            <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                <div class="img-block !text-center wow fadeInUp mb-[20px] md:mb-[30px]">
+                    <img src="{{ hero_image:url }}" alt="{{ hero_image:alt or title }}" class="img-fluid rounded-lg"
+                        style="width: 100%; height: auto; min-height: 300px; max-height: 600px; object-fit: cover; object-position: center;">
+                </div>
+            </div>
+        </div>
+        {{ /if }}
+
+    </div>
+</section>
+{{ /if }}

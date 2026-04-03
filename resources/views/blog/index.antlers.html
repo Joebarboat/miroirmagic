@@ -1,0 +1,197 @@
+<section id="blog-page"
+    class="!pt-[40px] mt-xl:!pb-[40px] md:max-lg:!pb-[40px] lg:max-xl:!pb-[40px] inner-page-hero blog-page-section md:!pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] md:max-lg:pt-[70px]">
+    <div class="container">
+
+        <div class="banner">
+            <div
+                class="inner-page-title !text-center xl:!mb-[80px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[45px] sm:max-md:!mb-[50px] xsm:max-sm:!mb-[50px]">
+                <h1
+                    class="not-odd:s-52 w--700 text-[2rem] xl:!text-[3.25rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !mb-0 md:max-lg:!mb-0 sm:max-md:!mb-0 xsm:max-sm:!mb-0 leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                    {{ treaser_title || title }}
+                </h1>
+            </div>
+        </div>
+
+        <div class="posts-wrapper">
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+
+                {{ collection:blog future="false" sort="date:desc" }}
+                <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full ">
+                    <div class="blog-post wow fadeInUp mb--40 mb-[40px]">
+                        <!-- BLOG POST IMAGE -->
+                        <div class="blog-post-img !mb-[15px]">
+                            <a href="{{ url }}">
+                                {{ if featured_image }}
+                                <div class="aspect-[4/3] overflow-hidden rounded-[16px]">
+                                    <img class="img-fluid w-full h-full object-cover transition-transform duration-500 hover:scale-110 decor-line"
+                                        src="{{ featured_image }}" alt="{{ title }}" fetchpriority="high"
+                                        onerror="this.onerror=null;this.src='/images/no_image_placeholder.png';">
+                                </div>
+                                {{ else }}
+                                <div class="aspect-[4/3] overflow-hidden rounded-[16px]">
+                                    <img class="img-fluid w-full h-full object-cover decor-line"
+                                        src="/images/no_image_placeholder.png" alt="{{ title }}" fetchpriority="high">
+                                </div>
+                                {{ /if }}
+                            </a>
+                        </div>
+                        <!-- BLOG POST TEXT -->
+                        <div class="blog-post-txt">
+                            <h3
+                                class="s-20 w--700 xl:!text-[1.25rem] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold xl:!mb-[15px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] sm:max-md:!mb-[18px] xsm:max-sm:!mb-[14px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
+                                <a class="text-[#353f4f] hover:!underline" href="{{ url }}">{{ title }}</a>
+                            </h3>
+                            <!-- Text -->
+                            {{# <p class="!mb-0">Egestas luctus vitae augue and ipsum ultrice quisque in cursus lacus
+                                feugiat congue diam ultrice laoreet sagittis</p> #}}
+                            <!-- Post Meta -->
+                            <div class="blog-post-meta  mt-[20px] ">
+                                <ul class="post-meta-list ico-10">
+                                    <li class="w-auto inline-block align-top clear-none">
+                                        <p
+                                            class="p-sm w--500 font-medium text-[#353f4f] leading-none !mb-0 xsm:max-sm:!mb-0">
+                                            {{ author:name }}</p>
+                                    </li>
+                                    <li
+                                        class="meta-list-divider w-auto inline-block align-top clear-none relative -rotate-90 px-px py-0 top-0 lg:max-xl:px-px lg:max-xl:py-0 md:max-lg:px-px md:max-lg:py-0">
+                                        <p class="text-[#353f4f] leading-none !mb-0 xsm:max-sm:!mb-0"><span
+                                                class="flaticon-minus"></span></p>
+                                    </li>
+                                    <li class="w-auto inline-block align-top clear-none">
+                                        <p class="p-sm text-[#353f4f] leading-none !mb-0 xsm:max-sm:!mb-0"> {{ date
+                                            format='d M Y' }}
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END BLOG POST TEXT -->
+                    </div>
+                </div>
+                {{ /collection:blog }}
+
+            </div>
+        </div>
+
+    </div>
+    <!-- End container -->
+</section>
+<!-- END BLOG POSTS LISTING -->
+
+<section class="bg-[#fff] py-[40px] md:py-[60px] lg:max-xl:py-[60px] md:max-lg:py-[60px] locations-section">
+    <div class="container">
+        <div
+            class="md:flex md:flex-wrap mx-[calc(-0.5*_1.5rem)] md:gap-x-4 justify-content-md-center md:max-lg:justify-center lg:max-xl:justify-center xl:justify-center">
+            <div class="col flex-1 text-center px-[calc(-0.5*_1.5rem)] mb-5 md:mb-0">
+                <div class="py-20 bg-[#e2d6c8] rounded-md">
+                    <svg class="w-10 h-10 mx-auto my-5" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                        width="800" height="800" version="1.0" viewBox="0 0 64 64">
+                        <g fill="#231F20">
+                            <path
+                                d="M32 50c7.732 0 14-6.268 14-14s-6.268-14-14-14-14 6.268-14 14 6.268 14 14 14zm0-26c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12z" />
+                            <path
+                                d="M60 12h-8c-1 0-1.582.004-2.793-1.207l-5.538-5.538C43.481 5.067 42.33 4 41 4H23c-1.453 0-2.498 1.084-2.686 1.271l-5.521 5.521C13.598 11.987 13.018 12 12 12V9a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3c-2.211 0-4 1.789-4 4v40c0 2.211 1.789 4 4 4h56c2.211 0 4-1.789 4-4V16c0-2.211-1.789-4-4-4zM6 10h4v2H6v-2zm-2 4h9c1 0 2.027-.613 2.707-1.293l5.984-5.984C22.394 6.02 23.5 6 23.5 6h17s1.074-.012 1.832.746l5.961 5.961C49.039 13.453 50 14 51 14h9a2 2 0 0 1 2 2v12H48.107C45.16 22.078 39.063 18 32 18s-13.16 4.078-16.107 10H2V16a2 2 0 0 1 2-2zm28 6c8.837 0 16 7.163 16 16 0 8.838-7.163 16-16 16s-16-7.162-16-16c0-8.837 7.163-16 16-16zm28 38H4a2 2 0 0 1-2-2V30h13.046A17.936 17.936 0 0 0 14 36c0 9.941 8.059 18 18 18s18-8.059 18-18c0-2.107-.381-4.121-1.046-6H62v26a2 2 0 0 1-2 2z" />
+                            <path
+                                d="M32 30a6 6 0 0 1 6 6 1 1 0 1 0 2 0 8 8 0 0 0-8-8 1 1 0 1 0 0 2zM55 24a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-4a1 1 0 1 1 0 2 1 1 0 1 1 0-2z" />
+                        </g>
+                    </svg>
+                    <h3 class="text-[1.3rem] leading-[1.1]">
+                        Location Photobooth
+                    </h3>
+                    <a class="btn !rounded-[4px] btn--tra-black hover--theme hover--tra-black mt-5"
+                        href="/location-photobooth">Je vais le lire</a>
+                </div>
+            </div>
+
+            <div class="col flex-1 text-center px-[calc(-0.5*_1.5rem)] mb-5 md:mb-0">
+                <div class="py-20 bg-[#e2d6c8] rounded-md">
+                    <svg class="w-10 h-10 mx-auto my-5" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                        width="800" height="800" version="1.0" viewBox="0 0 64 64">
+                        <g fill="#231F20">
+                            <path
+                                d="M32 50c7.732 0 14-6.268 14-14s-6.268-14-14-14-14 6.268-14 14 6.268 14 14 14zm0-26c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12z" />
+                            <path
+                                d="M60 12h-8c-1 0-1.582.004-2.793-1.207l-5.538-5.538C43.481 5.067 42.33 4 41 4H23c-1.453 0-2.498 1.084-2.686 1.271l-5.521 5.521C13.598 11.987 13.018 12 12 12V9a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3c-2.211 0-4 1.789-4 4v40c0 2.211 1.789 4 4 4h56c2.211 0 4-1.789 4-4V16c0-2.211-1.789-4-4-4zM6 10h4v2H6v-2zm-2 4h9c1 0 2.027-.613 2.707-1.293l5.984-5.984C22.394 6.02 23.5 6 23.5 6h17s1.074-.012 1.832.746l5.961 5.961C49.039 13.453 50 14 51 14h9a2 2 0 0 1 2 2v12H48.107C45.16 22.078 39.063 18 32 18s-13.16 4.078-16.107 10H2V16a2 2 0 0 1 2-2zm28 6c8.837 0 16 7.163 16 16 0 8.838-7.163 16-16 16s-16-7.162-16-16c0-8.837 7.163-16 16-16zm28 38H4a2 2 0 0 1-2-2V30h13.046A17.936 17.936 0 0 0 14 36c0 9.941 8.059 18 18 18s18-8.059 18-18c0-2.107-.381-4.121-1.046-6H62v26a2 2 0 0 1-2 2z" />
+                            <path
+                                d="M32 30a6 6 0 0 1 6 6 1 1 0 1 0 2 0 8 8 0 0 0-8-8 1 1 0 1 0 0 2zM55 24a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-4a1 1 0 1 1 0 2 1 1 0 1 1 0-2z" />
+                        </g>
+                    </svg>
+                    <h3 class="text-[1.3rem] leading-[1.1]">Location Photobox</h3>
+                    <a class="btn !rounded-[4px] btn--tra-black hover--theme hover--tra-black mt-5"
+                        href="/location-photobox">Je vais le lire</a>
+                </div>
+            </div>
+
+            <div class="col flex-1 text-center px-[calc(-0.5*_1.5rem)]">
+                <div class="py-20 bg-[#e2d6c8] rounded-md">
+                    <svg class="w-10 h-10 mx-auto my-5" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                        width="800" height="800" version="1.0" viewBox="0 0 64 64">
+                        <g fill="#231F20">
+                            <path
+                                d="M32 50c7.732 0 14-6.268 14-14s-6.268-14-14-14-14 6.268-14 14 6.268 14 14 14zm0-26c6.627 0 12 5.373 12 12s-5.373 12-12 12-12-5.373-12-12 5.373-12 12-12z" />
+                            <path
+                                d="M60 12h-8c-1 0-1.582.004-2.793-1.207l-5.538-5.538C43.481 5.067 42.33 4 41 4H23c-1.453 0-2.498 1.084-2.686 1.271l-5.521 5.521C13.598 11.987 13.018 12 12 12V9a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v3c-2.211 0-4 1.789-4 4v40c0 2.211 1.789 4 4 4h56c2.211 0 4-1.789 4-4V16c0-2.211-1.789-4-4-4zM6 10h4v2H6v-2zm-2 4h9c1 0 2.027-.613 2.707-1.293l5.984-5.984C22.394 6.02 23.5 6 23.5 6h17s1.074-.012 1.832.746l5.961 5.961C49.039 13.453 50 14 51 14h9a2 2 0 0 1 2 2v12H48.107C45.16 22.078 39.063 18 32 18s-13.16 4.078-16.107 10H2V16a2 2 0 0 1 2-2zm28 6c8.837 0 16 7.163 16 16 0 8.838-7.163 16-16 16s-16-7.162-16-16c0-8.837 7.163-16 16-16zm28 38H4a2 2 0 0 1-2-2V30h13.046A17.936 17.936 0 0 0 14 36c0 9.941 8.059 18 18 18s18-8.059 18-18c0-2.107-.381-4.121-1.046-6H62v26a2 2 0 0 1-2 2z" />
+                            <path
+                                d="M32 30a6 6 0 0 1 6 6 1 1 0 1 0 2 0 8 8 0 0 0-8-8 1 1 0 1 0 0 2zM55 24a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-4a1 1 0 1 1 0 2 1 1 0 1 1 0-2z" />
+                        </g>
+                    </svg>
+                    <h3 class="text-[1.3rem] leading-[1.1]">Location Photomaton</h3>
+                    <a class="btn !rounded-[4px] btn--tra-black hover--theme hover--tra-black mt-5"
+                        href="/location-photomaton">Je vais le lire</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- BANNER-1
+                        ============================================= -->
+
+{{ cta_large_box }}
+<section id="banner-1" class="pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] banner-section mb-15">
+    <div class="container">
+        <!-- BANNER-1 WRAPPER -->
+        <div
+            class="banner-1-wrapper rounded-[16px] relative overflow-hidden !text-center sm:max-md:mr-[-15px] sm:max-md:ml-[-15px] sm:max-md:my-0 sm:max-md:rounded-[0_0] xsm:max-sm:mr-[-15px] xsm:max-sm:ml-[-15px] xsm:max-sm:my-0 xsm:max-sm:rounded-[0_0]">
+            <div
+                class="cta-box banner-overlay bg--05 bg--fixed pt-[75px] !pb-[85px] px-[15%] lg:max-xl:pt-[60px] lg:max-xl:!pb-[70px] lg:max-xl:px-[15%] md:max-lg:pt-[45px] md:max-lg:!pb-[55px] md:max-lg:px-[12%] sm:max-md:pt-[55px] sm:max-md:!pb-[65px] sm:max-md:px-[60px] xsm:max-sm:pt-[60px] xsm:max-sm:!pb-[70px] xsm:max-sm:px-[30px] bg-scroll sm:max-md:w-auto xsm:max-sm:w-auto w-full bg-no-repeat bg-[center_center] bg-cover bg-[url('/images/bg-05.jpg')]">
+                <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                    <!-- BANNER-1 TEXT -->
+                    <div class="flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div class="banner-1-txt color--white">
+                            <!-- Title -->
+                            <h2
+                                class="s-45 w--700 xl:!text-[2.8125rem] lg:max-xl:!text-[2.5625rem] md:max-lg:!text-[2.20588rem] sm:max-md:!text-[2.25rem] xsm:max-sm:!text-[1.8125rem] !font-bold !tracking-[-0.5px] xl:!mb-[15px] lg:max-xl:!mb-[16px] md:max-lg:!mb-[16px] sm:max-md:!mb-[12px] xsm:max-sm:!mb-[12px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                                {{ headline }}
+                            </h2>
+                            <!-- Text -->
+                            <p
+                                class="p-xl !mt-0 !mb-[25px] lg:max-xl:!mt-[15px] md:max-lg:!mt-3 sm:max-md:!mt-[14px] xsm:max-sm:!text-[1.125rem] xsm:max-sm:!mt-[14px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[20px]">
+                                {{ text }}
+                            </p>
+                            <div class="btns-group inline-block">
+                                <!-- Button -->
+                                <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                    class="btn !rounded-[4px] btn--theme hover--tra-white mr-2">Demande
+                                    de devis
+                                </a>
+                                <a href="/contacter"
+                                    class="btn !rounded-[4px] btn--tra-white hover--theme hover--tra-white">Contactez-nous
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- END BANNER-1 TEXT -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End banner overlay -->
+        </div>
+        <!-- END BANNER-1 WRAPPER -->
+    </div>
+    <!-- End container -->
+</section>
+<!-- END BANNER-1 -->
+{{ /cta_large_box }}

@@ -10,32 +10,70 @@ Statamic is the flat-first, Laravel + Git powered CMS designed for building beau
 > The code for the Statamic Composer package itself can be found at the [Statamic core package repository][cms-repo].
 
 
-## Learning Statamic
+## Getting Started
 
-Statamic has extensive [documentation][docs]. We dedicate a significant amount of time and energy every day to improving them, so if something is unclear, feel free to open issues for anything you find confusing or incomplete. We are happy to consider anything you feel will make the docs and CMS better.
+This repository was repaired for local development and contains all necessary files to run the Statamic CMS on top of the Laravel framework.
 
-## Support
+### Prerequisites
 
-We provide official developer support on [Statamic Pro](https://statamic.com/pricing) projects. Community-driven support is available on the [forum](https://statamic.com/forum) and in [Discord][discord].
+- PHP ^8.2
+- Composer
+- Node.js & NPM
 
+### Installation
 
-## Contributing
+1.  **Install PHP dependencies:**
+    ```bash
+    composer install
+    ```
 
-Thank you for considering contributing to Statamic! We simply ask that you review the [contribution guide][contribution] before you open issues or send pull requests.
+2.  **Install and Build Assets (Vite):**
+    ```bash
+    npm install
+    ```
 
+3.  **Setup Environment:**
+    Ensure you have a `.env` file copied from `.env.example` if it doesn't already exist.
+    ```bash
+    php artisan key:generate
+    ```
 
-## Code of Conduct
+4.  **Link Storage:**
+    ```bash
+    php artisan storage:link
+    ```
 
-In order to ensure that the Statamic community is welcoming to all and generally a rad place to belong, please review and abide by the [Code of Conduct](https://github.com/statamic/cms/wiki/Code-of-Conduct).
+5.  **Warm the Statamic Stache:**
+    ```bash
+    php please stache:warm
+    ```
 
+### Local Development
+
+To run the application locally, start the Laravel server and build your assets.
+
+1.  **Start the server:**
+    ```bash
+    php artisan serve
+    ```
+2.  **Access the Control Panel:**
+    Navigate to `http://127.0.0.1:8000/cp` and login with your credentials.
+
+3.  **Run Vite:**
+    For active development of front-end assets:
+    ```bash
+    npm run dev
+    ```
+    Or build for production:
+    ```bash
+    npm run build
+    ```
 
 ## Important Links
 
-- [Statamic Main Site](https://statamic.com)
 - [Statamic Documentation][docs]
-- [Statamic Core Package Repo][cms-repo]
-- [Statamic Migrator](https://github.com/statamic/migrator)
-- [Statamic Discord][discord]
+- [Laravel Documentation](https://laravel.com/docs)
+- [Vite Documentation](https://vitejs.dev/guide/)
 
 [docs]: https://statamic.dev/
 [discord]: https://statamic.com/discord

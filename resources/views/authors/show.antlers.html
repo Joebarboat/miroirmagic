@@ -1,0 +1,101 @@
+<section
+    id="single-post"
+    class="pb--40 pb-[40px] !mb-0 lg:max-xl:!pb-[40px] md:max-lg:!pb-[40px] sm:max-md:!pb-[40px] xsm:max-sm:!pb-[40px] inner-page-hero blog-page-section !pt-[40px] md:!pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] md:max-lg:pt-[70px]"
+>
+    <div class="container">
+        <!-- row -->
+        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+            <!-- SINGLE POST CONTENT -->
+            <div
+                class="xl:w-10/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full"
+            >
+                <div class="post-content">
+                    <!--  SINGLE POST TITLE -->
+                    <div class="single-post-title !text-center">
+                        <h1
+                            class="s-46 w--700 xl:!text-[2.875rem] lg:max-xl:!text-[2.625rem] md:max-lg:!text-[2.35294rem] sm:max-md:!text-[2.25rem] xsm:max-sm:!text-[1.8125rem] !font-bold p-[0_10px] lg:max-xl:px-[10%] lg:max-xl:py-0 md:max-lg:!mb-[20px] md:max-lg:px-[3%] md:max-lg:py-0 sm:max-md:!mb-[20px] sm:max-md:px-[5%] sm:max-md:py-0 xsm:max-sm:!mb-[20px] xsm:max-sm:px-[8%] xsm:max-sm:py-0 leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]"
+                        >
+                            {{ name }}
+                        </h1>
+                    </div>
+                    <!-- END SINGLE POST TITLE -->
+
+                    <!-- END SINGLE POST TEXT -->
+                </div>
+            </div>
+            <!-- END  SINGLE POST CONTENT -->
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End container -->
+</section>
+
+<section
+    class="bg-[#f1f1f1] !mt-[0] md:!mt-[40px] pb--70 pb-[70px] lg:max-xl:!pb-[70px] md:max-lg:!pb-[70px] sm:max-md:!pb-[70px] xsm:max-sm:!pb-[70px] inner-page-hero blog-page-section !pt-[40px] md:!pt-[80px] lg:max-xl:pt-[80px] md:max-lg:!mt-[80px] md:max-lg:pt-[70px]"
+>
+    <div class="container">
+        <div class="flex flex-wrap md:mx-[calc(-0.5*_1.5rem)] justify-center items-center">
+            <div class="col w-12 w-12/12 md:w-4/12 px-[calc(0.5*_1.5rem)]">
+                {{ avatar }}
+                <img
+                    class="img-fluid rounded-xl w-full h-max-[500px] decor-line shadow-xl"
+                    src="{{ url }}"
+                    alt="{{ alt }}"
+                />
+                {{ /avatar }}
+            </div>
+            <div class="col w-12 w-12/12 md:w-8/12 px-[calc(0.5*_2.5rem)] pt-5">
+                <div class="single-post-txt">
+                    <article>{{ bio }}</article>
+                </div>
+            </div>
+        </div>
+
+        <div class="pt-[60px]">
+            <ul>
+                <li>Email: <a href="mailto:{{ email }}">{{ email }}</a></li>
+                {{ facebook }}
+                <li>Facebook: <a href="{{ facebook }}" target="_blank">{{ facebook }}</a></li>
+                {{ /facebook }} {{ instagram }}
+                <li>Instagram: <a href="{{ instagram }}" target="_blank">{{ instagram }}</a></li>
+                {{ /instagram }} {{ youtube }}
+                <li>Youtube: <a href="{{ youtube }}" target="_blank">{{ youtube }}</a></li>
+                {{ /youtube }} {{ tiktok }}
+                <li>Tiktok: <a href="{{ tiktok }}" target="_blank">{{ tiktok }}</a></li>
+                {{ /tiktok }} {{ pinterest }}
+                <li>Pinterest: <a href="{{ pinterest }}" target="_blank">{{ pinterest }}</a></li>
+                {{ /pinterest }} {{ website }}
+                <li>Website: <a href="{{ website }}" target="_blank">{{ website }}</a></li>
+                {{ /website }}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section
+    class="bg-[#f1f1f1] !mt-[0] md:!mt-[40px] pb--70 pb-[70px] lg:max-xl:!pb-[70px] md:max-lg:!pb-[70px] sm:max-md:!pb-[70px] xsm:max-sm:!pb-[70px] inner-page-hero blog-page-section !pt-[40px] md:!pt-[80px] lg:max-xl:pt-[80px] md:max-lg:!mt-[80px] md:max-lg:pt-[70px]"
+>
+    <div class="container">
+        <div
+            class="section-title mb--70 xl:!mb-[70px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[50px] text-center !md:text-left"
+        >
+            <h2
+                class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35] !text-black"
+            >
+                Articles
+            </h2>
+        </div>
+
+        <div class="sitemap">
+            <ul>
+                {{ collection:pages }} {{ if title == "Blog"}}
+                <ul>
+                    {{ collection:blog }} {{ if author:name == "Lawrence Banahan" }}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+                    {{ /if }} {{ /collection:blog }}
+                </ul>
+                {{/if}} {{ /collection:pages }}
+            </ul>
+        </div>
+    </div>
+</section>

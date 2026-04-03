@@ -1,0 +1,167 @@
+<section id="contacts-1"
+    class="pb--50 xl:!pb-[50px] lg:max-xl:!pb-[40px] md:max-lg:!pb-[30px] inner-page-hero contacts-section division !pt-[40px] md:!pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] md:max-lg:pt-[70px]">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+            <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                <div class="section-title !text-center mb--60 xl:!mb-[60px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[50px]">
+                    <!-- Title -->
+                    <h1
+                        class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] !mb-0 xsm:max-sm:px-[1%] xsm:max-sm:py-0 font-Jakarta leading-[1.25] sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                        Demande de devis
+                    </h1>
+                    <!-- Text -->
+                    <p
+                        class="p-lg !text-[1.125rem] xl:!mt-[18px] !mb-0 px-[3%] py-0 lg:max-xl:!mt-[15px] md:max-lg:!mt-3 lg:max-xl:!p-0 md:max-lg:!p-0 sm:max-md:!mt-[14px] sm:max-md:!p-0 xsm:max-sm:!p-0 !leading-[1.6666]">
+                        <strong>Une question ? Un projet ? Recevez votre étude
+                            personnalisée.</strong>
+                    </p>
+                    <p> Remplissez ce formulaire en 30 secondes. Notre équipe
+                        analyse vos besoins et vous répond avec<br />
+                        un devis détaillé et la confirmation de notre
+                        disponibilité sous 24h (souvent bien moins !).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Proposal FORM -->
+        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+            <div
+                class="proposal-box md:w-11/12 lg:max-xl:w-10/12 xl:w-8/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                <!-- Title -->
+                <h3
+                    class="s-52 w--700 text-center !text-[1.35rem] xl:!text-[1.45rem] lg:max-xl:!text-[1.2rem] md:max-lg:!text-[0.89411rem] sm:max-md:!text-[1.375rem] xsm:max-sm:!text-[1.1625rem] !font-bold !tracking-[-0.5px] !mb-16 xsm:max-sm:px-[1%] xsm:max-sm:py-0 font-Jakarta leading-[1.25] sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                    Veuillez remplir le formulaire ci-dessous.
+                </h3>
+
+                <div class="form-holder mt-5 md:mt-10">
+                    <div class="mx-[calc(-0.5*_1.5rem)] pb-8">
+                        {{ nocache }}
+
+                        {{ form:proposal_form redirect="/merci" }} {{ if success }}
+                        <div class="bg-green-500 text-white p-2 rounded-xl text-center">
+                            Merci ! Nous vous contacterons bientôt pour vous
+                            donner plus de détails.
+                        </div>
+                        {{ else }} {{ fields }}
+                        <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mt-8">
+                            <p
+                                class="p-lg text-[#353f4f] !text-[1.125rem] !leading-none font-medium !mb-[15px] pl-[8px]">
+                                {{ display }}
+                            </p>
+
+                            {{ if type == "text" || type == "email" || type ==
+                            "phone" || tpye== "time" || type=="date"}}
+
+                            <input type="{{ input_type }}" name="{{ handle }}"
+                                class="form-control block w-full name h-[42px] xl:!h-[62px] bg-[#f5f6f8] border shadow-[0_0_0_0] !text-[#3a4a56] !text-[1rem] !font-normal p-[0_15px] rounded-[6px] border-solid border-transparent lg:max-xl:!h-[54px] md:max-lg:!h-[52px] sm:max-md:!h-[54px] xsm:max-sm:!h-[54px] focus:shadow-none focus:bg-[#fcfdfd] focus:border-[#1680fb] focus:[outline:0px_none]"
+                                placeholder="{{ placeholder }}" />
+
+                            {{ elseif type == "textarea"}}
+                            <textarea
+                                class="form-control block w-full message xl:!h-[62px] bg-[#f5f6f8] border shadow-[0_0_0_0] !text-[#3a4a56] !text-[1rem] !font-normal p-[0_15px] rounded-[6px] border-solid border-transparent lg:max-xl:!h-[54px] md:max-lg:!h-[52px] sm:max-md:!h-[54px] xsm:max-sm:!h-[54px] focus:shadow-none focus:bg-[#fcfdfd] focus:border-[#1680fb] focus:[outline:0px_none]"
+                                name="{{ handle }}" rows="6" placeholder="{{ placeholder }}"></textarea>
+                            {{ /if }} {{ if error }}
+                            <div class="text-sm text-red-500">{{ error }}</div>
+                            {{ /if }}
+                        </div>
+
+                        {{ /fields }} {{ captcha }}
+
+                        <label for="check" class="!flex items-start justify-center gap-x-3">
+                            <input type="checkbox" name="disclaimer" id="check" class="mt-[10px]" required />
+                            <div class="!text-[#222] mb-0">
+                                {{ captcha:disclaimer }}
+                            </div>
+                        </label>
+
+                        {{ if error:captcha }}
+                        <p>{{ error:captcha }}</p>
+                        {{ /if }}
+
+                        <!-- Contact Form Button -->
+                        <div
+                            class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mt-[15px] form-btn text-center">
+                            <button type="submit" class="btn btn--theme hover--theme submit">
+                                Vérifier la disponibilité
+                            </button>
+                        </div>
+                        {{ /if }} {{ /form:proposal_form }}
+
+                        {{ /nocache }}
+                    </div>
+                </div>
+
+
+                <div class="text-center mb-5 max-w-[500] border-t-2 border-[#C8A75A] p-md-5">
+                    <article>
+                        <ul>
+                            <li class="flex items-center"><svg class="w-6 h-auto mr-2" width="800px" height="800px"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#C8A75A" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg><strong>Devis gratuit et sans engagement sous 24h.</strong></li>
+                            <li class="flex items-center">
+                                <svg class="w-6 h-auto mr-2" width="800px" height="800px" viewBox="0 0 24 24"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12.6111L8.92308 17.5L20 6.5" stroke="#C8A75A" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <strong>Vos données sont uniquement utilisées pour
+                                    l'envoi de votre devis.</strong>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- END Proposal FORM -->
+
+        <!-- BANNER-1
+                        ============================================= -->
+        <section id="banner-1" class="pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] banner-section mb-10">
+            <div class="container">
+                <!-- BANNER-1 WRAPPER -->
+                <div
+                    class="banner-1-wrapper rounded-[16px] relative overflow-hidden !text-center sm:max-md:mr-[-15px] sm:max-md:ml-[-15px] sm:max-md:my-0 sm:max-md:rounded-[0_0] xsm:max-sm:mr-[-15px] xsm:max-sm:ml-[-15px] xsm:max-sm:my-0 xsm:max-sm:rounded-[0_0]">
+                    <div
+                        class="cta-box banner-overlay bg--05 bg--fixed pt-[75px] !pb-[85px] px-[15%] lg:max-xl:pt-[60px] lg:max-xl:!pb-[70px] lg:max-xl:px-[15%] md:max-lg:pt-[45px] md:max-lg:!pb-[55px] md:max-lg:px-[12%] sm:max-md:pt-[55px] sm:max-md:!pb-[65px] sm:max-md:px-[60px] xsm:max-sm:pt-[60px] xsm:max-sm:!pb-[70px] xsm:max-sm:px-[30px] bg-scroll sm:max-md:w-auto xsm:max-sm:w-auto w-full bg-no-repeat bg-[center_center] bg-cover bg-[url('/images/bg-05.jpg')]">
+                        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                            <!-- BANNER-1 TEXT -->
+                            <div class="flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                                <div class="banner-1-txt color--white">
+                                    <!-- Title -->
+                                    <h2
+                                        class="s-45 w--700 xl:!text-[2.8125rem] lg:max-xl:!text-[2.5625rem] md:max-lg:!text-[2.20588rem] sm:max-md:!text-[2.25rem] xsm:max-sm:!text-[1.8125rem] !font-bold !tracking-[-0.5px] xl:!mb-[15px] lg:max-xl:!mb-[16px] md:max-lg:!mb-[16px] sm:max-md:!mb-[12px] xsm:max-sm:!mb-[12px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                                        {{ cta_large_box:headline }}
+                                    </h2>
+                                    <!-- Text -->
+                                    <p
+                                        class="p-xl !mt-0 !mb-[25px] lg:max-xl:!mt-[15px] md:max-lg:!mt-3 sm:max-md:!mt-[14px] xsm:max-sm:!text-[1.125rem] xsm:max-sm:!mt-[14px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[20px]">
+                                        {{ cta_large_box:text }}
+                                    </p>
+                                    <div class="btns-group inline-block">
+                                        <!-- Button -->
+                                        <a href="/tarifs"
+                                            class="btn !rounded-[4px] btn--theme hover--tra-white mr-2">Tarifs
+                                        </a>
+                                        <a href="/contacter"
+                                            class="btn !rounded-[4px] btn--tra-white hover--theme hover--tra-white">Contactez-nous
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END BANNER-1 TEXT -->
+                        </div>
+                        <!-- End row -->
+                    </div>
+                    <!-- End banner overlay -->
+                </div>
+                <!-- END BANNER-1 WRAPPER -->
+            </div>
+            <!-- End container -->
+        </section>
+        <!-- END BANNER-1 -->
+    </div>
+    <!-- End container -->
+</section>

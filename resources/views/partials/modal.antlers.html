@@ -1,0 +1,73 @@
+<!-- MODAL WINDOW (brochure FORM) ============================================= -->
+{{ brochure_modal }} {{ if show_hide }}
+
+<div id="modal-2" class="modal fade modal-ads" tabindex="-1" aria-labelledby="modal-title">
+    <div
+        class="modal-dialog modal-dialog-centered xl:!w-[540px] lg:max-xl:!w-[350px] md:max-lg:!w-[320px] sm:max-md:!w-[390px] xsm:max-sm:!w-[340px] xsm:max-sm:m-auto">
+        <div class="modal-content overflow-hidden !rounded-[10px]">
+            <!-- CLOSE BUTTON -->
+            <button type="button"
+                class="btn-close ico-10 white-color !absolute !h-[1.5rem] !w-[1.5rem] opacity-90 z-[9999] !p-0 rounded-[50%] right-[15px] top-[15px] !bg-[rgba(255,255,255,1)] !text-black focus:no-underline focus:[outline:none] cursor-pointer"
+                data-bs-dismiss="modal" aria-label="Close">
+                <span class="flaticon-cancel relative leading-6 -top-[2px]"></span>
+            </button>
+            <!-- MODAL CONTENT -->
+            <div class="modal-body !text-center !p-0 relative flex-[1_1_auto]">
+                <!-- IMAGE -->
+                <div class="modal-body-img">
+                    <img class="img-fluid w-full object-cover max-h-[200px]" src="{{ top_image:url }}"
+                        alt="content-image" />
+                </div>
+                <!-- NEWSLETTER FORM -->
+                <div
+                    class="py--90 modal-body-content xl:!pt-[35px] xl:!pb-[35px] px-[40px] lg:max-xl:pt-[30px] lg:max-xl:!pb-[20px] lg:max-xl:px-[30px] md:max-lg:pt-[30px] md:max-lg:!pb-[20px] md:max-lg:px-[30px] sm:max-md:pt-[25px] sm:max-md:!pb-[20px] sm:max-md:px-[30px] xsm:max-sm:pt-[25px] xsm:max-sm:!pb-[20px] xsm:max-sm:px-[30px]">
+                    <!-- Title -->
+                    <h2 id="modal-title"
+                        class="s-24 w--700 xl:!text-[1.5rem] lg:max-xl:!text-[1.375rem] md:max-lg:!text-[1.470588rem] sm:max-md:!text-[1.625rem] xsm:max-sm:!text-[1.4375rem] !font-bold leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
+                        {{ title }}
+                    </h2>
+                    <!-- Form -->
+
+                    <div
+                        class="mt-[25px] lg:max-xl:!mt-[20px] md:max-lg:!mt-[20px] sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
+                        {{ messages }} {{ success_message = success_message }}
+                        {{ /messages }}
+
+                        <form id="formRequest" method="POST" action="/!/forms/request_form"
+                            data-success-message="{{ success_message }}">
+                            {{ csrf_field }}
+
+                            <input type="email" name="email_address" autocomplete="off"
+                                class="form-control block w-full !text-center xl:!h-[56px] bg-[#f5f6f8] border xl:!text-[1rem] !text-[#353f4f] !font-normal shadow-none !mt-0 !mb-[15px] mx-0 p-[0_15px] rounded-[6px] border-solid border-transparent lg:max-xl:!h-[50px] lg:max-xl:!text-[0.975rem] md:max-lg:!h-[50px] md:max-lg:!text-[0.975rem] sm:max-md:!h-[54px] sm:max-md:!text-[1.0625rem] xsm:max-sm:!h-[52px] xsm:max-sm:!text-[1rem] focus:shadow-none focus:border-[#1e90ff] placeholder:text-[#aaa] focus:[outline:0]"
+                                placeholder="{{ input_placeholder }}" required id="email_address" />
+                            <input type="hidden" name="download_url"
+                                value="https://miroirmagic.fr/assets/email/miroir-magic.pdf" />
+
+                            <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+
+                            <label for="check" class="!flex items-start justify-center gap-x-3">
+                                <input type="checkbox" name="disclaimer" id="check" class="mt-[13px]" required>
+                                <div class="!text-[#222] mb-0">{{ captcha:disclaimer }}</div>
+                            </label>
+
+                            <span class="input-group-btn block w-full">
+                                <button onclick="loadRecaptcha()" type="submit"
+                                    class="btn btn--theme hover--theme block w-full xl:!h-[56px] !m-0 lg:max-xl:!h-[50px] lg:max-xl:!text-[0.975rem] md:max-lg:!h-[50px] md:max-lg:!text-[0.975rem] sm:max-md:!h-[54px] sm:max-md:!text-[1.0625rem] xsm:max-sm:!h-[52px] xsm:max-sm:!text-[1rem]">
+                                    {{ button_text }}
+                                </button>
+                            </span>
+
+                            <div id="form-response"></div>
+                        </form>
+
+
+                    </div>
+                </div>
+                <!-- END NEWSLETTER FORM -->
+            </div>
+            <!-- END MODAL CONTENT -->
+        </div>
+    </div>
+</div>
+
+{{ /if }} {{ /brochure_modal }}

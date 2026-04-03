@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr-FR" class="scroll-smooth">
+
+<head>
+    <style>
+        body {
+            background: #f9f6f3;
+            font-weight: 400;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #c8a257
+        }
+
+        h1,
+        h2 {
+            font-family: "Playfair Display SC", serif;
+            font-weight: 700 !important;
+            font-style: normal
+        }
+
+        p {
+            font-weight: 400
+        }
+
+        .wsmenu>.wsmenu-list>li>ul.sub-menu {
+            top: 80px
+        }
+
+        @media only screen and (max-width:991px) {
+            .wsmenu>.wsmenu-list {
+                background: #010101 !important;
+                padding-top: 20px !important
+            }
+
+            .wsmenu>.wsmenu-list>li>ul.sub-menu {
+                display: block !important;
+                transform: none !important;
+                background: transparent !important;
+                border: none !important
+            }
+        }
+
+        .page-header .wsmenu>.wsmenu-list>li>a.h-link {
+            color: #fff;
+            opacity: 0.85
+        }
+
+        .hero-section {
+            background: linear-gradient(-140deg, rgba(150, 106, 31, 1) 0%, rgba(228, 195, 100, 1) 42%, rgba(202, 150, 29, 1) 74%, rgba(207, 184, 132, 1) 100%);
+            background-size: cover
+        }
+
+        .hero-section .wave-shape-bottom path {
+            fill: #f9f6f3
+        }
+
+        .hero-image {
+            outline: 1px solid white;
+            outline-offset: -8px
+        }
+
+        .decor-line {
+            outline: 1px solid white;
+            outline-offset: -8px
+        }
+
+        .hero-headline {
+            color: #fff
+        }
+
+        .hero-headline span {
+            text-shadow: 0 0 20px rgb(222, 207, 169, 0.85)
+        }
+
+        .btn {
+            font-weight: 500
+        }
+
+        .btn--theme {
+            color: #e2d3a7 !important;
+            border-color: #1d1d1d !important;
+            border-radius: 12px !important;
+            background: #1d1d1d !important;
+            font-weight: 600 !important
+        }
+
+        .btn--cta {
+            color: #e4d6a7 !important;
+            border-color: #1a1a1a !important;
+            border-radius: 12px !important;
+            background: #1a1a1a !important;
+            font-weight: 600 !important
+        }
+
+        @media (max-width:767px) {
+            .btn--theme {
+                display: block;
+                width: 100%;
+                margin-right: 0 !important
+            }
+        }
+
+        input[type="email"].form-control {
+            padding: 0 15px
+        }
+
+        .page-header {
+            min-height: 45px;
+            position: relative
+        }
+
+        .page-header__middle {
+            position: absolute;
+            left: 0;
+            top: 45px;
+            z-index: 1000;
+            width: 100%
+        }
+
+        .page-header__top {
+            background: #1a1a1a;
+            padding: 10px;
+            font-size: 15px
+        }
+
+        .contact-infos a.link:hover {
+            color: #fafafa !important;
+        }
+
+        @media (hover: hover) {
+            .contact-infos a.link:hover {
+                color: #fafafa !important;
+            }
+        }
+
+        @media (max-width:667px) {
+            .page-header .social-icons {
+                display: none
+            }
+
+            .page-header__middle {
+                position: absolute;
+                top: 40px;
+                background: linear-gradient(-140deg, rgba(150, 106, 31, 1) 0%, rgba(228, 195, 100, 1) 42%, rgba(202, 150, 29, 1) 74%, rgba(207, 184, 132, 1) 100%) !important
+            }
+
+            .page-header .contact-infos a {
+                font-size: 13px
+            }
+        }
+
+        /* Hide CTA when mobile menu or modal is open */
+        body.wsactive .cta-mobile,
+        body.modal-open .cta-mobile {
+            display: none !important;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    {{#
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> #}}
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="MiroirMagic" />
+
+    <title>{{ meta_title ?? title }}</title>
+
+    {{ partial:seo }}
+    {{# <!-- désactivation de Twitter
+        <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MiroirMagic" />
+    <meta name="twitter:title"
+        content="Location Photobooth Miroir et Borne Photo pour Événements - Photobooth Miroir Magic Location Borne" />
+    <meta name="twitter:description"
+        content="Découvrez un photobooth incroyable le miroir sera l’expérience incontournable de votre événement." />
+    <meta name="twitter:creator" content="@lawrencebanahan" />
+
+    <link rel="canonical" href="{{ current_url }}" />
+
+    FIN désactivation de Twitter --> #}}
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "G-KCLQDN9WM5");
+
+        function loadGtag() {
+            if (!window.gtagLoaded) {
+                const script = document.createElement("script");
+                script.src =
+                    "https://www.googletagmanager.com/gtag/js?id=G-KCLQDN9WM5";
+                script.async = true;
+                document.head.appendChild(script);
+                window.gtagLoaded = true;
+            }
+        }
+
+        // Option 1: Load after user scrolls 300px
+        window.addEventListener("scroll", function scrollHandler() {
+            if (window.scrollY > 300) {
+                loadGtag();
+                window.removeEventListener("scroll", scrollHandler);
+            }
+        });
+    </script>
+
+    <script>
+        function loadGTM() {
+            if (!window.gtmLoaded) {
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || [];
+                    w[l].push({
+                        "gtm.start": new Date().getTime(),
+                        event: "gtm.js",
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s),
+                        dl = l != "dataLayer" ? "&l=" + l : "";
+                    j.async = true;
+                    j.src =
+                        "https://www.googletagmanager.com/gtm.js?id=" +
+                        i +
+                        dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, "script", "dataLayer", "GTM-PWTMZSG8");
+
+                window.gtmLoaded = true; // prevent double-loading
+            }
+        }
+
+        // Option 1: Load after scroll
+        window.addEventListener("scroll", function scrollHandler() {
+            if (window.scrollY > 300) {
+                // adjust threshold as needed
+                loadGTM();
+                window.removeEventListener("scroll", scrollHandler);
+            }
+        });
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- FAVICON AND TOUCH ICONS -->
+    <link rel="icon" href="/cropped-cropped-miroir-magic-photobooth-L-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/cropped-cropped-miroir-magic-photobooth-L-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/cropped-cropped-miroir-magic-photobooth-L-180x180.png" />
+    <meta name="msapplication-TileImage" content="/cropped-cropped-miroir-magic-photobooth-L-270x270.png" />
+
+    <link rel="alternate" hreflang="fr" href="{{ permalink }}" />
+
+    {{#
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+        as="style">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap">
+    #}}
+
+
+    <link rel="preload" href="/fonts/playfair-display-sc/PlayfairDisplaySC-Regular.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="/fonts/playfair-display-sc/PlayfairDisplaySC-Bold.woff2" as="font" type="font/woff2"
+        crossorigin>
+
+    <link rel="preload" href="/fonts/plus-jakarta-sans/PlusJakartaSans-Regular.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="/fonts/plus-jakarta-sans/PlusJakartaSans-Bold.woff2" as="font" type="font/woff2"
+        crossorigin>
+
+    <link rel="preload" href="/css/fonts.css" as="style" />
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="preload" href="/css/vendor.css" as="style" />
+    <link rel="stylesheet" href="/css/vendor.css?v=v6">
+    <link rel="stylesheet" href="/css/style.css?v=6">
+
+    {{ if template == "home"}}
+    <link rel="preload" fetchpriority="high" as="image" href="/images/hero/hero-main.webp" type="image/webp">
+
+    <link rel="preload" href="/css/owl.carousel.min.css" as="style" />
+    <link rel="preload" href="/css/owl.theme.default.min.css" as="style" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" media="print" onload="this.media='all'">
+
+    {{ /if}}
+
+    {{ if template == "portfolio" }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+
+    {{ /if }} {{ if is_homepage }}
+    <script>
+        window.loadRecaptcha = function () {
+            if (window.grecaptcha)
+                return Promise.resolve(window.grecaptcha);
+
+            return new Promise((resolve, reject) => {
+                let s = document.createElement("script");
+                s.src =
+                    "https://www.google.com/recaptcha/api.js?render=6Lf0mw8sAAAAADkGviuxBVJzrty5PA6DM0udctkF";
+                s.async = true;
+                s.defer = true;
+                s.onload = () => resolve(window.grecaptcha);
+                s.onerror = () => reject("reCAPTCHA load error");
+                document.head.appendChild(s);
+            });
+        };
+    </script>
+    {{ else }} {{ captcha:head }} {{ /if }}
+    {{ vite src="resources/js/site.js" }}
+    {{ vite src="resources/css/site.css" }}
+
+    {{#
+    <script src="https://web.cmp.usercentrics.eu/modules/autoblocker.js"></script>
+    <script id="usercentrics-cmp" src="https://web.cmp.usercentrics.eu/ui/loader.js" data-settings-id="hXBztnXlGFA1Ad"
+        async></script>
+    #}}
+
+    {{ site_config }} {{ if schema }} {{ schema }} {{ else }}
+    <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "MiroirMagic Photobooth",
+                "url": "https://www.miroirmagic.fr/",
+                "logo": "https://www.miroirmagic.fr/assets/miroir-magic-photobooth-logo-light.webp",
+                "sameAs": [
+                    "https://www.instagram.com/photobooth.miroirmagic/",
+                    "https://www.linkedin.com/company/location-borne-photobooth-miroir-magic/"
+                ]
+            }
+        </script>
+    {{ /if }} {{ /site_config }}
+</head>
+
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWTMZSG8" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe>
+    </noscript>
+
+    {{ if is_homepage }} {{ partial:header }} {{ else }} {{ partial:header
+    is_subpage="true" }} {{ /if }}
+
+    {{ if !is_homepage && template != 'landing' }}
+    {{ partial:hero-dynamic }}
+    {{ /if }}
+
+    <main id="main">{{ template_content }}</main>
+
+    <!-- CTA bouton toutes les pages -->
+    <div class="cta-mobile min-h-[64px]" style="
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 0 16px;
+  display: none;
+">
+
+        <a href="/nous-contacter-devis-photoboth-borne-miroir" class="btn btn--cta"
+            style="display:block;text-align:center;padding:16px 20px;">
+            Devis Location Photobooth
+        </a>
+
+    </div>
+
+    <!-- FIN CTA bouton toutes les pages-->
+
+
+    {{ partial:footer }} {{ partial:scripts }}
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cta = document.querySelector('.cta-mobile');
+            const header = document.querySelector('.page-header');
+            const excludedPaths = ['/nous-contacter-devis-photoboth-borne-miroir'];
+            const isExcluded = excludedPaths.includes(window.location.pathname);
+
+            if (!cta) return;
+
+            // State to track header visibility
+            let isHeaderVisible = true;
+
+            const updateVisibility = () => {
+                const isMobile = window.innerWidth < 768;
+                // Check for modal open or mobile menu active (wsactive)
+                const isModalOrMenuOpen = document.body.classList.contains('modal-open') ||
+                    document.body.classList.contains('wsactive');
+
+                // Logic: Show ONLY if mobile, not excluded, header is scrolled out of view, and no modal/menu is open
+                if (isMobile && !isExcluded && !isHeaderVisible && !isModalOrMenuOpen) {
+                    cta.style.display = 'block';
+                } else {
+                    cta.style.display = 'none';
+                }
+            };
+
+            // 1. Observer for Header Visibility
+            if (header) {
+                const headerObserver = new IntersectionObserver((entries) => {
+                    // If header is intersecting (visible), set flag to true
+                    isHeaderVisible = entries[0].isIntersecting;
+                    updateVisibility();
+                }, { threshold: 0 }); // Trigger as soon as 1px is in/out
+                headerObserver.observe(header);
+            }
+
+            // 2. Observer for Body Classes (Modal or Menu changes)
+            const bodyObserver = new MutationObserver(() => {
+                updateVisibility();
+            });
+            bodyObserver.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+            // 3. Resize listener (orientation change, etc.)
+            window.addEventListener('resize', updateVisibility);
+
+            // Initial check
+            updateVisibility();
+        });
+    </script>
+</body>
+
+</html>

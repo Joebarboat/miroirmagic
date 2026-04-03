@@ -1,0 +1,108 @@
+<section id="faqs-2" class="py-20 lg:py-28 bg-[#f9f6f3]">
+    <div class="container mx-auto px-4 md:px-8">
+
+        <!-- HEADER -->
+        <div class="text-center mb-12 lg:mb-16">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold font-Jakarta text-gray-900 mb-4">
+                {{ treaser_title || title }}
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Tout ce que vous devez savoir sur la location de notre Photobooth Miroir Magic.
+            </p>
+        </div>
+
+        <!-- ACCORDION WRAPPER -->
+        <div class="max-w-3xl mx-auto">
+            <ul class="accordion space-y-4">
+                {{ collection:faq }}
+                <li
+                    class="accordion-item bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-md">
+                    <!-- HEADER -->
+                    <div class="accordion-thumb p-6 flex justify-between items-center cursor-pointer">
+                        <h4 class="text-lg md:text-xl font-bold font-Jakarta text-gray-800 pr-8">
+                            {{ question }}
+                        </h4>
+                        <!-- SVG CHEVRON -->
+                        <div class="chevron flex-shrink-0 transition-transform duration-300 transform origin-center">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9" stroke="#C8A257" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- ANSWER -->
+                    <div class="accordion-panel hidden px-6 pb-6 pt-0">
+                        <div class="prose prose-p:text-gray-600 prose-p:leading-relaxed max-w-none">
+                            {{ answer }}
+                        </div>
+                    </div>
+                </li>
+                {{ /collection:faq }}
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    /* Rotate chevron when active */
+    .accordion-item.is-active .chevron {
+        transform: rotate(180deg);
+    }
+
+    /* Ensure panel is visible when active (JS usually handles display:block, but this ensures opacity transition if needed) */
+    .accordion-item.is-active .accordion-panel {
+        display: block;
+    }
+</style>
+
+<!-- BANNER-1
+                ============================================= -->
+<section id="banner-1" class="pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] banner-section mb-15">
+    <div class="container">
+        <!-- BANNER-1 WRAPPER -->
+        <div
+            class="banner-1-wrapper rounded-[16px] relative overflow-hidden !text-center sm:max-md:mr-[-15px] sm:max-md:ml-[-15px] sm:max-md:my-0 sm:max-md:rounded-[0_0] xsm:max-sm:mr-[-15px] xsm:max-sm:ml-[-15px] xsm:max-sm:my-0 xsm:max-sm:rounded-[0_0]">
+            <div
+                class="cta-box banner-overlay bg--05 bg--fixed pt-[75px] !pb-[85px] px-[15%] lg:max-xl:pt-[60px] lg:max-xl:!pb-[70px] lg:max-xl:px-[15%] md:max-lg:pt-[45px] md:max-lg:!pb-[55px] md:max-lg:px-[12%] sm:max-md:pt-[55px] sm:max-md:!pb-[65px] sm:max-md:px-[60px] xsm:max-sm:pt-[60px] xsm:max-sm:!pb-[70px] xsm:max-sm:px-[30px] bg-scroll sm:max-md:w-auto xsm:max-sm:w-auto w-full bg-no-repeat bg-[center_center] bg-cover bg-[url('/images/bg-05.jpg')]">
+                <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                    <!-- BANNER-1 TEXT -->
+                    <div class="flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div class="banner-1-txt color--white">
+                            <!-- Title -->
+                            <h2
+                                class="s-45 w--700 xl:!text-[2.8125rem] lg:max-xl:!text-[2.5625rem] md:max-lg:!text-[2.20588rem] sm:max-md:!text-[2.25rem] xsm:max-sm:!text-[1.8125rem] !font-bold !tracking-[-0.5px] xl:!mb-[15px] lg:max-xl:!mb-[16px] md:max-lg:!mb-[16px] sm:max-md:!mb-[12px] xsm:max-sm:!mb-[12px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                                Avez-vous des questions?
+                            </h2>
+                            <!-- Text -->
+                            <p
+                                class="p-xl !mt-0 !mb-[25px] lg:max-xl:!mt-[15px] md:max-lg:!mt-3 sm:max-md:!mt-[14px] xsm:max-sm:!text-[1.125rem] xsm:max-sm:!mt-[14px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[20px]">
+                                Ne manquez pas cette occasion de rendre votre
+                                événement inoubliable avec le Photobooth Miroir
+                                Magic. Contactez-nous dès maintenant pour
+                                réserver votre animation.
+                            </p>
+                            <div class="btns-group inline-block">
+                                <!-- Button -->
+                                <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                    class="btn !rounded-[4px] btn--theme hover--tra-white mr-2">Réservez
+                                </a>
+                                <a href="/contacter"
+                                    class="btn !rounded-[4px] btn--tra-white hover--theme hover--tra-white">Contactez-nous
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END BANNER-1 TEXT -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End banner overlay -->
+        </div>
+        <!-- END BANNER-1 WRAPPER -->
+    </div>
+    <!-- End container -->
+</section>
+<!-- END BANNER-1 -->

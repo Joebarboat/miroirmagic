@@ -1,0 +1,226 @@
+<!-- EXTERNAL SCRIPTS
+				 ============================================= -->
+
+<script src="/js/vendor.js" defer></script>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const loadScript = (src) => {
+            return new Promise((resolve, reject) => {
+                const script = document.createElement("script");
+                script.src = src;
+                script.onload = resolve;
+                script.onerror = reject;
+                document.head.appendChild(script);
+            });
+        };
+
+        const getYouTubeId = (url) => {
+            const regex = /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/))([\w-]+)/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        };
+
+        const initVideoPlayer = async (videoEl, youtubeUrl) => {
+
+            if (!videoEl) return console.warn("Video element not found!");
+
+            const videoId = getYouTubeId(youtubeUrl);
+            if (!videoId) return console.error("Invalid YouTube URL");
+
+            try {
+
+                // Load Video.js core
+                if (!window.videojs) {
+                    await loadScript(
+                        "https://vjs.zencdn.net/7.17.0/video.min.js"
+                    );
+                }
+
+                if (!videojs.getTech("Youtube")) {
+                    await loadScript(
+                        "https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js"
+                    );
+                }
+
+                // Auto-initialize from your data-setup
+                let videoPlayer = videojs(videoEl, {
+                    techOrder: ["youtube"],
+                    controls: true,
+                    autoplay: false,
+                    preload: "auto",
+                    sources: [
+                        {
+                            type: "video/youtube",
+                            src: youtubeUrl
+                        }
+                    ],
+                    youtube: {
+                        iv_load_policy: 1
+                    }
+                });
+
+                videoPlayer.ready(function () {
+
+                    const bigPlay = videoPlayer.bigPlayButton;
+                    if (bigPlay) {
+                        bigPlay.show(); // ensure visible at start
+                    }
+
+                    var myPlayer = this;
+                    videoPlayer.on("pause", function () {
+                        bigPlay?.show();
+                    });
+
+                    videoPlayer.on("playing", function () {
+                        bigPlay?.hide();
+                    });
+
+                    videoPlayer.on('useractive', () => {
+                        if (videoPlayer.paused()) {
+                            videoPlayer.play().catch(err => console.log("Play blocked:", err));
+                        }
+                    });
+                });
+            } catch (err) {
+                console.error("Error loading Video.js:", err);
+            }
+        };
+
+
+        const setupLazyLoad = (videoEl, youtubeUrl) => {
+            if (!videoEl) return;
+
+            const isVisible = () => {
+                const rect = videoEl.getBoundingClientRect();
+                return rect.top < window.innerHeight && rect.bottom > 0;
+            };
+
+            const initWhenReady = () => {
+                // Slight delay ensures iframe and Video.js are ready
+                requestAnimationFrame(() => initVideoPlayer(videoEl, youtubeUrl));
+            };
+
+            if (isVisible()) {
+                initWhenReady();
+            } else {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            initVideoPlayer(videoEl, youtubeUrl);
+                            obs.disconnect();
+                        }
+                    });
+                }, { threshold: 0.25 });
+
+                observer.observe(videoEl);
+            }
+        };
+
+
+        const videoElement = document.querySelector('#my-video');
+        const youtubeUrl = {{ video_sew:video_url | to_json }};
+        if (videoElement && youtubeUrl) {
+            setupLazyLoad(videoElement, youtubeUrl);
+        }
+    });
+</script>
+
+{{ if template == "portfolio" }}
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js" defer></script>
+{{ /if }}
+
+<script>
+    function loadElfsight() {
+        if (!window.elfsightPlatform) {
+            const script = document.createElement("script");
+            script.src = "https://apps.elfsight.com/p/platform.js";
+            script.defer = true;
+            script.onload = () => {
+                // All lazy widgets initialize automatically
+            };
+            document.body.appendChild(script);
+        }
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                loadElfsight();
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    document
+        .querySelectorAll("[data-elfsight-app-lazy]")
+        .forEach((el) => observer.observe(el));
+</script>
+
+<!-- Custom Script -->
+<script src="/js/custom.js" defer></script>
+
+
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
+    as="style" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css"
+    media="print" onload="this.media='all'">
+
+<script>
+    function loadCookieConsentModule() {
+        import("/js/cookieconsent-config.js")
+            .then((module) => {
+                // If your module exports an init function, call it
+                if (module.init) module.init();
+            })
+            .catch((err) =>
+                console.error("Failed to load cookie consent module:", err)
+            );
+    }
+
+    // Example triggers
+    window.addEventListener(
+        "scroll",
+        () => {
+            if (window.scrollY > 300) loadCookieConsentModule();
+        },
+        { once: true }
+    );
+
+    document.addEventListener("click", () => loadCookieConsentModule(), {
+        once: true,
+    });
+</script>
+
+<script>
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadSmartlook);
+    } else {
+        window.addEventListener('load', loadSmartlook);
+    }
+
+    function loadSmartlook() {
+        window.smartlook ||
+            (function (d) {
+                var o = (smartlook = function () {
+                    o.api.push(arguments);
+                }),
+                    h = d.getElementsByTagName("head")[0];
+                var c = d.createElement("script");
+                o.api = [];
+                c.async = true;
+                c.type = "text/javascript";
+                c.charset = "utf-8";
+                c.src = "https://web-sdk.smartlook.com/recorder.js";
+                h.appendChild(c);
+            })(document);
+
+        smartlook("init", "6189d8a26b546ffa151f07ce116bb05ed0bb7fde", {
+            region: "eu",
+        });
+    }
+</script>
