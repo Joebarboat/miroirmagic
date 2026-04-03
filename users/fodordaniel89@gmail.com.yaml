@@ -1,0 +1,18 @@
+name: 'Daniel Fodor'
+super: true
+id: 8c344063-dc01-48b3-90b2-f7b2949239af
+password_hash: $2y$12$NtrSgdMQ9aWP4HzM9WBy.ujnr1l60XAFJqhPRcjBaUk57up7ayniS
+preferences:
+  theme: light
+  assets:
+    assets:
+      mode: grid
+  forms:
+    proposal_form:
+      columns:
+        - datestamp
+        - archived
+        - email
+  collections:
+    pages:
+      after_save: continue_editing

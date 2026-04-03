@@ -1,0 +1,475 @@
+title: Landing
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+      -
+        display: Hero
+        fields:
+          -
+            import: hero_section
+      -
+        display: 'About Section'
+        fields:
+          -
+            handle: intro_section
+            field:
+              type: replicator
+              display: 'Intro Section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                        -
+                          handle: text
+                          field:
+                            remove_empty_nodes: false
+                            type: bard
+                            display: Text
+                        -
+                          handle: image
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: Image
+                        -
+                          handle: cta_text
+                          field:
+                            type: text
+                            display: 'CTA text'
+                        -
+                          handle: cta_link
+                          field:
+                            type: link
+                            display: 'CTA Link'
+      -
+        display: 'Features Block'
+        instructions: 'List of features with check'
+        fields:
+          -
+            handle: features_section
+            field:
+              type: replicator
+              display: 'Features Section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                        -
+                          handle: features_list
+                          field:
+                            type: list
+                            display: 'Features List'
+      -
+        display: 'Video Block'
+        fields:
+          -
+            handle: video_section
+            field:
+              type: replicator
+              display: 'Video Section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                        -
+                          handle: video_bottom
+                          field:
+                            type: textarea
+                            display: 'Video Bottom'
+      -
+        display: 'Event Block'
+        fields:
+          -
+            handle: event_section
+            field:
+              type: replicator
+              display: 'Event section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                        -
+                          handle: block_1
+                          field:
+                            type: replicator
+                            display: 'Block 1'
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: image
+                                        field:
+                                          max_files: 1
+                                          container: assets
+                                          type: assets
+                                          display: Image
+                                      -
+                                        handle: headline
+                                        field:
+                                          type: text
+                                          display: Headline
+                                      -
+                                        handle: text
+                                        field:
+                                          type: textarea
+                                          display: Text
+                        -
+                          handle: block_2
+                          field:
+                            type: replicator
+                            display: 'Block 2'
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: image
+                                        field:
+                                          max_files: 1
+                                          container: assets
+                                          type: assets
+                                          display: Image
+                                      -
+                                        handle: headline
+                                        field:
+                                          type: text
+                                          display: Headline
+                                      -
+                                        handle: text
+                                        field:
+                                          type: textarea
+                                          display: Text
+                        -
+                          handle: block_3
+                          field:
+                            type: replicator
+                            display: 'Block 3'
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: image
+                                        field:
+                                          max_files: 1
+                                          container: assets
+                                          type: assets
+                                          display: Image
+                                      -
+                                        handle: headline
+                                        field:
+                                          type: text
+                                          display: Headline
+                                      -
+                                        handle: text
+                                        field:
+                                          type: textarea
+                                          display: Text
+                        -
+                          handle: cta
+                          field:
+                            type: replicator
+                            display: CTA
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: text
+                                        field:
+                                          type: text
+                                          display: Text
+                                      -
+                                        handle: link
+                                        field:
+                                          type: link
+                                          display: Link
+      -
+        display: 'Icons Block'
+        fields:
+          -
+            handle: icons_section
+            field:
+              type: replicator
+              display: 'Icons Section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields: {  }
+      -
+        display: 'Partner Block'
+        fields:
+          -
+            handle: partners_section
+            field:
+              type: grid
+              display: 'Partners Section'
+              fields:
+                -
+                  handle: headline
+                  field:
+                    type: text
+                    display: Headline
+      -
+        display: 'Price Packages Block'
+        fields:
+          -
+            handle: packages_section
+            field:
+              type: grid
+              display: 'Packages Section'
+              fields:
+                -
+                  handle: headline
+                  field:
+                    type: text
+                    display: Headline
+                -
+                  handle: subtitle
+                  field:
+                    type: textarea
+                    display: Subtitle
+      -
+        display: 'Places Block'
+        fields:
+          -
+            handle: places_section
+            field:
+              type: replicator
+              display: 'Places Section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                        -
+                          handle: cities_datas
+                          field:
+                            type: replicator
+                            display: 'Cities Datas'
+                            sets:
+                              new_set_group:
+                                display: 'New Set Group'
+                                sets:
+                                  new_set:
+                                    display: 'New Set'
+                                    fields:
+                                      -
+                                        handle: city_name
+                                        field:
+                                          type: text
+                                          display: 'City Name'
+                                      -
+                                        handle: city_url
+                                        field:
+                                          type: link
+                                          display: 'City URL'
+      -
+        display: 'Quote Block'
+        fields:
+          -
+            handle: quote_section
+            field:
+              type: replicator
+              display: 'Quote Section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: text
+                          field:
+                            type: textarea
+                            display: Text
+                        -
+                          handle: author_image
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Author Image'
+                        -
+                          handle: author_name
+                          field:
+                            type: text
+                            display: 'Author Name'
+                        -
+                          handle: author_position
+                          field:
+                            type: text
+                            display: 'Author Position'
+
+      -
+        display: 'Google Reviews Configuration'
+        fields:
+          -
+            handle: google_reviews_config
+            field:
+              type: replicator
+              display: 'Google Reviews Configuration'
+              max_sets: 1
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'Setting'
+                      fields:
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                            default: 'Avis Clients'
+                        -
+                          handle: description
+                          field:
+                            type: textarea
+                            display: Description
+                            instructions: 'HTML content allowed (e.g. links, line breaks)'
+                        -
+                          handle: google_places_api_key
+                          field:
+                            type: text
+                            display: 'Google Places API Key'
+                            instructions: 'Enter your Google Maps Javascript API Key'
+                        -
+                          handle: google_place_id
+                          field:
+                            type: text
+                            display: 'Google Place ID'
+                            instructions: 'Enter your Google Place ID'
+      -
+        display: 'Blog Block'
+        fields:
+          -
+            handle: blog_section
+            field:
+              type: replicator
+              display: 'Blog Section'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                        -
+                          handle: subtitle
+                          field:
+                            type: textarea
+                            display: Subtitle
+                        -
+                          handle: cta
+                          field:
+                            type: grid
+                            display: CTA
+                            fields:
+                              -
+                                handle: text
+                                field:
+                                  type: text
+                                  display: Text
+                              -
+                                handle: link
+                                field:
+                                  type: link
+                                  display: Link
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+      -
+        display: SEO
+        fields:
+          -
+            import: seo_fields

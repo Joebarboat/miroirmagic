@@ -1,0 +1,23 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: email_address
+            field:
+              input_type: email
+              placeholder: 'Entrez votre adresse email...'
+              type: text
+              display: 'Email Address'
+              validate:
+                - required
+          -
+            handle: download_url
+            field:
+              input_type: hidden
+              default: 'https://dev.miroirmagic.fr/assets/email/miroir-magic.pdf'
+              antlers: true
+              type: text
+              display: 'Download Url'

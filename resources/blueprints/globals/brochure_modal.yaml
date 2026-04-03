@@ -1,0 +1,42 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: show_hide
+            field:
+              type: toggle
+              display: 'Show / Hide'
+          -
+            handle: top_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Top Image'
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+          -
+            handle: input_placeholder
+            field:
+              type: text
+              display: 'Input Placeholder'
+          -
+            handle: button_text
+            field:
+              type: text
+              display: 'Button Text'
+      -
+        display: Messages
+        instructions: "Edit the action's messages"
+        fields:
+          -
+            handle: success_message
+            field:
+              type: text
+              display: 'Success Message'

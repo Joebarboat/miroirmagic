@@ -1,0 +1,18 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: header_logo
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Header Logo'
+          -
+            handle: schema
+            field:
+              type: code
+              display: Schema

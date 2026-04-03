@@ -1,0 +1,61 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        display: 'Package 1'
+        instructions: 'Information about Package 1'
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+          -
+            handle: short_description
+            field:
+              type: text
+              display: 'Short description'
+          -
+            handle: price
+            field:
+              type: text
+              display: Price
+      -
+        display: 'Package 2'
+        instructions: 'Information about Package 2'
+        fields:
+          -
+            handle: title_2
+            field:
+              type: text
+              display: 'Title 2'
+          -
+            handle: short_description_2
+            field:
+              type: text
+              display: 'Short description 2'
+          -
+            handle: price_2
+            field:
+              type: text
+              display: 'Price 2'
+      -
+        display: 'Package 3'
+        instructions: 'Information about Package 3'
+        fields:
+          -
+            handle: title_3
+            field:
+              type: text
+              display: 'Title 3'
+          -
+            handle: short_description_3
+            field:
+              type: text
+              display: 'Short description 3'
+          -
+            handle: price_3
+            field:
+              type: text
+              display: 'Price 3'

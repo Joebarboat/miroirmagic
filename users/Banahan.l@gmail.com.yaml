@@ -1,0 +1,28 @@
+name: 'Lawrence Banahan'
+bio:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Le Miroir Magic : Disponible à la location dans toute la France Services de création de contenu et de montage vidéo Contactez-nous dès aujourd'hui pour réserver votre Miroir Magic !"
+slug: lawrence-banahan
+super: true
+id: 5e902e56-53cf-4b74-956e-59acb99a2636
+password_hash: $2y$12$u6RdGRvxwBepxWPfp92Xu.cuGgInlmLZG8g/V2CwNM3yusyWGT7n.
+preferences:
+  locale: fr
+  favorites: {  }
+  collections:
+    partners:
+      after_save: create_another
+    blog:
+      per_page: 500
+      after_save: continue_editing
+    pages:
+      after_save: continue_editing
+  forms:
+    request_form:
+      columns:
+        - datestamp
+        - email_address

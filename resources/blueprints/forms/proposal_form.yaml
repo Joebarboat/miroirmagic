@@ -1,0 +1,41 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: identite
+            field:
+              type: text
+              display: Identité
+              validate:
+                - required
+              placeholder: 'Nom, Prénom, Société, Organisation'
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: Contact
+              validate:
+                - required
+              placeholder: 'Votre adresse email'
+          -
+            handle: telephone
+            field:
+              input_type: tel
+              type: text
+              display: Téléphone
+              placeholder: 'Pour votre devis par SMS/WhatsApp'
+          -
+            handle: parlez_nous_de_votre_evenement
+            field:
+              placeholder: 'Date, type d’événement, lieux de votre événement, nombre de convives, durée de notre présence, (Ex : Mariage le 15/06 à Nice, 150 invités, prestation de 3h souhaitée...'
+              type: textarea
+              display: 'Parlez-nous de votre événement'
+          -
+            handle: archived
+            field:
+              type: toggle
+              instructions: 'Jelöld be, ha archiválni szeretnéd a submission-t'

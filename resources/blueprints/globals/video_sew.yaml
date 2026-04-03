@@ -1,0 +1,11 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: video_url
+            field:
+              type: text
+              display: 'Video URL'

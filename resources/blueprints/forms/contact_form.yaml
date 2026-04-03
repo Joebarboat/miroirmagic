@@ -1,0 +1,32 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: organisation
+            field:
+              type: text
+              display: 'Votre nom & prénom et/ou organisation'
+          -
+            handle: email
+            field:
+              input_type: email
+              type: text
+              display: 'Votre adresse email'
+              validate:
+                - required
+          -
+            handle: telephone
+            field:
+              input_type: tel
+              type: text
+              display: 'Votre numéro de téléphone'
+          -
+            handle: evenement
+            field:
+              type: textarea
+              display: 'Vous avez une question ? Écrivez-nous.'
+              validate:
+                - required

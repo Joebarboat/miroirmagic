@@ -1,0 +1,20 @@
+validate:
+  g-recaptcha-response: required|captcha
+title: 'Contact Form'
+honeypot: 'false'
+email:
+  -
+    id: mhg6ksow
+    to: Banahan.l@gmail.com
+    from: contact@miroirmagic.fr
+    subject: 'Nous avons reçu votre message.'
+    html: emails/form-contact
+    attachments: true
+    reply_to: contact@miroirmagic.fr
+  -
+    id: W9GG9L1Q
+    to: '{{ email }}'
+    from: contact@miroirmagic.fr
+    subject: 'Nous avons reçu votre message.'
+    template: emails/form-contact-confirmation
+    html: emails/form-contact-confirmation

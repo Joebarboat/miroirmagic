@@ -1,0 +1,36 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: facebook_link
+            field:
+              type: text
+              display: 'Facebook Link'
+          -
+            handle: instagram_link
+            field:
+              type: text
+              display: 'Instagram Link'
+          -
+            handle: linkedin_link
+            field:
+              type: text
+              display: 'Linkedin Link'
+          -
+            handle: youtube_link
+            field:
+              type: text
+              display: 'Youtube Link'
+          -
+            handle: pinterest_link
+            field:
+              type: text
+              display: Pinterest
+          -
+            handle: tiktok_link
+            field:
+              type: text
+              display: Tiktok

@@ -1,0 +1,36 @@
+title: 'Configuration Héros'
+fields:
+  -
+    handle: hero_enabled
+    field:
+      type: toggle
+      display: 'Activer le Héros Dynamique'
+      default: false
+      instructions: 'Activez pour remplacer le héros par défaut de cette page.'
+  -
+    handle: hero_title
+    field:
+      type: text
+      display: 'Titre du Héros'
+      instructions: 'Laisser vide pour utiliser le titre de la page.'
+      if:
+        hero_enabled: true
+  -
+    handle: hero_image
+    field:
+      max_files: 1
+      container: assets
+      type: assets
+      display: 'Image de fond'
+      instructions: 'Recommended size: 1920x600px (min: 1200x400px). Images will be automatically constrained between 300-600px height. Use landscape orientation for best results.'
+      if:
+        hero_enabled: true
+  -
+    handle: hero_overlay
+    field:
+      type: toggle
+      display: 'Activer le filtre sombre'
+      default: true
+      instructions: 'Ajoute un filtre sombre sur l''image pour améliorer la lisibilité du texte.'
+      if:
+        hero_enabled: true

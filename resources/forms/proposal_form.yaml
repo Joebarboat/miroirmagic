@@ -1,0 +1,19 @@
+validate:
+  g-recaptcha-response: required|captcha
+title: 'Proposal Form'
+email:
+  -
+    id: mhf45xnx
+    to: Banahan.l@gmail.com
+    from: contact@miroirmagic.fr
+    subject: 'Nous avons bien reçu votre demande de devis.'
+    attachments: true
+    html: emails/form-proposal
+    reply_to: contact@miroirmagic.fr
+  -
+    id: G9XGzHne
+    to: '{{ email }}'
+    from: contact@miroirmagic.fr
+    subject: 'Nous avons bien reçu votre demande de devis.'
+    template: emails/form-proposal-confirmation
+    html: emails/form-proposal-confirmation

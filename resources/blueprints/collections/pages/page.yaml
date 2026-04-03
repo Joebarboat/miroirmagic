@@ -1,0 +1,116 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: treaser_title
+            field:
+              type: text
+              display: 'Treaser Title'
+          -
+            handle: treaser_intro
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Treaser Intro'
+          -
+            handle: content
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: Content
+              sets:
+                html:
+                  display: HTML
+                  icon: programming-script-code-brackets
+                  sets:
+                    html:
+                      display: html
+                      fields:
+                        -
+                          handle: markup
+                          field:
+                            type: code
+                            display: markup
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+      -
+        display: Hero
+        fields:
+          -
+            handle: hero_enabled
+            field:
+              type: toggle
+              display: 'Activer le Héros Dynamique'
+              default: false
+              instructions: 'Activez pour remplacer le héros par défaut de cette page.'
+              localizable: true
+          -
+            handle: hero_title
+            field:
+              type: text
+              display: 'Titre du Héros'
+              instructions: 'Laisser vide pour utiliser le titre de la page.'
+              localizable: true
+              if:
+                hero_enabled: true
+          -
+            handle: hero_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Image de fond'
+              localizable: true
+              if:
+                hero_enabled: true
+
+      -
+        display: SEO
+        fields:
+          -
+            import: seo_fields
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true

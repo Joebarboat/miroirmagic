@@ -1,0 +1,968 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@source "../views";
+@source "../../content";
+
+body {
+    background: #f9f6f3;
+}
+
+a {
+    color: #c8a257;
+}
+
+.tra-menu .wsmainfull {
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.font-playfair-display-sc-regular {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-playfair-display-sc-bold {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-playfair-display-sc-black {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.font-playfair-display-sc-regular-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.font-playfair-display-sc-bold-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.font-playfair-display-sc-black-italic {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700 !important;
+    font-style: normal;
+}
+
+.skip-nav-link {
+    padding: 8px;
+    position: absolute;
+    background: #e77e23;
+    left: 50%;
+    height: 30px;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-nav-link:focus-within {
+    transform: translateY(0%);
+}
+
+#header .header-wrapper {
+    /* background: #1a1a1a; */
+    /* background: linear-gradient(
+        120deg,
+        rgb(108 74 182) 0%,
+        rgba(228, 214, 167, 1) 100%
+    ); */
+}
+
+#header.is-subpage .header-wrapper {
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    ) !important;
+}
+
+.tra-menu .wsmobileheader,
+.white-menu .wsmobileheader {
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    ) !important;
+}
+
+.tra-menu.white-scroll .wsmainull.scroll {
+    backdrop-filter: blur(5px) !important;
+}
+
+.wsmenu > .wsmenu-list > li > ul.sub-menu {
+    top: 80px;
+}
+
+@media only screen and (max-width: 991px) {
+    .wsmainfull {
+        height: 80px !important;
+    }
+
+    .wsmenu > .wsmenu-list {
+        background: #010101 !important;
+        padding-top: 20px !important;
+    }
+
+    .wsmenu > .wsmenu-list > li > ul.sub-menu {
+        display: block !important;
+        transform: none !important;
+        background: transparent !important;
+        border: none !important;
+    }
+
+    .wsanimated-arrow span,
+    .wsanimated-arrow span:before,
+    .wsanimated-arrow span:after {
+        background: #fff !important;
+    }
+}
+
+.page-header .wsmenu > .wsmenu-list > li > a.h-link {
+    color: #fff;
+    opacity: 0.85;
+}
+
+.page-header .wsmenu > .wsmenu-list > li:hover > a.h-link {
+    color: #fff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+}
+
+.wsmenu > .wsmenu-list.nav-theme > li > ul.sub-menu > li > a:hover {
+    color: #c8a257 !important;
+}
+
+.hero-section {
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    );
+    background-size: cover;
+
+    /*background-size: 180% 180%;
+    animation: gradient-animation 5s ease both; */
+}
+
+.hero-section .wave-shape-bottom path {
+    fill: #f9f6f3;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 30% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 30% 50%;
+    }
+}
+
+.hero-image {
+    outline: 1px solid white;
+    outline-offset: -8px;
+}
+
+.decor-line {
+    outline: 1px solid white;
+    outline-offset: -8px;
+}
+
+.hero-headline {
+    color: #fff;
+}
+
+.hero-headline span {
+    text-shadow: 0 0 20px rgb(222, 207, 169, 0.85);
+}
+
+/* .btn--theme {
+    color: #010101 !important;
+    border-color: #e4d6a7 !important;
+    border-radius: 12px !important;
+    background: #e2d3a7 !important;
+} */
+
+.btn--theme {
+    color: #e2d3a7 !important;
+    border-color: #1d1d1d !important;
+    border-radius: 12px !important;
+    background: #1d1d1d !important;
+}
+
+.hover--theme:hover {
+    color: #2d2d2d !important;
+    border-color: #f2ebd3 !important;
+    background: #f2ebd3 !important;
+    box-shadow: 0 0 10px rgb(222, 207, 169, 0.8);
+}
+
+.btn--cta {
+    color: #e4d6a7 !important;
+    border-color: #1a1a1a !important;
+    border-radius: 12px !important;
+    background: #1a1a1a !important;
+}
+
+@media (max-width: 767px) {
+    .btn--theme {
+        display: block;
+        width: 100%;
+        margin-right: 0 !important;
+    }
+}
+
+.has-colored-bg {
+    background: #f1f1f1;
+}
+
+.author-box {
+    margin: 0 auto 30px auto !important;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.65);
+}
+
+/* bgs */
+.bg-party {
+    background: url("../images/portfolio/14_photobooth_Photographe-mariage-Nice.webp")
+        no-repeat center center;
+    position: relative;
+    background-size: cover;
+}
+
+.bg-blog-info:after,
+.bg-party:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+}
+
+.bg-blog-info {
+    background: url("../images/bg/Location-Photobooth-entreprise-Toulon.jpg")
+        no-repeat center center;
+    position: relative;
+    background-size: cover;
+}
+
+.bg-concept {
+    position: relative;
+    background-size: cover;
+}
+
+.bg-concept-01 {
+    background: url("../images/miroir_front.webp") no-repeat center center;
+}
+
+.bg-concept-02 {
+    background: url("../images/mariage.jpg") no-repeat center center;
+}
+
+.bg-concept-03 {
+    background: url("../images/F8A6789-683x1024.webp") no-repeat center center;
+}
+
+.bg-concept-04 {
+    background: url("../images/portfolio/14_photobooth_Photographe-mariage-Nice.webp")
+        no-repeat center center;
+}
+
+.bg-concept-05 {
+    background: url("../images/events/wedding-01.webp") no-repeat center right;
+}
+
+.bg-concept:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.bg-animation {
+    background: url("../images/F8A6789-683x1024.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.bg-animation:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.bg-photo {
+    position: relative;
+}
+
+.bg-photo:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.bg-photo-01 {
+    background: url("../images/animations/Miroir-Magique-Photobooth-Location-mob.webp")
+        no-repeat center center;
+    background-size: cover;
+}
+
+.bg-photo-02 {
+    background: url("../images/animations/2018-02-17-20.57.10.jpg.webp")
+        no-repeat center center;
+    background-size: cover;
+}
+
+.bg-photo-03 {
+    background: url("../images/animations/2018-02-17-20.57.10.jpg.webp")
+        no-repeat center center;
+    background-size: cover;
+}
+
+.bg-event-01 {
+    background: url("../images/bg/Location-Photobooth-entreprise-Toulon.jpg")
+        no-repeat center center;
+    position: relative;
+    background-size: cover;
+}
+
+.bg-event-01:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.bg-enterprise {
+    position: relative;
+}
+
+.bg-enterprise:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+}
+
+.bg-enterprise-01 {
+    background: url("../images/events/2019-01-16-22.54.04.jpg.webp") no-repeat
+        center center;
+    background-size: cover;
+}
+
+.bg-enterprise-02 {
+    background: url("../images/events/Miroir-Magic-Corporate-2.jpg.webp")
+        no-repeat center center;
+    background-size: cover;
+}
+
+.bg-enterprise-03 {
+    background: url("../images/events/F8A6788.jpg.webp") no-repeat center center;
+    background-size: cover;
+}
+
+.bg-enterprise-04 {
+    background: url("../images/events/1524046620766.jpg.webp") no-repeat center
+        center;
+    background-size: cover;
+}
+
+.bg-enterprise-05 {
+    background: url("../images/events/MG_5942-1024x640.jpg.webp") no-repeat
+        center center;
+    background-size: cover;
+}
+
+/*  miroir place */
+.miroir-places {
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.miroir-places:before {
+    content: "";
+    background-image: url("../images/france-mockup.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+}
+
+.miroir-places .container {
+    position: relative;
+    z-index: 2000;
+}
+
+/* blog posts */
+.blog-post-txt {
+    position: relative;
+    z-index: 10;
+}
+
+.blog-post img {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+/* callout */
+.callout-text > * {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.callout-text-lg > * {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* general artical styles */
+article h2,
+article h3 {
+    font-size: 36px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+
+@media (max-width: 767px) {
+    article h2,
+    article h3 {
+        font-size: 1.65rem;
+        line-height: 1.45;
+    }
+}
+
+article > * + * {
+    margin-top: 30px;
+}
+
+@media (max-width: 667px) {
+    article > * + * {
+        margin-top: 20px;
+    }
+}
+
+article.description-list-holder > * {
+    margin-top: 20px;
+}
+
+article a {
+    color: #c8a257;
+}
+
+article a:hover {
+    color: #c8a257;
+    text-decoration: underline;
+}
+
+.description-list-holder ul {
+    margin: 35px 0 25px 0;
+}
+
+.description-list-holder ul li {
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.description-list-holder ul li:before {
+    content: "";
+    position: absolute;
+    background: url("../images/icons/list-icon.svg") no-repeat center center;
+    background-size: contain;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    top: 2px;
+}
+
+/* Home */
+.features-section {
+    background: #f0f0fd;
+}
+
+.integrations-section {
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    );
+}
+
+.feature-of-mirror {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    min-height: 237px;
+}
+
+/* Features section */
+.main-features-section {
+    background: url("../images/bg/Location-Photobooth-mariage-Toulon_gray.jpg")
+        no-repeat center bottom;
+    position: relative;
+    background-size: cover;
+}
+
+.main-features-section:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4d787f;
+    opacity: 0.2;
+}
+
+@media (max-width: 667px) {
+    .main-features-section:after {
+        opacity: 0.75;
+    }
+}
+
+/* Video wrapper */
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+@media (max-width: 667px) {
+    #video-container {
+        height: 50vh;
+        min-height: 350px;
+        border: 2px solid #000;
+    }
+}
+
+#video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#video-container .video-js {
+    display: block;
+    /* Hide the actual video player */
+    width: 100%;
+    height: 100%;
+}
+
+.video-js .vjs-big-play-button {
+    top: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.2);
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    border: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 667px) {
+    .video-js .vjs-big-play-button {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+.video-js .vjs-big-play-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.video-js .vjs-big-play-button:before {
+    height: 50px;
+}
+
+@media (max-width: 667px) {
+    .video-js .vjs-big-play-button {
+        width: 90px;
+        height: 90px;
+        font-size: 60px;
+    }
+
+    .video-js .vjs-big-play-button:before {
+        height: 30px;
+    }
+}
+
+.vjs-controls-disabled .vjs-big-play-button,
+.vjs-has-started .vjs-big-play-button,
+.vjs-using-native-controls .vjs-big-play-button,
+.vjs-error .vjs-big-play-button {
+    display: none !important;
+}
+
+.text-block-area {
+    background: #e2d3a7;
+}
+
+/* Sitemap */
+.sitemap {
+    margin: 50px 0;
+}
+
+.sitemap ul {
+    list-style: disc;
+    padding-left: 30px;
+}
+
+.sitemap ul ul {
+    margin-bottom: 10px;
+}
+
+.sitemap ul li {
+    margin-bottom: 5px;
+}
+
+.sitemap a {
+    color: #c8a951;
+}
+
+.proposal-box {
+    background: #fff;
+    padding: 50px 40px 0 40px;
+    border-radius: 12px;
+    border: 5px dashed #e4d6a7;
+}
+
+@media (max-width: 667px) {
+    .proposal-box {
+        padding: 30px 20px 0 20px;
+        border: 3px dashed #e4d6a7;
+    }
+}
+
+.cta-box {
+    background: url("../images/events/wedding-01.webp") no-repeat right 80%;
+    background-size: cover;
+    position: relative;
+}
+
+.cta-box > * {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-box:before {
+    content: "";
+    position: absolute;
+    background: #4d787f;
+    border-radius: 12px;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 667px) {
+    .btns-group {
+        display: block !important;
+    }
+
+    .btns-group > * {
+        width: 100% !important;
+    }
+}
+
+/* price page */
+.main-offer-box {
+    border: 5px solid #e2d3a7;
+    box-shadow: 0 0 30px rgba(228, 214, 167, 0.7);
+}
+
+.color--theme .flaticon-check {
+    color: #7150b5 !important;
+}
+
+/* quote */
+.reviews-section {
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    ) !important;
+}
+
+/* le concept */
+.square-post-wrapper {
+    background: #e2d3a7;
+}
+
+/* footer */
+#footer-3 {
+    position: relative;
+    background: url("../images/footer/footer-bg.webp") no-repeat right 90%;
+    background-size: cover;
+}
+
+#footer-3:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    );
+    border-top: 1px solid #fff;
+
+    opacity: 0.92;
+}
+
+.footer-copyright p {
+    color: #fff;
+}
+
+.footer-links h6 {
+    color: #f0eef9;
+    font-weight: normal;
+}
+
+.footer-links a {
+    color: #fff;
+}
+
+.footer-links a:hover {
+    color: #fff !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.contact-form-box {
+    background: #fff;
+    border-radius: 12px;
+    border: 5px dashed #e4d6a7;
+    padding: 30px 30px 0 30px;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+/* swiper */
+.miroir-carousel {
+    width: 100%;
+    height: auto;
+}
+
+.miroir-carousel .swiper-button-next,
+.miroir-carousel .swiper-button-prev {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    ) !important;
+    top: 35%;
+    transition: transform 0.35s ease-in-out;
+}
+
+.miroir-carousel .swiper-button-next svg,
+.miroir-carousel .swiper-button-prev svg {
+    max-width: 20px;
+}
+
+.miroir-carousel .swiper-button-next svg path,
+.miroir-carousel .swiper-button-prev svg path {
+    fill: #fff;
+}
+
+.miroir-carousel .swiper-button-next:active,
+.miroir-carousel .swiper-button-prev:active {
+    transform: scale(0.9);
+}
+
+@media (max-width: 767px) {
+    .miroir-carousel .swiper-button-next,
+    .miroir-carousel .swiper-button-prev {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* forms */
+.form-control.error {
+    border: 2px solid red !important;
+}
+
+input[type="text"].form-control,
+input[type="tel"].form-control,
+input[type="email"].form-control {
+    padding: 0 15px;
+}
+
+textarea.form-control {
+    padding: 20px 15px;
+    min-height: 200px;
+}
+
+.footer-socials ul li a span:before {
+    color: #fafafa !important;
+}
+
+/* page header */
+.page-header {
+    position: relative;
+}
+
+.page-header__middle {
+    position: absolute;
+    left: 0;
+    top: 45px;
+    z-index: 1000;
+    width: 100%;
+}
+
+.page-header.is-subpage .page-header__middle {
+    background: linear-gradient(
+        -140deg,
+        rgba(150, 106, 31, 1) 0%,
+        rgba(228, 195, 100, 1) 42%,
+        rgba(202, 150, 29, 1) 74%,
+        rgba(207, 184, 132, 1) 100%
+    ) !important;
+}
+
+.page-header__top {
+    background: #1a1a1a;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.contact-infos a.link {
+    &:hover {
+        @media (hover: hover) {
+            color: #fafafa !important;
+        }
+    }
+}
+
+.contact-infos a svg path {
+    transition: all 0.35s ease-in-out;
+}
+
+.contact-infos a:hover svg path {
+    fill: #fff;
+}
+
+.page-header .social-icons a:hover svg path {
+    fill: #fafafa;
+}
+
+@media (max-width: 667px) {
+    .page-header .social-icons {
+        display: none;
+    }
+
+    .page-header__middle {
+        position: absolute;
+        top: 40px;
+        background: linear-gradient(
+            -140deg,
+            rgba(150, 106, 31, 1) 0%,
+            rgba(228, 195, 100, 1) 42%,
+            rgba(202, 150, 29, 1) 74%,
+            rgba(207, 184, 132, 1) 100%
+        ) !important;
+    }
+
+    .page-header .contact-infos a {
+        font-size: 13px;
+    }
+}

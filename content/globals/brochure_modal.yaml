@@ -1,0 +1,8 @@
+title: 'Brochure Modal'
+data:
+  show_hide: true
+  top_image: location-photobooth-mariage-toulon.webp
+  title: 'Souhaitez-vous notre brochure?'
+  input_placeholder: 'Entrez votre adresse email...'
+  button_text: 'Envoyez moi la brochure.'
+  success_message: "Merci\_! Nous vous avons envoyé la brochure, vous la recevrez rapidement."

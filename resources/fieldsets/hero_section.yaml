@@ -1,0 +1,12 @@
+title: 'Hero Section'
+fields:
+  -
+    handle: hero_headline
+    field:
+      type: textarea
+      display: 'Hero Headline'
+  -
+    handle: hero_text
+    field:
+      type: textarea
+      display: 'Hero Text'

@@ -1,0 +1,11 @@
+title: 'Tarifs Packages'
+data:
+  title: 'Sur Mesure'
+  short_description: "Jusqu'au bout de la nuit et les jours suivant..."
+  price: 'Sur devis'
+  title_2: 'A partir de'
+  short_description_2: 'Tirages illimités'
+  price_2: ~590€
+  title_3: Plus
+  short_description_3: Personnalisation
+  price_3: Inclus

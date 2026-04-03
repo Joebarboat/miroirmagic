@@ -1,0 +1,92 @@
+title: Author
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+          -
+            handle: email
+            field:
+              type: text
+              display: Email
+          -
+            handle: avatar
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: Avatar
+          -
+            handle: bio
+            field:
+              type: markdown
+              display: Bio
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+      -
+        display: 'Social Media'
+        fields:
+          -
+            handle: facebook
+            field:
+              type: link
+              display: Facebook
+          -
+            handle: instagram
+            field:
+              type: link
+              display: Instagram
+          -
+            handle: youtube
+            field:
+              type: link
+              display: Youtube
+          -
+            handle: tiktok
+            field:
+              type: link
+              display: Tiktok
+          -
+            handle: pinterest
+            field:
+              type: link
+              display: Pinterest
+          -
+            handle: website
+            field:
+              type: link
+              display: Website
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+      -
+        display: SEO
+        fields:
+          -
+            import: seo_fields

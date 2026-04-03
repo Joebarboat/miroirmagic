@@ -1,0 +1,19 @@
+validate:
+  email_address: required|email
+title: 'Request Form'
+email:
+  -
+    id: mh0tes1n
+    to: banahanl@gmail.com
+    from: contact@miroirmagic.fr
+    subject: 'Miroir Magic - Brochure gratuite'
+    attachments: true
+    html: emails/form-request
+    reply_to: contact@miroirmagic.fr
+  -
+    id: Q0l5JIKI
+    to: '{{ email_address }}'
+    from: contact@miroirmagic.fr
+    subject: 'Miroir Magic - Brochure gratuite'
+    template: emails/form-request-confirmation
+    html: emails/form-request-confirmation

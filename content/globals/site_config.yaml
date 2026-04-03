@@ -1,0 +1,19 @@
+title: 'Site Config'
+data:
+  header_logo: miroir-magic-photobooth-logo-light.webp
+  schema:
+    code: |-
+      <script type="application/ld+json">
+                  {
+                      "@context": "https://schema.org",
+                      "@type": "Organization",
+                      "name": "MiroirMagic Photobooth",
+                      "url": "https://www.miroirmagic.fr/",
+                      "logo": "https://www.miroirmagic.fr/assets/miroir-magic-photobooth-logo-light.webp",
+                      "sameAs": [
+                          "https://www.instagram.com/photobooth.miroirmagic/",
+                          "https://www.linkedin.com/company/location-borne-photobooth-miroir-magic/"
+                      ]
+      			}
+       </script>
+    mode: htmlmixed

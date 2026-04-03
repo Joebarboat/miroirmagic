@@ -1,0 +1,6 @@
+title: Faq
+template: faq/index
+revisions: false
+date_behavior:
+  past: public
+  future: private
