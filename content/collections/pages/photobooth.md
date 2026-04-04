@@ -1,5 +1,6 @@
 ---
 id: fee0bd3a-59d5-43ea-82e2-bd9115e4a229
+slug: photobooth
 blueprint: page
 title: 'Location Photobooth'
 author: 8c344063-dc01-48b3-90b2-f7b2949239af

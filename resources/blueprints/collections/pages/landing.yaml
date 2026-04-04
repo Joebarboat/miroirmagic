@@ -366,7 +366,6 @@ tabs:
                           field:
                             type: text
                             display: 'Author Position'
-
       -
         display: 'Google Reviews Configuration'
         fields:
@@ -381,7 +380,7 @@ tabs:
                   display: 'New Set Group'
                   sets:
                     new_set:
-                      display: 'Setting'
+                      display: Setting
                       fields:
                         -
                           handle: headline

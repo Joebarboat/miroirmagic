@@ -29,6 +29,9 @@ tree:
     entry: 52ecb1e2-fbdb-4589-94fc-1662fa753312
   -
     entry: fee0bd3a-59d5-43ea-82e2-bd9115e4a229
+    children:
+      -
+        entry: 5256689f-0443-4e39-a5fd-4ed3487345e4
   -
     entry: f344d957-f196-4510-a3f6-d5281517f432
   -
@@ -71,8 +74,6 @@ tree:
     entry: ee609dfb-145a-483b-9c59-e00dff69afdf
   -
     entry: fe32530c-5da6-4014-97cc-7ef05023cbd6
-  -
-    entry: 5256689f-0443-4e39-a5fd-4ed3487345e4
   -
     entry: be5a40e7-d9dd-4fbb-a8d5-23f35e4411c3
   -

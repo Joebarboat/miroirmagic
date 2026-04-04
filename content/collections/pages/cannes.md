@@ -1,5 +1,6 @@
 ---
 id: 5256689f-0443-4e39-a5fd-4ed3487345e4
+slug: cannes
 blueprint: general
 title: 'Photobooth Cannes – Location et Animation pour Particuliers et Professionnels'
 meta_description: 'Offrez une animation unique à votre événement à Cannes avec notre service de location de photobooth miroir. Contactez nous pour réserver maintenant !'

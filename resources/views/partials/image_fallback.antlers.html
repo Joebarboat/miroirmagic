@@ -1,0 +1,6 @@
+{{ if image:url }}
+    <img src="{{ image:url }}" class="w-full h-full object-cover rounded-xl shadow-xl decor-line" loading="lazy" alt="{{ headline }}" />
+{{ else }}
+    {{# Use the raw field value (filename) if Asset augmentation fails #}}
+    <img src="/assets/{{ image | raw }}" class="w-full h-full object-cover rounded-xl shadow-xl decor-line" loading="lazy" alt="{{ headline }}" />
+{{ /if }}

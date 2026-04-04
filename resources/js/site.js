@@ -28,22 +28,6 @@ window.onload = function () {
     }
     shareButton();
 
-    if (document.querySelector(".video-js")) {
-        var player = videojs("my-video");
-
-        if (player) {
-            player.ready(function () {
-                var myPlayer = this;
-                player.on("pause", function () {
-                    player.bigPlayButton.show();
-                });
-
-                player.on("play", function () {
-                    player.bigPlayButton.hide();
-                });
-            });
-        }
-    }
 
     /* gallery */
     const miroirGallery = document.querySelector(".miroir-gallery");
