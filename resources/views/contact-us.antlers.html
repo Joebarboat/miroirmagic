@@ -38,7 +38,9 @@
                     <!-- TEXT BOX -->
                     <div class="txt-box !mb-[20px] md:max-lg:!mb-[5px] last:!mb- max-w-[580px]">
                         <!-- Text -->
-                        <article>{{ content }}</article>
+                        <article>
+                            {{ content }}
+                        </article>
                     </div>
                     <!-- END TEXT BOX -->
                 </div>
@@ -118,7 +120,7 @@
 
                 {{ nocache }}
 
-                {{ form:contact_form id="contactForm" }} {{ if success }}
+                {{ form:contact_form id="contactForm" redirect="/merci" }} {{ if success }}
                 <div class="bg-green-500 text-white p-2 rounded-xl text-center">
                     Merci. Nous avons bien reçu votre message.
                 </div>

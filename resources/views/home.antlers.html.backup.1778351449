@@ -1,0 +1,1720 @@
+<!-- PAGE CONTENT
+                      ============================================= -->
+<div id="page" class="page font--jakarta">
+    <section id="hero-5"
+        class="bg--scroll hero-section relative md:max-lg:!mt-[40px] z-[3] pt-[140px] !pb-[50px] lg:max-xl:pt-[130px] lg:max-xl:!pb-[50px] md:max-lg:pt-[50px] md:max-lg:!pb-[50px] sm:max-md:!mb-[50px] xsm:max-sm:!mb-[50px] w-full bg-no-repeat bg-[center_center] bg-cover bg-fixed sm:max-md:w-auto sm:max-md:bg-scroll xsm:max-sm:w-auto xsm:max-sm:bg-scroll">
+        <div class="container">
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] items-center">
+                <!-- HERO TEXT -->
+                <div
+                    class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div class="hero-5-txt">
+                        <!-- Title -->
+                        <h1
+                            class="hero-headline text-white s-58 !mb-[20px] w--700 xl:!text-[3.625rem] lg:max-xl:!text-[3.375rem] md:max-lg:!text-[3.08823rem] sm:max-md:!text-[2.5rem] xsm:max-sm:!text-[2.0625rem] !font-bold leading-[1.3] xl:!mb-[25px] lg:max-xl:!mb-[20px] md:max-lg:!mb-[20px] xsm:max-sm:!mb-[15px] font-Jakarta">
+                            {{ hero_headline }}
+                        </h1>
+                        <!-- Text -->
+                        <p
+                            class="text-white p-lg mb--30 xl:!mb-[30px] pr-[10%] lg:max-xl:!mb-[25px] lg:max-xl:pr-[10%] md:max-lg:!mb-[25px] md:max-lg:pr-0 xsm:max-sm:!mb-[20px]">
+                            {{ hero_text }}
+                        </p>
+                        <!-- Button -->
+                        <div class="flex flex-wrap items-start">
+                            <a href="/tarifs" class="btn !rounded-[4px] btn--theme hover--theme mr-2 !mb-2">Voir Les
+                                Tarifs</a>
+                            <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                class="btn !rounded-[4px] btn--theme hover--theme">J'aimerais une offre</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END HERO TEXT -->
+                <!-- HERO IMAGE -->
+                <div
+                    class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div class="hero-5-img">
+                        <img class="img-fluid rounded-xl max-h-[650px] shadow-2xl hero-image object-cover object-center mx-auto block"
+                            src="/images/hero/hero-main.webp"
+                            srcset="/images/hero/hero-main.webp 360w, /images/hero/hero-main.webp 460w"
+                            sizes="(max-width: 600px) 100vw, 600px" width="600" height="900" fetchpriority="high"
+                            alt="Location Photobooth Miroir Magic" />
+                    </div>
+                </div>
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+        <!-- WAVE SHAPE BOTTOM -->
+        <div class="wave-shape-bottom !absolute w-full left-0 bottom-0">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 170">
+                <path fill-opacity="1"
+                    d="M0,160L120,160C240,160,480,160,720,138.7C960,117,1200,75,1320,53.3L1440,32L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+    <!-- END HERO-5 -->
+
+    <!-- TEXT CONTENT
+                         ============================================= -->
+    {{ intro_section }}
+    <section
+        class="py-[40px] pt-0 md:pb-[120px] md:pt-[140px] lg:max-xl:pt-[70px] md:max-lg:pt-[70px] ct-02 content-section division">
+        <div class="container">
+            <!-- SECTION CONTENT (ROW) -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] items-center">
+                <!-- IMAGE BLOCK -->
+                <div
+                    class="order-1 mt-8 md:order-0 md:mt-0 xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="img-block !text-center left-column wow fadeInRight mr-[30px] lg:max-xl:mr-[5px] md:max-lg:mr-0 sm:max-md:mx-[3%] xsm:max-sm:m-[0_2%_35px]">
+                        <div class="aspect-[3/4] w-full">
+                            <img src="{{ image:url }}"
+                                class="w-full h-full object-cover rounded-xl shadow-xl decor-line" loading="lazy"
+                                alt="{{ headline }}" />
+                        </div>
+
+                    </div>
+                </div>
+                <!-- TEXT BLOCK -->
+                <div
+                    class="xl:w-6/12 lg:max-xl:w-6/12 md:max-lg:w-6/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div class="txt-block right-column wow fadeInLeft">
+                        <!-- Title -->
+                        <h2
+                            class="s-46 w--700 xl:!text-[2.875rem] lg:max-xl:!text-[2.625rem] md:max-lg:!text-[2.35294rem] sm:max-md:!text-[2.25rem] xsm:max-sm:!text-[1.8125rem] !font-bold lg:max-xl:!mb-[20px] md:max-lg:!mb-[15px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[15px] xl:!mb-[26px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                            {{ headline }}
+                        </h2>
+                        <div class="txt-block">{{ text }}</div>
+                        <!-- Link -->
+                        <div class="txt-block-tra-link mt-[25px]">
+                            <a href="{{ cta_link }}" class="btn !rounded-[4px] btn--theme hover--theme mr-2">{{ cta_text
+                                }}</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END TEXT BLOCK -->
+            </div>
+            <!-- END SECTION CONTENT (ROW) -->
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- END TEXT CONTENT -->
+    {{ /intro_section }}
+
+    <!-- FEATURES-11
+                         ============================================= -->
+    {{ features_section }}
+    <section
+        class="pt--100 pb-[60px] pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] features-section division main-features-section">
+        <div class="container">
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                </div>
+            </div>
+
+            <div class="fbox-wrapper">
+                <div class="mx-[calc(-0.5*_1.5rem)] row-cols-1 row-cols-md-2 rows-3">
+                    <div
+                        class="section-title mb--70 xl:!mb-[70px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[50px] text-center !md:text-left">
+                        <h2
+                            class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35] !text-white">
+                            {{ headline }}
+                        </h2>
+                    </div>
+
+                    <div class="w-full px-[calc(0.5*_1.5rem)] pb-5 gap-4 flex flex-col justify-start items-start">
+                        {{ features_list }}
+                        <div
+                            class="feature-badge px-6 py-3 rounded-[50px] inline-flex items-center border border-white border-1 xl:!text-[1.375rem] lg:max-xl:!text-[1.25rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] text-white xl:!mb-[10px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] xsm:max-sm:!mb-[15px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] wow fadeInLeft">
+                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" xml:space="preserve"
+                                style="enable-background: new 0 0 400 297.9" viewBox="0 0 400 297.9">
+                                <path d="m33.3 166.7 96.4 96.4h0c2 2 5.3 2 7.3 0h0L366.7 33.3" style="
+                                        fill: none;
+                                        stroke: #fff;
+                                        stroke-width: 66.6667;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                        stroke-miterlimit: 133.3333;
+                                    " />
+                            </svg>
+                            <span>{{ value }}</span>
+                        </div>
+                        {{ /features_list }}
+                    </div>
+                </div>
+                <!-- End row -->
+            </div>
+        </div>
+    </section>
+    <!-- END FEATURES-11 -->
+    {{ /features_section }}
+
+    <!-- BOX CONTENT
+                         ============================================= -->
+
+    <!-- SECTION VIDÉO PLEINE LARGEUR -->
+    <section class="py-0">
+        <div class="video-section-wrapper" style="position: relative; width: 100%; background: #000;">
+            <div class="video-container" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0;">
+                <!-- Image poster -->
+                <img src="/images/video_cover.webp" alt="Miroir Magic Photobooth - Vidéo de présentation"
+                    class="video-poster" id="videoPoster"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 2; cursor: pointer;"
+                    loading="lazy" />
+
+                <!-- Overlay avec bouton play -->
+                <div class="play-button-overlay" id="playOverlay"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; z-index: 3; background: rgba(0, 0, 0, 0.3); cursor: pointer;">
+                    <div class="play-button-gold" id="playButton" aria-label="Lire la vidéo"></div>
+                </div>
+
+                <!-- Container pour l'iframe -->
+                <div id="videoIframeContainer" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </div>
+
+                <!-- Bouton de fermeture (caché par défaut) -->
+                <button id="closeVideoBtn"
+                    style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.7); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; z-index: 5; display: none; line-height: 1;">×</button>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .play-button-gold {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(-140deg,
+                    rgba(150, 106, 31, 1) 0%,
+                    rgba(228, 195, 100, 1) 42%,
+                    rgba(202, 150, 29, 1) 74%,
+                    rgba(207, 184, 132, 1) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 24px rgba(228, 195, 100, 0.4);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            animation: pulse-gold 2s infinite;
+        }
+
+        .play-button-gold::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 15px 0 15px 26px;
+            border-color: transparent transparent transparent #fff;
+            margin-left: 4px;
+        }
+
+        .play-button-gold:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 32px rgba(228, 195, 100, 0.6);
+            animation: none;
+        }
+
+        @keyframes pulse-gold {
+            0% {
+                box-shadow: 0 8px 24px rgba(228, 195, 100, 0.4);
+            }
+
+            50% {
+                box-shadow: 0 8px 24px rgba(228, 195, 100, 0.7),
+                    0 0 0 20px rgba(228, 195, 100, 0.1);
+            }
+
+            100% {
+                box-shadow: 0 8px 24px rgba(228, 195, 100, 0.4);
+            }
+        }
+
+        .play-button-overlay:hover {
+            background: rgba(0, 0, 0, 0.4) !important;
+        }
+
+        #closeVideoBtn:hover {
+            background: rgba(228, 195, 100, 0.9) !important;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            .play-button-gold {
+                width: 80px;
+                height: 80px;
+            }
+
+            .play-button-gold::before {
+                border-width: 12px 0 12px 20px;
+            }
+
+            #closeVideoBtn {
+                top: 10px;
+                right: 10px;
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .play-button-gold {
+                width: 70px;
+                height: 70px;
+            }
+
+            .play-button-gold::before {
+                border-width: 10px 0 10px 17px;
+            }
+        }
+    </style>
+    <script>
+        // Attendre que le DOM soit chargé
+        document.addEventListener('DOMContentLoaded', function () {
+            // Vérifier si la section vidéo existe
+            const videoSection = document.querySelector('.video-section-wrapper');
+            if (!videoSection) return;
+
+            // Extraire l'ID YouTube
+            let videoUrl = '{{ video_sew:video_url }}';
+            if (!videoUrl || videoUrl.trim() === '') {
+                videoUrl = 'https://www.youtube.com/watch?v=6jduVHjNPTA';
+            }
+            const videoId = videoUrl.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/)?.[1];
+
+            if (!videoId) {
+                console.error('ID vidéo YouTube invalide');
+                return;
+            }
+
+            // Eléments DOM
+            const playOverlay = document.getElementById('playOverlay');
+            const playButton = document.getElementById('playButton');
+            const videoPoster = document.getElementById('videoPoster');
+            const videoContainer = document.getElementById('videoIframeContainer');
+            const closeBtn = document.getElementById('closeVideoBtn');
+
+            if (!playOverlay || !playButton || !videoPoster || !videoContainer || !closeBtn) {
+                console.warn('Certains éléments vidéo sont manquants dans le DOM');
+                return;
+            }
+
+            // Variables d'état
+            let player = null;
+            let isPlaying = false;
+
+            // Fonction pour charger et jouer la vidéo
+            function loadAndPlayVideo() {
+                // Si la vidéo est déjà en cours, ne rien faire
+                if (isPlaying) return;
+
+                // Masquer l'overlay et le poster
+                playOverlay.style.display = 'none';
+                videoPoster.style.display = 'none';
+
+                // Afficher le bouton de fermeture
+                closeBtn.style.display = 'block';
+
+                // Créer l'iframe YouTube
+                const iframe = document.createElement('iframe');
+                iframe.id = 'youtubeIframe';
+                iframe.style.cssText = 'position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; z-index: 4;';
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&playsinline=1&enablejsapi=1`;
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                iframe.loading = 'lazy';
+
+                // Ajouter l'iframe au container
+                videoContainer.appendChild(iframe);
+
+                // Mettre à jour l'état
+                isPlaying = true;
+
+                // Initialiser l'API YouTube
+                if (typeof YT !== 'undefined' && YT.Player) {
+                    initializePlayer();
+                } else {
+                    // Charger l'API YouTube
+                    const tag = document.createElement('script');
+                    tag.src = "https://www.youtube.com/iframe_api";
+                    const firstScriptTag = document.getElementsByTagName('script')[0];
+                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                    window.onYouTubeIframeAPIReady = initializePlayer;
+                }
+            }
+
+            // Initialiser le lecteur YouTube
+            function initializePlayer() {
+                player = new YT.Player('youtubeIframe', {
+                    events: {
+                        'onReady': onPlayerReady,
+                        'onStateChange': onPlayerStateChange
+                    }
+                });
+            }
+
+            // Quand le lecteur est prêt
+            function onPlayerReady(event) {
+                // La vidéo démarre automatiquement avec autoplay=1
+            }
+
+            // Surveiller les changements d'état
+            function onPlayerStateChange(event) {
+                // État 1 = lecture, État 2 = pause
+                if (event.data === YT.PlayerState.PLAYING) {
+                    isPlaying = true;
+                } else if (event.data === YT.PlayerState.PAUSED) {
+                    isPlaying = false;
+                } else if (event.data === YT.PlayerState.ENDED) {
+                    isPlaying = false;
+                    // Réinitialiser à la fin de la vidéo
+                    resetVideo();
+                }
+            }
+
+            // Fonction pour arrêter et réinitialiser la vidéo
+            function stopAndResetVideo() {
+                if (player) {
+                    player.stopVideo();
+                    player.destroy();
+                    player = null;
+                }
+
+                // Supprimer l'iframe
+                const iframe = document.getElementById('youtubeIframe');
+                if (iframe) {
+                    iframe.remove();
+                }
+
+                // Réafficher l'overlay et le poster
+                playOverlay.style.display = 'flex';
+                videoPoster.style.display = 'block';
+
+                // Masquer le bouton de fermeture
+                closeBtn.style.display = 'none';
+
+                // Réinitialiser l'état
+                isPlaying = false;
+            }
+
+            // Réinitialiser la vidéo (sans supprimer l'iframe)
+            function resetVideo() {
+                if (player) {
+                    player.seekTo(0);
+                    player.pauseVideo();
+                }
+
+                // Réafficher l'overlay et le poster
+                playOverlay.style.display = 'flex';
+                videoPoster.style.display = 'block';
+
+                // Masquer le bouton de fermeture
+                closeBtn.style.display = 'none';
+
+                // Réinitialiser l'état
+                isPlaying = false;
+            }
+
+            // Ajouter les événements
+            playButton.addEventListener('click', function (e) {
+                e.stopPropagation();
+                loadAndPlayVideo();
+            });
+
+            playOverlay.addEventListener('click', function (e) {
+                e.stopPropagation();
+                loadAndPlayVideo();
+            });
+
+            // Cliquer sur le poster lance aussi la vidéo
+            videoPoster.addEventListener('click', function (e) {
+                e.stopPropagation();
+                loadAndPlayVideo();
+            });
+
+            // Bouton de fermeture
+            closeBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                stopAndResetVideo();
+            });
+
+            // Option: Mettre en pause en cliquant sur la vidéo
+            document.addEventListener('click', function (e) {
+                if (isPlaying && player && e.target.closest('#videoIframeContainer')) {
+                    // Basculer entre pause et play
+                    if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+                        player.pauseVideo();
+                    } else {
+                        player.playVideo();
+                    }
+                }
+            });
+
+            // Préchargement YouTube
+            playButton.addEventListener('mouseenter', function () {
+                if (!isPlaying) {
+                    const link = document.createElement('link');
+                    link.rel = 'preconnect';
+                    link.href = 'https://www.youtube.com';
+                    document.head.appendChild(link);
+                }
+            }, { once: true });
+        });
+    </script>
+
+    <!-- FEATURES-2
+                         ============================================= -->
+
+    {{ event_section }}
+    <section id="features-2"
+        class="py--100 py-[100px] lg:max-xl:py-[80px] md:max-lg:py-[70px] features-section division">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div class="section-title mb--50 mb-[50px] lg:max-xl:!mb-[50px] md:max-lg:!mb-[50px] !text-center">
+                        <!-- Title -->
+                        <h2
+                            class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35] !tracking-[-0.5px]">
+                            {{ headline }}
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <!-- FEATURES-2 WRAPPER  -->
+            <div class="fbox-wrapper !text-center">
+                <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] row-cols-1 row-cols-md-3">
+                    <!-- FEATURE BOX #1 -->
+                    {{ block_1}}
+                    <div class="md:w-4/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div class="fbox-2 fb-1 wow fadeInUp">
+                            <!-- Image -->
+                            <div
+                                class="fbox-img !mb-0 gr--whitesmoke h--195 xl:!m-[0_8px_30px] xl:!pt-[42px] lg:max-xl:!mt-0 lg:max-xl:!mb-[20px] lg:max-xl:mx-0 lg:max-xl:pt-[35px] md:max-lg:!mt-0 md:max-lg:!mb-[20px] md:max-lg:mx-0 md:max-lg:pt-[30px] sm:max-md:!mt-0 sm:max-md:!mb-[20px] sm:max-md:mx-[10%] sm:max-md:pt-[46px] xsm:max-sm:!mt-0 xsm:max-sm:!mb-[20px] xsm:max-sm:mx-3 xsm:max-sm:pt-[40px] rounded-[12px_12px_0_0]">
+                                <div class="aspect-[3/4] w-full">
+                                    {{ partial:partials/image_fallback }}
+                                </div>
+
+                            </div>
+                            <!-- Text -->
+                            <div class="fbox-txt">
+                                <h2
+                                    class="s-22 w--700 xl:!text-[1.375rem] lg:max-xl:!text-[1.25rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] xl:!leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] !font-bold !mt-5 md:!mt-0 !mb-[15px]">
+                                    {{ headline }}
+                                </h2>
+                                <p class="!mb-0">{{ text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /block_1}}
+                    <!-- END FEATURE BOX #1 -->
+
+                    <!-- FEATURE BOX #2 -->
+                    {{ block_2 }}
+                    <div class="md:w-4/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div class="fbox-2 fb-2 wow fadeInUp">
+                            <!-- Image -->
+                            <div
+                                class="fbox-img !mb-0 gr--whitesmoke h--195 xl:!m-[0_8px_30px] xl:!pt-[42px] lg:max-xl:!mt-0 lg:max-xl:!mb-[50px] lg:max-xl:mx-0 lg:max-xl:pt-[35px] md:max-lg:!mt-0 md:max-lg:!mb-[45px] md:max-lg:mx-0 md:max-lg:pt-[30px] sm:max-md:!mt-0 sm:max-md:!mb-[50px] sm:max-md:mx-[10%] sm:max-md:pt-[46px] xsm:max-sm:!mt-0 xsm:max-sm:!mb-[50px] xsm:max-sm:mx-3 xsm:max-sm:pt-[40px] rounded-[12px_12px_0_0]">
+                                <div class="aspect-[3/4] w-full">
+                                    {{ partial:partials/image_fallback }}
+                                </div>
+
+                            </div>
+                            <!-- Text -->
+                            <div class="fbox-txt">
+                                <h2
+                                    class="s-22 w--700 xl:!text-[1.375rem] lg:max-xl:!text-[1.25rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] xl:!leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] !font-bold !mt-5 !mb-[15px]">
+                                    {{ headline }}
+                                </h2>
+                                <p class="!mb-0">{{ text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{ /block_2 }}
+                    <!-- END FEATURE BOX #2 -->
+
+                    {{ block_3 }}
+                    <!-- FEATURE BOX #3 -->
+                    <div class="md:w-4/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div class="fbox-2 fb-3 wow fadeInUp">
+                            <!-- Image -->
+                            <div
+                                class="fbox-img !mb-0 gr--whitesmoke h--195 xl:!m-[0_8px_30px] xl:!pt-[42px] lg:max-xl:!mt-0 lg:max-xl:!mb-[50px] lg:max-xl:mx-0 lg:max-xl:pt-[35px] md:max-lg:!mt-0 md:max-lg:!mb-[45px] md:max-lg:mx-0 md:max-lg:pt-[30px] sm:max-md:!mt-0 sm:max-md:!mb-[50px] sm:max-md:mx-[10%] sm:max-md:pt-[46px] xsm:max-sm:!mt-0 xsm:max-sm:!mb-[50px] xsm:max-sm:mx-3 xsm:max-sm:pt-[40px] rounded-[12px_12px_0_0]">
+                                <div class="aspect-[3/4] w-full">
+                                    {{ partial:partials/image_fallback }}
+                                </div>
+
+                            </div>
+                            <!-- Text -->
+                            <div class="fbox-txt">
+                                <h2
+                                    class="s-22 w--700 xl:!text-[1.375rem] lg:max-xl:!text-[1.25rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] xl:!leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] !font-bold !mt-5 !mb-[15px]">
+                                    {{ headline}}
+                                </h2>
+                                <p class="!mb-0">{{ text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEATURE BOX #3 -->
+                    {{ /block_3 }}
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- END FEATURES-2 WRAPPER -->
+
+            <!-- ACTION BUTTON -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] pb-0 mt-[60px]">
+                <div class="flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                    <div class="img-block-btn !text-center wow fadeInUp !mt-0">
+                        <!-- Button -->
+                        {{ cta }}
+                        <a href="{{ link }}" class="btn !rounded-[4px] btn--theme hover--tra-black">{{ text }}</a>
+                        {{ /cta }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- END FEATURES-2 -->
+    {{ /event_section }}
+
+    <!-- DIVIDER LINE -->
+    <hr
+        class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]" />
+    <!-- INTEGRATIONS-1
+                         ============================================= -->
+    <section id="integrations-1"
+        class="py--100 py-[100px] lg:max-xl:py-[80px] md:max-lg:py-[70px] integrations-section">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-8/12 lg:max-xl:w-8/12 xl:w-8/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="section-title mb--70 xl:!mb-[70px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[50px] !text-center">
+                        <!-- Title -->
+                        <h2
+                            class="!text-white s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold lg:max-xl:!mb-[20px] md:max-lg:!mb-[15px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[15px] xl:!mb-[26px] xl:!leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35] !tracking-[-0.5px]">
+                            Bien plus qu'un simple photobooth
+                        </h2>
+                        <!-- Text -->
+                        <p
+                            class="s-21 color--white xl:!text-[1.1125rem] xl:!mt-[16px] !mb-0 lg:max-xl:!mt-[15px] lg:max-xl:!text-[1.28755rem] md:max-lg:!text-[1.12352rem] md:max-lg:!mt-[12px] sm:max-md:!text-[1.01875rem] sm:max-md:!mt-[12px] xsm:max-sm:!text-[1.1875rem] xsm:max-sm:!mt-[12px] xsm:max-sm:px-[3%] xsm:max-sm:py-0">
+                            Il s’agit d’un miroir interactif qui combine les
+                            fonctionnalités d’un photo booth traditionnel avec
+                            une technologie de pointe. Ses fonctionnalités
+                            innovantes incluent
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- INTEGRATIONS-1 WRAPPER -->
+            <div class="integrations-1-wrapper">
+                <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] row-cols-1 row-cols-md-2 row-cols-lg-3 rows-2">
+                    <!-- TOOL #1 -->
+                    <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div
+                            class="in_tool feature-of-mirror relative items-stretch justify-start px-[20px] py-[22px] [flex-flow:row_wrap] lg:max-xl:px-[20px] lg:max-xl:py-4 md:max-lg:!p-[16px] sm:max-md:!p-[25px] xsm:max-sm:px-[25px] xsm:max-sm:py-[20px] it-6 rounded-[12px] mb--30 xl:!mb-[30px] wow fadeInUp">
+                            <!-- Icon -->
+                            <div class="in_tool-logo-wrap">
+                                <div class="in_tool-logo ico-60 relative mr-[20px]">
+                                    <svg class="w-[64px] h-auto" xmlns="http://www.w3.org/2000/svg" width="44"
+                                        height="44" fill="none">
+                                        <circle cx="22" cy="22" r="20" stroke="#fff" stroke-linejoin="round"
+                                            stroke-width="3" />
+                                        <circle cx="22" cy="22" r="8" stroke="#fff" stroke-linejoin="round"
+                                            stroke-width="3" />
+                                        <path stroke="#fff" stroke-linecap="round" stroke-width="3"
+                                            d="M22 14h18m-10 8v18M14 22V4m8 26H4" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="in_tool-txt flex-1 w-full max-w-full">
+                                <h2
+                                    class="s-20 w--200 !text-white xl:!text-[1.15rem] lg:max-xl:!text-[1.17755rem] md:max-lg:!text-[1.297058rem] md:max-lg:!leading-[1.3] !font-medium font-Jakarta mt-[5px] md:max-lg:!mt-[2px] sm:max-md:!text-[1.4rem] sm:max-md:!leading-none sm:max-md:!mt-[4px] xsm:max-sm:!text-[1.4rem] xsm:max-sm:leading-none xsm:max-sm:!mt-[4px] !leading-[1.5] !mb-0">
+                                    Personnalisation des tirages pour s’adapter
+                                    à votre événement
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEATURE BOX #1 -->
+                    <!-- TOOL #2 -->
+                    <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div
+                            class="in_tool feature-of-mirror relative items-stretch justify-start px-[20px] py-[22px] [flex-flow:row_wrap] lg:max-xl:px-[20px] lg:max-xl:py-4 md:max-lg:!p-[16px] sm:max-md:!p-[25px] xsm:max-sm:px-[25px] xsm:max-sm:py-[20px] it-6 rounded-[12px] mb--30 xl:!mb-[30px] wow fadeInUp">
+                            <!-- Icon -->
+                            <div class="in_tool-logo-wrap">
+                                <div class="in_tool-logo ico-60 relative mr-[20px]">
+                                    <svg class="w-[46px] h-auto mb-5" xmlns="http://www.w3.org/2000/svg"
+                                        xml:space="preserve" style="
+                                            enable-background: new 0 0 583.3
+                                                583.3;
+                                        " viewBox="0 0 583.3 583.3">
+                                        <path fill="#fff"
+                                            d="M491.7 450H425c-6.6 0-13-2.6-17.7-7.3-4.7-4.7-7.3-11-7.3-17.7 0-6.6 2.6-13 7.3-17.7 4.7-4.7 11-7.3 17.7-7.3h66.7c11 0 21.6-4.4 29.5-12.2 7.8-7.8 12.2-18.4 12.2-29.5V225c0-11.1-4.4-21.6-12.2-29.5-7.8-7.8-18.4-12.2-29.5-12.2h-400c-11.1 0-21.6 4.4-29.5 12.2C54.4 203.4 50 213.9 50 225v133.3c0 11.1 4.4 21.6 12.2 29.5C70 395.6 80.6 400 91.7 400h66.7c6.6 0 13 2.6 17.7 7.3 4.7 4.7 7.3 11 7.3 17.7 0 6.6-2.6 13-7.3 17.7-4.7 4.7-11 7.3-17.7 7.3H91.7c-24.3 0-47.6-9.7-64.8-26.8C9.7 406 0 382.6 0 358.3V225c0-24.3 9.7-47.6 26.8-64.8C44 143 67.4 133.3 91.7 133.3h400c24.3 0 47.6 9.7 64.8 26.8 17.2 17.2 26.8 40.5 26.8 64.8v133.3c0 24.3-9.7 47.6-26.8 64.8-17.2 17.3-40.5 27-64.8 27z" />
+                                        <path
+                                            d="M425 183.3c-6.6-.1-12.9-2.7-17.6-7.4-4.7-4.7-7.3-11-7.4-17.6V50H183.3v108.3c0 6.6-2.6 13-7.3 17.7-4.7 4.7-11 7.3-17.7 7.3-6.6 0-13-2.6-17.7-7.3-4.7-4.7-7.3-11-7.3-17.7V41.7c0-11.1 4.4-21.6 12.2-29.5C153.4 4.4 163.9 0 175 0h233.3c11.1 0 21.6 4.4 29.5 12.2C445.6 20 450 30.6 450 41.7v116.7c-.1 6.6-2.7 12.9-7.4 17.6-4.7 4.6-11 7.2-17.6 7.3zM408.3 583.3H175c-11.1 0-21.6-4.4-29.5-12.2-7.8-7.8-12.2-18.4-12.2-29.5V308.3c0-11 4.4-21.6 12.2-29.5 7.8-7.8 18.4-12.2 29.5-12.2h233.3c11.1 0 21.6 4.4 29.5 12.2 7.8 7.8 12.2 18.4 12.2 29.5v233.3c0 11-4.4 21.7-12.2 29.5-7.8 7.8-18.4 12.2-29.5 12.2zm-225-50H400V316.7H183.3v216.6z"
+                                            fill="#fff" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="in_tool-txt flex-1 w-full max-w-full">
+                                <h2
+                                    class="s-20 w--200 !text-white xl:!text-[1.15rem] lg:max-xl:!text-[1.17755rem] md:max-lg:!text-[1.297058rem] md:max-lg:!leading-[1.3] !font-medium font-Jakarta mt-[5px] md:max-lg:!mt-[2px] sm:max-md:!text-[1.4rem] sm:max-md:!leading-none sm:max-md:!mt-[4px] xsm:max-sm:!text-[1.4rem] xsm:max-sm:leading-none xsm:max-sm:!mt-[4px] !leading-[1.5] !mb-0">
+                                    Tirages illimités sur papier professionnel
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEATURE BOX #2 -->
+                    <!-- TOOL #3 -->
+                    <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div
+                            class="in_tool feature-of-mirror relative items-stretch justify-start px-[20px] py-[22px] [flex-flow:row_wrap] lg:max-xl:px-[20px] lg:max-xl:py-4 md:max-lg:!p-[16px] sm:max-md:!p-[25px] xsm:max-sm:px-[25px] xsm:max-sm:py-[20px] it-6 rounded-[12px] mb--30 xl:!mb-[30px] wow fadeInUp">
+                            <!-- Icon -->
+                            <div class="in_tool-logo-wrap">
+                                <div class="in_tool-logo ico-60 relative mr-[20px]">
+                                    <svg class="w-[64px] h-auto" xmlns="http://www.w3.org/2000/svg" width="42"
+                                        height="42" fill="none">
+                                        <path stroke="#fff" stroke-linejoin="round" stroke-width="3"
+                                            d="M2 12h38M31 2l-6 10M17 2l-6 10" />
+                                        <path stroke="#fff" stroke-width="3"
+                                            d="M2 21C2 12.043 2 7.565 4.782 4.782 7.565 2 12.043 2 21 2s13.435 0 16.217 2.782C40 7.565 40 12.043 40 21s0 13.435-2.783 16.218C34.435 40 29.957 40 21 40c-8.957 0-13.435 0-16.218-2.782C2 34.434 2 29.957 2 21Z" />
+                                        <path stroke="#fff" stroke-linejoin="round" stroke-width="3"
+                                            d="M26.906 26.79c-.303 1.253-1.735 2.139-4.598 3.91-2.769 1.713-4.153 2.57-5.268 2.225a2.752 2.752 0 0 1-1.22-.785C15 31.24 15 29.493 15 26s0-5.24.82-6.14c.338-.372.759-.643 1.22-.785 1.115-.344 2.5.512 5.268 2.225 2.863 1.771 4.295 2.657 4.598 3.91a3.372 3.372 0 0 1 0 1.58Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="in_tool-txt flex-1 w-full max-w-full">
+                                <h2
+                                    class="s-20 w--200 !text-white xl:!text-[1.15rem] lg:max-xl:!text-[1.17755rem] md:max-lg:!text-[1.297058rem] md:max-lg:!leading-[1.3] !font-medium font-Jakarta mt-[5px] md:max-lg:!mt-[2px] sm:max-md:!text-[1.4rem] sm:max-md:!leading-none sm:max-md:!mt-[4px] xsm:max-sm:!text-[1.4rem] xsm:max-sm:leading-none xsm:max-sm:!mt-[4px] !leading-[1.5] !mb-0">
+                                    Animations uniques pour surprendre et amuser
+                                    vos invités
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEATURE BOX #3 -->
+                    <!-- TOOL #4 -->
+                    <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div
+                            class="in_tool feature-of-mirror relative items-stretch justify-start px-[20px] py-[22px] [flex-flow:row_wrap] lg:max-xl:px-[20px] lg:max-xl:py-4 md:max-lg:!p-[16px] sm:max-md:!p-[25px] xsm:max-sm:px-[25px] xsm:max-sm:py-[20px] it-6 rounded-[12px] mb--30 xl:!mb-[30px] wow fadeInUp">
+                            <!-- Icon -->
+                            <div class="in_tool-logo-wrap">
+                                <div class="in_tool-logo ico-60 relative mr-[20px]">
+                                    <svg class="w-[64px] h-auto" xmlns="http://www.w3.org/2000/svg" width="42"
+                                        height="42" fill="none">
+                                        <circle cx="12" cy="12" r="3" stroke="#fff" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="3" />
+                                        <path stroke="#fff" stroke-width="3"
+                                            d="M2 21C2 12.043 2 7.565 4.782 4.782 7.565 2 12.043 2 21 2s13.435 0 16.218 2.782C40 7.565 40 12.043 40 21s0 13.435-2.782 16.218C34.434 40 29.957 40 21 40S7.565 40 4.782 37.218C2 34.434 2 29.957 2 21Z" />
+                                        <path stroke="#fff" stroke-width="3"
+                                            d="M7 39c8.745-10.45 18.548-24.232 32.995-14.915" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="in_tool-txt flex-1 w-full max-w-full">
+                                <h2
+                                    class="s-20 w--200 !text-white xl:!text-[1.15rem] lg:max-xl:!text-[1.17755rem] md:max-lg:!text-[1.297058rem] md:max-lg:!leading-[1.3] !font-medium font-Jakarta mt-[5px] md:max-lg:!mt-[2px] sm:max-md:!text-[1.4rem] sm:max-md:!leading-none sm:max-md:!mt-[4px] xsm:max-sm:!text-[1.4rem] xsm:max-sm:leading-none xsm:max-sm:!mt-[4px] !leading-[1.5] !mb-0">
+                                    Impressions sur fond vert pour des photos
+                                    créatives (option)
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEATURE BOX #4 -->
+                    <!-- TOOL #5 -->
+                    <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div
+                            class="in_tool feature-of-mirror relative items-stretch justify-start px-[20px] py-[22px] [flex-flow:row_wrap] lg:max-xl:px-[20px] lg:max-xl:py-4 md:max-lg:!p-[16px] sm:max-md:!p-[25px] xsm:max-sm:px-[25px] xsm:max-sm:py-[20px] it-6 rounded-[12px] mb--30 xl:!mb-[30px] wow fadeInUp">
+                            <!-- Icon -->
+                            <div class="in_tool-logo-wrap">
+                                <div class="in_tool-logo ico-60 relative mr-[20px]">
+                                    <svg class="w-[64px] h-auto" xmlns="http://www.w3.org/2000/svg" width="42"
+                                        height="42" fill="none">
+                                        <path stroke="#fff" stroke-width="3"
+                                            d="M2 21C2 12.043 2 7.565 4.782 4.782 7.565 2 12.043 2 21 2s13.435 0 16.218 2.782C40 7.565 40 12.043 40 21s0 13.435-2.782 16.218C34.434 40 29.957 40 21 40S7.565 40 4.782 37.218C2 34.434 2 29.957 2 21Z" />
+                                        <path stroke="#fff" stroke-linejoin="round" stroke-width="3"
+                                            d="M2 11h38M2 31h38" />
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="3" d="M21 31V11M13 11V3m16 8V3M13 39v-8m16 8v-8" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="in_tool-txt flex-1 w-full max-w-full">
+                                <h2
+                                    class="s-20 w--200 !text-white xl:!text-[1.15rem] lg:max-xl:!text-[1.17755rem] md:max-lg:!text-[1.297058rem] md:max-lg:!leading-[1.3] !font-medium font-Jakarta mt-[5px] md:max-lg:!mt-[2px] sm:max-md:!text-[1.4rem] sm:max-md:!leading-none sm:max-md:!mt-[4px] xsm:max-sm:!text-[1.4rem] xsm:max-sm:leading-none xsm:max-sm:!mt-[4px] !leading-[1.5] !mb-0">
+                                    Réalisation de Gif-Vidéo pour des souvenirs
+                                    animés (option)
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEATURE BOX #5 -->
+                    <!-- TOOL #6 -->
+                    <div class="md:w-6/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div
+                            class="in_tool feature-of-mirror relative items-stretch justify-start px-[20px] py-[22px] [flex-flow:row_wrap] lg:max-xl:px-[20px] lg:max-xl:py-4 md:max-lg:!p-[16px] sm:max-md:!p-[25px] xsm:max-sm:px-[25px] xsm:max-sm:py-[20px] it-6 rounded-[12px] mb--30 xl:!mb-[30px] wow fadeInUp">
+                            <!-- Icon -->
+                            <div class="in_tool-logo-wrap">
+                                <div class="in_tool-logo ico-60 relative mr-[20px]">
+                                    <svg class="w-[64px] h-auto" xmlns="http://www.w3.org/2000/svg" width="44"
+                                        height="36" fill="none">
+                                        <path stroke="#fff" stroke-width="3"
+                                            d="M2 16C2 9.4 2 6.1 4.05 4.05 6.1 2 9.4 2 16 2h2c6.6 0 9.9 0 11.95 2.05C32 6.1 32 9.4 32 16v4c0 6.6 0 9.9-2.05 11.95C27.9 34 24.6 34 18 34h-2c-6.6 0-9.9 0-11.95-2.05C2 29.9 2 26.6 2 20v-4Z" />
+                                        <path stroke="#fff" stroke-linecap="round" stroke-width="3"
+                                            d="m32 11.812.252-.208c4.231-3.492 6.347-5.237 8.048-4.394 1.7.843 1.7 3.637 1.7 9.226v3.128c0 5.589 0 8.383-1.7 9.226-1.7.843-3.817-.902-8.048-4.394L32 24.188" />
+                                        <circle cx="21" cy="13" r="3" stroke="#fff" stroke-width="3" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <!-- Text -->
+                            <div class="in_tool-txt flex-1 w-full max-w-full">
+                                <h2
+                                    class="s-20 w--200 !text-white xl:!text-[1.15rem] lg:max-xl:!text-[1.17755rem] md:max-lg:!text-[1.297058rem] md:max-lg:!leading-[1.3] !font-medium font-Jakarta mt-[5px] md:max-lg:!mt-[2px] sm:max-md:!text-[1.4rem] sm:max-md:!leading-none sm:max-md:!mt-[4px] xsm:max-sm:!text-[1.4rem] xsm:max-sm:leading-none xsm:max-sm:!mt-[4px] !leading-[1.5] !mb-0">
+                                    Enregistrement de témoignages en vidéo pour
+                                    garder un souvenir émouvant (option)
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END FEATURE BOX #6 -->
+                </div>
+            </div>
+            <!-- END INTEGRATIONS-1 WRAPPER -->
+            <!-- MORE BUTTON -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                <div class="flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                    <div
+                        class="more-btn !text-center mt--50 mt-[40px] lg:max-xl:!mt-[50px] md:max-lg:!mt-[50px] wow fadeInUp">
+                        <a href="/concept-photobooth-borne-miroir-magic"
+                            class="btn !rounded-[4px] btn--theme hover--tra-white">Plus De Détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- END INTEGRATIONS-1 -->
+
+    <!-- BRANDS-1
+                     ============================================= -->
+    <div id="brands-1" class="py-[80px] lg:max-xl:py-[60px] md:max-lg:py-[50px] brands-section">
+        <div class="container">
+            <!-- BRANDS TITLE -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="brands-title mb--50 xl:!mb-[50px] lg:max-xl:!mb-[45px] md:max-lg:!mb-[30px] !text-center px-[5%] py-0 sm:max-md:!mb-[30px] sm:max-md:!p-0 xsm:max-sm:px-[4%] xsm:max-sm:py-0 xsm:max-sm:!mb-[25px]">
+                        <h3
+                            class="s-20 !text-[2.25rem] lg:max-xl:!text-[2.18755rem] md:max-lg:!text-[2.397058rem] sm:max-md:!text-[2.4375rem] xsm:max-sm:!text-[2.3125rem] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
+                            Nos entreprises partenaires
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <!-- BRANDS CAROUSEL -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                <div class="col !text-center w-full flex-[1_0_0%] px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div class="owl-carousel brands-carousel-6">
+                        {{ collection:partners }} {{ logo }}
+
+                        <!-- BRAND LOGO IMAGE -->
+                        <div
+                            class="brand-logo p-[0_20px] lg:max-xl:px-3 lg:max-xl:py-0 md:max-lg:px-[10px] md:max-lg:py-0 xsm:max-sm:px-[25px] xsm:max-sm:py-0 overflow-hidden relative transition-all duration-[400ms] ease-[ease-in-out] top-0 hover:-top-1.5 flex-col items-center justify-center">
+                            <a href="#"><img class="img-fluid light-theme-img" src="{{ url }}" loading="lazy"
+                                    alt="{{ alt ?? title }}" /></a>
+                        </div>
+
+                        {{ /logo }} {{ /collection:partners }}
+                    </div>
+                </div>
+            </div>
+            <!-- END BRANDS CAROUSEL -->
+        </div>
+        <!-- End container -->
+    </div>
+    <!-- END BRANDS-1 -->
+
+    <!-- IMAGE CONTENT
+                         ============================================= -->
+
+    {{ packages_section }}
+    <section class="pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] ct-08 content-section division">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="section-title mb--70 xl:!mb-[70px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[50px] !text-center">
+                        <!-- Title -->
+                        <h2
+                            class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                            {{ headline }}
+                        </h2>
+                        <!-- Text -->
+                        <p
+                            class="s-21 color--grey xl:!text-[1.3125rem] xl:!mt-[18px] !mb-0 lg:max-xl:!mt-[15px] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.32352rem] md:max-lg:!mt-[12px] sm:max-md:!text-[1.21875rem] sm:max-md:!mt-[12px] xsm:max-sm:!text-[1.1875rem] xsm:max-sm:!mt-[12px] xsm:max-sm:px-[3%] xsm:max-sm:py-0">
+                            {{ subtitle }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE BLOCK -->
+
+            <!-- PRICING TABLES -->
+            {{ packages }}
+            <div class="pricing-1-wrapper">
+                <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] row-cols-1 row-cols-md-3">
+                    <!-- STARTER PLAN -->
+                    <div
+                        class="col md:max-lg:w-4/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div id="pt--1-1"
+                            class="p-table pricing-1-table xl:!pt-[50px] xl:!pb-[45px] xl:!px-[38px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[35px] lg:max-xl:px-[25px] md:max-lg:pt-[30px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[40px] sm:max-md:px-[30px] xsm:max-sm:px-[40px] xsm:max-sm:py-[35px] bg--white-100 block-shadow rounded-[12px] wow fadeInUp xl:!mb-[50px] lg:max-xl:!mb-[40px] md:max-lg:!mb-[35px] sm:max-md:!mb-[40px] xsm:max-sm:!mb-[40px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                            <!-- TABLE HEADER -->
+                            <div class="pricing-table-header relative text-center">
+                                <!-- Title -->
+                                <h5
+                                    class="s-24 w--700 xl:!text-[1.5rem] !font-bold mb--30 xl:!mb-[30px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!text-[1.6875rem] xsm:max-sm:!text-[1.5625rem] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
+                                    {{ title }}
+                                </h5>
+                                <p
+                                    class="color--grey my-[25px] lg:max-xl:!mt-[20px] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.9075rem] md:max-lg:my-[14px]">
+                                    {{ short_description }}
+                                </p>
+
+                                <!-- Price -->
+                                <div class="price">
+                                    <span
+                                        class="color--black xl:!text-[3rem] leading-none font-semibold tracking-[-2px] font-Jakarta lg:max-xl:!text-[2.85rem] lg:max-xl:tracking-[-1.5px] md:max-lg:!text-[2.45rem] md:max-lg:tracking-[-1.5px] sm:max-md:!text-[2.875rem] sm:max-md:tracking-[-1.5px] xsm:max-sm:!text-[2.75rem]">{{
+                                        price }}</span>
+                                </div>
+
+                                <!-- Button -->
+                                <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                    class="pt--btn btn !rounded-[4px] btn--theme hover--theme">Demander un devis</a>
+                            </div>
+                            <!-- END TABLE HEADER -->
+                        </div>
+                    </div>
+                    <!-- END STARTER PLAN -->
+                    <!-- BASIC PLAN -->
+                    <div
+                        class="col md:max-lg:w-4/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div id="pt--1-2"
+                            class="main-offer-box p-table pricing-1-table xl:!pt-[50px] xl:!pb-[45px] xl:!px-[38px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[35px] lg:max-xl:px-[25px] md:max-lg:pt-[30px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[40px] sm:max-md:px-[30px] xsm:max-sm:px-[40px] xsm:max-sm:py-[35px] bg--white-100 block-shadow rounded-[12px] wow fadeInUp xl:!mb-[50px] lg:max-xl:!mb-[40px] md:max-lg:!mb-[35px] sm:max-md:!mb-[40px] xsm:max-sm:!mb-[40px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                            <!-- TABLE HEADER -->
+                            <div class="pricing-table-header relative text-center">
+                                <!-- Title -->
+                                <h5
+                                    class="s-24 xl:!text-[1.5rem] mb--30 !mb-[30px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!text-[1.6875rem] xsm:max-sm:!text-[1.5625rem] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
+                                    {{ title_2 }}
+                                </h5>
+
+                                <!-- Text -->
+                                <p
+                                    class="color--grey my-[25px] lg:max-xl:!mt-[20px] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.9075rem] md:max-lg:my-[14px]">
+                                    {{ short_description_2}}
+                                </p>
+                                <!-- Price -->
+                                <div class="price">
+                                    <!-- Monthly Price -->
+                                    <div class="price2">
+                                        <span
+                                            class="color--black xl:!text-[3rem] leading-none font-semibold tracking-[-2px] font-Jakarta lg:max-xl:!text-[2.85rem] lg:max-xl:tracking-[-1.5px] md:max-lg:!text-[2.45rem] md:max-lg:tracking-[-1.5px] sm:max-md:!text-[2.875rem] sm:max-md:tracking-[-1.5px] xsm:max-sm:!text-[2.75rem]">
+                                            {{ price_2 }}</span>
+                                        {{#
+                                        <sup
+                                            class="color--black xl:!text-[1.05rem] font-semibold top-[-5px] tracking-[-1px] right-[2px] font-Jakarta lg:max-xl:!text-[1rem] lg:max-xl:right-[2px] lg:max-xl:-top-1 md:max-lg:!text-[2.125rem] md:max-lg:-top-[2px] sm:max-md:!text-[2.15rem] sm:max-md:-top-1 xsm:max-sm:!text-[2rem] xsm:max-sm:top-[-5px]">TTC</sup>
+                                        #}}
+                                    </div>
+                                </div>
+                                <!-- End Price -->
+                                <!-- Button -->
+                                <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                    class="pt--btn btn !rounded-[4px] btn--theme hover--theme">Demander un devis</a>
+                                {{#
+                                <p
+                                    class="p-sm btn-txt xl:!m-[14px_0_0_0] md:max-lg:!text-sm sm:max-md:!mt-3 sm:max-md:!mb-0 sm:max-md:mx-0 xsm:max-sm:!mt-3 xsm:max-sm:!mb-0 xsm:max-sm:mx-0 !text-center color--grey">
+                                    7-Day Money Back Guarantee
+                                </p>
+                                #}}
+                            </div>
+                            <!-- END TABLE HEADER -->
+                            <!-- PRICING FEATURES -->
+                        </div>
+                    </div>
+                    <!-- END BASIC PLAN -->
+                    <!-- ADVANCED PLAN -->
+                    <div
+                        class="col md:max-lg:w-4/12 lg:w-4/12 xl:w-4/12 flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div id="pt--1-3"
+                            class="p-table pricing-1-table xl:!pt-[50px] xl:!pb-[45px] xl:!px-[38px] lg:max-xl:pt-[40px] lg:max-xl:!pb-[35px] lg:max-xl:px-[25px] md:max-lg:pt-[30px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[40px] sm:max-md:px-[30px] xsm:max-sm:px-[40px] xsm:max-sm:py-[35px] bg--white-100 block-shadow rounded-[12px] wow fadeInUp xl:!mb-[50px] lg:max-xl:!mb-[40px] md:max-lg:!mb-[35px] sm:max-md:!mb-[40px] xsm:max-sm:!mb-[40px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                            <!-- TABLE HEADER -->
+                            <div class="pricing-table-header relative text-center">
+                                <!-- Title -->
+                                <h5
+                                    class="s-24 xl:!text-[1.5rem] mb--30 !mb-[30px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!text-[1.6875rem] xsm:max-sm:!text-[1.5625rem] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
+                                    {{ title_3 }}
+                                </h5>
+                                <!-- Text -->
+                                <p
+                                    class="color--grey my-[25px] lg:max-xl:!mt-[20px] lg:max-xl:!mb-[15px] md:max-lg:!text-[0.9075rem] md:max-lg:my-[14px]">
+                                    {{ short_description_3 }}
+                                </p>
+
+                                <!-- Price -->
+                                <div class="price">
+                                    <!-- Monthly Price -->
+                                    <div class="price2">
+                                        <span
+                                            class="color--black xl:!text-[3rem] leading-none font-semibold tracking-[-2px] font-Jakarta lg:max-xl:!text-[2.85rem] lg:max-xl:tracking-[-1.5px] md:max-lg:!text-[2.45rem] md:max-lg:tracking-[-1.5px] sm:max-md:!text-[2.875rem] sm:max-md:tracking-[-1.5px] xsm:max-sm:!text-[2.75rem]">{{
+                                            price_3 }}</span>
+                                    </div>
+                                </div>
+                                <!-- End Price -->
+                                <!-- Button -->
+                                <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                    class="pt--btn btn !rounded-[4px] btn--theme hover--theme">Demander un devis</a>
+                                {{#
+                                <p
+                                    class="p-sm btn-txt xl:!m-[14px_0_0_0] md:max-lg:!text-sm sm:max-md:!mt-3 sm:max-md:!mb-0 sm:max-md:mx-0 xsm:max-sm:!mt-3 xsm:max-sm:!mb-0 xsm:max-sm:mx-0 !text-center color--grey">
+                                    7-Day Money Back Guarantee
+                                </p>
+                                #}}
+                            </div>
+                            <!-- END TABLE HEADER -->
+                        </div>
+                    </div>
+                    <!-- END ADVANCED PLAN -->
+                </div>
+            </div>
+            {{ /packages }}
+            <!-- PRICING TABLES -->
+
+            <!-- ACTION BUTTON -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] pb-15">
+                <div class="flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                    <div class="img-block-btn !text-center wow fadeInUp !mt-0">
+                        <!-- Button -->
+                        <a href="/tarifs" class="btn !rounded-[4px] btn--tra-black hover--theme">Liste de prix
+                            détaillée</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- END IMAGE CONTENT -->
+    {{ /packages_section }}
+
+
+    {{ places_section }}
+    <section class="pt--100 pb-[60px] pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] division miroir-places">
+        <div class="container">
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                </div>
+            </div>
+
+            <div class="fbox-wrapper">
+                <div class="mx-[calc(-0.5*_1.5rem)] row-cols-1 row-cols-md-2 rows-3">
+                    <div
+                        class="section-title mb--70 xl:!mb-[70px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[50px] text-center !md:text-left">
+                        <h2
+                            class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                            {{ headline }}
+                        </h2>
+                    </div>
+
+                    <div class="w-full px-[calc(0.5*_1.5rem)] pb-5 gap-4 flex flex-wrap justify-start items-start">
+                        {{ cities_datas }}
+                        <a href="{{ city_url }}"
+                            class="feature-badge px-6 py-3 rounded-[50px] inline-flex items-center border border-black border-1 xl:!text-[1.375rem] lg:max-xl:!text-[1.25rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] text-black xl:!mb-[10px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] xsm:max-sm:!mb-[15px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4] wow fadeInLeft">
+                            <span>{{ city_name }}</span>
+                        </a>
+                        {{ /cities_datas }}
+                    </div>
+                </div>
+                <!-- End row -->
+            </div>
+        </div>
+    </section>
+    {{ /places_section }}
+
+
+    {{ quote_section }}
+    <section
+        class="py--50 py-[50px] lg:max-xl:py-[60px] md:max-lg:py-[60px] after:absolute after:content-[''] after:z-[-1] after:w-[150%] after:!h-3/4 after:-left-1/4 after:!top-0 xsm:max-sm:after:!h-[92%] shape--gr-whitesmoke reviews-section">
+        <div class="container">
+            <!-- TESTIMONIALS CONTENT -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                <div class="flex-none w-full max-w-full px-[calc(0.5*_1.5rem)] justify-center">
+                    <!-- TESTIMONIAL #1 -->
+                    <div
+                        class="review-1 author-box block-shadow rounded-xl pt-[40px] !pb-[30px] px-[40px] lg:max-xl:pt-[35px] lg:max-xl:!pb-[25px] lg:max-xl:px-[25px] sm:max-md:pt-[35px] sm:max-md:!pb-[30px] sm:max-md:px-8 xsm:max-sm:!mt-0 xsm:max-sm:!mb-[20px] xsm:max-sm:mx-[6px] xsm:max-sm:pt-[35px] xsm:max-sm:!pb-[30px] xsm:max-sm:px-[20px] md:max-lg:pt-[35px] md:max-lg:!pb-[25px] md:max-lg:px-[25px] shadow-[0_4px_12px_0_rgba(0,0,0,0.08)]">
+                        <!-- Quote Icon -->
+                        <div class="review-ico ico-65 relative mt-[-25px] opacity-10 -ml-[10px]">
+                            <span class="flaticon-quote"></span>
+                        </div>
+                        <!-- Text -->
+                        <div
+                            class="review-txt relative mt-[-45px] lg:max-xl:!mt-[-42px] md:max-lg:!mt-[-38px] sm:max-md:!mt-[-43px] xsm:max-sm:-mt-[40px]">
+                            <!-- Text -->
+                            <p class="leading-[1.6] !text-[1.25rem]">
+                                {{ text }}
+                            </p>
+                            <!-- Author -->
+                            <div
+                                class="author-data clearfix mt-[22px] lg:max-xl:!mt-[15px] md:max-lg:!mt-0 sm:max-md:!mt-[20px] xsm:max-sm:!mt-[20px]">
+                                <!-- Avatar -->
+                                <div class="review-avatar float-left !m-[0_auto]">
+                                    {{ author_image }}
+                                    <img class="!w-[64px] !h-[64px] rounded-[100%] lg:max-xl:!w-[54px] lg:max-xl:!h-[54px] md:max-lg:!w-[50px] md:max-lg:!h-[50px] sm:max-md:!w-[52px] sm:max-md:!h-[52px] xsm:max-sm:!w-[52px] xsm:max-sm:!h-[52px]"
+                                        src="{{ url }}" alt="{{ alt }}" loading="lazy" />
+                                    {{ /author_image }}
+                                </div>
+                                <!-- Data -->
+                                <div
+                                    class="review-author !mt-1 md:max-lg:!mt-[3px] sm:max-md:!mt-[3px] xsm:max-sm:!mt-[3px] relative inline-block !text-left p-[0_0_0_15px] lg:max-xl:!pl-[12px] lg:max-xl:pr-0 lg:max-xl:py-0 md:max-lg:!pl-[12px] md:max-lg:pr-0 md:max-lg:py-0 sm:max-md:!pl-[12px] sm:max-md:pr-0 sm:max-md:py-0 xsm:max-sm:!pl-[12px] xsm:max-sm:pr-0 xsm:max-sm:py-0">
+                                    <div
+                                        class="s-18 w--700 xl:!text-[0.975rem] lg:max-xl:!text-[1rem] md:max-lg:!text-[1rem] sm:max-md:!text-[1.25rem] xsm:max-sm:!text-[1.2rem] !font-bold leading-none xl:!mb-[8px] lg:max-xl:!mb-[8px] md:max-lg:!mb-[5px] sm:max-md:!mb-[8px] xsm:max-sm:!mb-[8px] font-Jakarta">
+                                        {{ author_name }}
+                                    </div>
+                                    <p class="p-sm leading-none !font-light !mb-0">
+                                        {{ author_position }}
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Author -->
+                        </div>
+                        <!-- End Text -->
+                    </div>
+                    <!-- END TESTIMONIAL #1 -->
+                </div>
+            </div>
+
+            <!-- END TESTIMONIALS CONTENT -->
+        </div>
+        <!-- End container -->
+    </section>
+    {{ /quote_section }}
+
+    {{ google_reviews_config }}
+    <section id="google-reviews" class="py--100 py-[100px] lg:max-xl:py-[80px] md:max-lg:py-[70px] division bg-white">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="section-title mb--50 xl:!mb-[50px] lg:max-xl:!mb-[40px] md:max-lg:!mb-[30px] !text-center">
+                        <h2
+                            class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                            {{ headline }}
+                        </h2>
+                        <div class="flex justify-center mt-4">
+                            <span class="text-2xl mm-text-gold--soft font-bold">★★★★★</span>
+                            <span class="ml-2 color--black self-center font-medium font-Jakarta">Sur Google</span>
+                        </div>
+                        <!-- Description with forced link styling -->
+                        <div class="mt-8 color--grey max-w-2xl mx-auto s-21 font-medium review-description">
+                            {{ description }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Styles -->
+            <style>
+                .review-avatar {
+                    width: 64px !important;
+                    height: 64px !important;
+                    min-width: 64px !important;
+                    min-height: 64px !important;
+                    border-radius: 50% !important;
+                    object-fit: cover !important;
+                }
+
+                .review-description a {
+                    color: #000000 !important;
+                    text-decoration: underline !important;
+                    font-weight: 600;
+                }
+
+                /* Custom Carousel Navigation */
+                .custom-owl-prev,
+                .custom-owl-next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 44px;
+                    height: 44px;
+                    background: white;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                    z-index: 20;
+                    transition: all 0.3s ease;
+                    color: #333;
+                }
+
+                .custom-owl-prev:hover,
+                .custom-owl-next:hover {
+                    background: #222;
+                    color: white;
+                }
+
+                .custom-owl-prev {
+                    left: -20px;
+                }
+
+                .custom-owl-next {
+                    right: -20px;
+                }
+
+                @media (max-width: 768px) {
+                    .custom-owl-prev {
+                        left: 0;
+                    }
+
+                    .custom-owl-next {
+                        right: 0;
+                    }
+                }
+
+                .mm-text-gold--soft {
+                    color: #c8a257 !important;
+                    background: linear-gradient(180deg,
+                            #e2d3a7 0%,
+                            #c8a257 60%,
+                            #b08a2e 100%) !important;
+                    -webkit-background-clip: text !important;
+                    -webkit-text-fill-color: transparent !important;
+                    display: inline-block;
+                }
+
+                /* Modal Review Styles */
+                #review-modal {
+                    display: none;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.6);
+                    z-index: 99999;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+
+                #review-modal.active {
+                    opacity: 1;
+                }
+
+                .review-modal-content {
+                    background: white;
+                    border-radius: 16px;
+                    max-width: 600px;
+                    width: 100%;
+                    max-height: 90vh;
+                    overflow-y: auto;
+                    position: relative;
+                    transform: scale(0.95);
+                    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+                }
+
+                #review-modal.active .review-modal-content {
+                    transform: scale(1);
+                }
+            </style>
+
+            <!-- REVIEWS GRID -->
+            <div id="reviews-container-wrapper" class="w-full relative px-4 sm:px-6">
+                <!-- Loading State -->
+                <div id="reviews-loading" class="w-full text-center py-10">
+                    <span class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></span>
+                    <p class="mt-2 text-gray-500">Chargement des avis...</p>
+                </div>
+
+                <!-- Custom Navigation Arrows -->
+                <div class="custom-owl-nav hidden md:block">
+                    <div class="custom-owl-prev"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg></div>
+                    <div class="custom-owl-next"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg></div>
+                </div>
+
+                <!-- Carousel Container (Hidden initially) -->
+                <div class="owl-carousel reviews-carousel owl-theme opacity-0 transition-opacity duration-300"></div>
+            </div>
+
+            <div id="map-service-helper"></div>
+        </div>
+
+        <!-- (Review Modal moved to bottom of file) -->
+
+        <script>
+            // Store reviews globally for modal access
+            window.googleReviewsData = [];
+
+            function initGoogleReviews() {
+                const mapHelper = document.getElementById('map-service-helper');
+                const service = new google.maps.places.PlacesService(mapHelper);
+
+                const request = {
+                    placeId: '{{ google_place_id }}',
+                    fields: ['name', 'rating', 'reviews', 'user_ratings_total']
+                };
+
+                service.getDetails(request, (place, status) => {
+                    const loading = document.getElementById('reviews-loading');
+                    const carouselContainer = document.querySelector('.reviews-carousel');
+
+                    if (status === google.maps.places.PlacesServiceStatus.OK && place.reviews) {
+                        // Sort by time (latest first)
+                        // Normalize dates and text size
+                        const reviews = place.reviews.sort((a, b) => b.time - a.time).slice(0, 10); // increased limit for carousel
+                        window.googleReviewsData = reviews;
+
+                        reviews.forEach((review, index) => {
+                            const stars = '★'.repeat(Math.round(review.rating)) + '☆'.repeat(5 - Math.round(review.rating));
+                            const profilePhoto = review.profile_photo_url || '/images/no_image_placeholder.png';
+
+                            // Date Formatting (French, Month Year)
+                            const dateObj = new Date(review.time * 1000);
+                            const formattedDate = dateObj.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+                            // Capitalize first letter of month
+                            const finalDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+
+                            // Truncate text logic
+                            const maxChars = 140;
+                            const isLongText = review.text.length > maxChars;
+                            const shortText = isLongText ? review.text.substring(0, maxChars) + '...' : review.text;
+
+                            // Inline Google SVG
+                            const googleLogo = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="24px" height="24px"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>`;
+
+                            const html = `
+                                <div class="item px-2 h-full py-4">
+                                    <div class="review-card bg-white p-6 rounded-[12px] shadow-[0_5px_15px_rgba(0,0,0,0.08)] h-full flex flex-col hover:-translate-y-1 transition-transform duration-300 min-h-[360px] border border-gray-100 relative group cursor-pointer" onclick="openReviewModal(${index})">
+                                        
+                                        <!-- Header: Avatar & Name -->
+                                        <div class="flex items-center mb-4">
+                                            <img src="${profilePhoto}" 
+                                                 alt="${review.author_name}" 
+                                                 class="review-avatar rounded-full mr-3 object-cover border border-gray-100 shadow-sm" 
+                                                 style="width: 64px; height: 64px;"
+                                                 loading="lazy"
+                                                 onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(review.author_name)}&background=random&color=fff&size=128';">
+                                            <div>
+                                                <h4 class="font-bold text-[1rem] font-Jakarta text-gray-800 leading-tight">${review.author_name}</h4>
+                                                <p class="text-[0.65rem] text-gray-400 font-medium mt-1">${finalDate}</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Stars -->
+                                        <div class="mb-3 text-lg tracking-wide mm-text-gold--soft font-bold">${stars}</div>
+                                        
+                                        <!-- Review Text -->
+                                        <div class="flex-grow">
+                                            <p class="text-gray-600 leading-[1.6] text-[0.92rem] font-light">
+                                                "${shortText}"
+                                            </p>
+                                            ${isLongText ? `
+                                            <span class="text-xs text-theme underline mt-2 font-medium inline-block">
+                                                Lire la suite
+                                            </span>` : ''}
+                                        </div>
+
+                                        <!-- Footer Action -->
+                                        <div class="mt-auto pt-4 border-t border-gray-50 flex justify-between items-center">
+                                            <div class="flex items-center gap-2">
+                                                 <div class="w-5 h-5">${googleLogo}</div>
+                                                 <span class="text-[0.65rem] font-bold text-gray-400 uppercase tracking-wider">Avis Google</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                            $(carouselContainer).append(html);
+                        });
+
+                        // CSS Fix for Equal Heights in Owl Carousel
+                        const style = document.createElement('style');
+                        style.innerHTML = `
+                            .reviews-carousel .owl-stage { display: flex; align-items: stretch; }
+                            .reviews-carousel .owl-item { display: flex; height: auto; }
+                            .reviews-carousel .item { width: 100%; }
+                        `;
+                        document.head.appendChild(style);
+
+                        // Hide loading, show carousel
+                        loading.style.display = 'none';
+                        carouselContainer.classList.remove('opacity-0');
+
+                        // Initialize Owl Carousel
+                        var owl = $('.reviews-carousel');
+                        owl.owlCarousel({
+                            loop: true,
+                            margin: 20,
+                            nav: false, // Using custom arrows
+                            dots: true,
+                            autoplay: true,
+                            autoplayTimeout: 6000,
+                            autoplayHoverPause: true,
+                            smartSpeed: 500,
+                            responsive: {
+                                0: { items: 1, margin: 10 },
+                                768: { items: 2, margin: 15 },
+                                1024: { items: 3, margin: 20 }
+                            }
+                        });
+
+                        // Custom Navigation Events
+                        $('.custom-owl-next').click(function () {
+                            owl.trigger('next.owl.carousel');
+                        });
+                        $('.custom-owl-prev').click(function () {
+                            owl.trigger('prev.owl.carousel');
+                        });
+
+
+                    } else {
+                        console.error('Google Places API Error:', status);
+                        loading.innerHTML = '<div class="text-red-500">Impossible de charger les avis pour le moment.</div>';
+                    }
+                });
+            }
+
+            function openReviewModal(index) {
+                const review = window.googleReviewsData[index];
+                if (!review) return;
+
+                const modal = document.getElementById('review-modal');
+                const modalBody = document.getElementById('review-modal-body');
+                const stars = '★'.repeat(Math.round(review.rating)) + '☆'.repeat(5 - Math.round(review.rating));
+
+                // Date Formatting
+                const dateObj = new Date(review.time * 1000);
+                const formattedDate = dateObj.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+                const finalDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+
+                const profilePhoto = review.profile_photo_url || '/images/no_image_placeholder.png';
+                // Google Logo - Responsive SVG
+                const googleLogo = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="w-full h-full"><path fill="#FFC107" d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"/><path fill="#FF3D00" d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"/><path fill="#4CAF50" d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"/><path fill="#1976D2" d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"/></svg>`;
+
+                console.log('Opening Review Modal for index:', index, review);
+
+                modalBody.innerHTML = `
+                    <div class="flex items-start mb-4">
+                        <div class="relative">
+                            <img src="${profilePhoto}" 
+                                class="review-avatar rounded-full mr-4 object-cover border border-gray-100 shadow-sm" 
+                                style="width: 50px; height: 50px;"
+                                onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(review.author_name)}&background=random&color=fff&size=128';">
+                            
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-bold text-[1.1rem] font-Jakarta text-gray-900 leading-tight flex items-center gap-1">
+                                ${review.author_name} 
+                                <svg class="w-4 h-4 text-blue-500 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                            </h3>
+                            <p class="text-[0.8rem] text-gray-500 font-normal mt-0.5">${review.relative_time_description || finalDate}</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 text-lg tracking-wide mm-text-gold--soft font-bold">${stars}</div>
+                    
+                    ${review.text ? `
+                    <div class="text-gray-800 font-normal text-[0.95rem] leading-[1.6] max-h-[50vh] overflow-y-auto pr-2 custom-scrollbar mt-4">
+                        ${review.text}
+                    </div>` : '<p class="text-gray-400 italic text-sm mt-4">Pas de commentaire écrit pour cet avis.</p>'}
+
+                     <div class="mt-6 flex justify-between items-center bg-white border-t border-gray-100 pt-4">
+                         <div class="flex items-center gap-2">
+                             <div class="w-5 h-5 shrink-0">${googleLogo}</div>
+                             <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Avis Google</span>
+                         </div>
+                         <a href="${review.author_url}" target="_blank" class="text-xs font-bold text-theme hover:underline uppercase tracking-wide">Voir sur Google</a>
+                    </div>
+                `;
+
+                modal.style.display = 'flex';
+                // Trigger reflow
+                modal.offsetHeight;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            }
+
+            function closeReviewModal() {
+                const modal = document.getElementById('review-modal');
+                modal.classList.remove('active');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }, 300);
+            }
+
+            // Close on background click
+            const reviewModal = document.getElementById('review-modal');
+            if (reviewModal) {
+                reviewModal.addEventListener('click', function (e) {
+                    if (e.target === this) {
+                        closeReviewModal();
+                    }
+                });
+            }
+
+            // Close on escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') closeReviewModal();
+            });
+        </script>
+        <!-- Load Google Maps API with Async/Defer and Callback -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key={{ google_places_api_key }}&libraries=places&callback=initGoogleReviews"
+            async defer></script>
+    </section>
+    {{ /google_reviews_config }}
+
+    {{ google_reviews_section }}
+    <section class="py--100 py-[100px] lg:max-xl:py-[80px] md:max-lg:py-[70px] reviews-section division">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="section-title mb--50 xl:!mb-[50px] lg:max-xl:!mb-[40px] md:max-lg:!mb-[30px] !text-center">
+                        <h2
+                            class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                            {{ headline }}
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REVIEWS WIDGET CONTAINER -->
+            <div class="google-reviews-wrapper w-full flex justify-center">
+                {{ embed_code }}
+            </div>
+        </div>
+    </section>
+    {{ /google_reviews_section }}
+
+    <!-- Review Modal (Moved here to avoid Z-Index stacking issues) -->
+    <div id="review-modal" role="dialog" aria-modal="true" style="z-index: 2147483647 !important;">
+        <div class="review-modal-content p-8 relative">
+            <button onclick="closeReviewModal()"
+                class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200 transition-colors z-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div id="review-modal-body">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </div>
+
+    <section class="py-[80px] lg:max-xl:py-[80px] md:max-lg:py-[70px] blog-section division has-colored-bg">
+        <div class="container">
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="section-title mb--30 xl:!mb-[30px] lg:max-xl:!mb-[30px] md:max-lg:!mb-[30px] !text-center">
+                        <!-- Title -->
+                        <h2
+                            class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                            Réseaux Sociaux
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="instagram-feed">
+                <div class="elfsight-app-ba02ccce-ea98-4b03-b1ef-930d26c6a60e" data-elfsight-app-lazy></div>
+            </div>
+
+            <div class="img-block-btn !text-center wow fadeInUp !mt-10">
+                {{ cta }}
+                <!-- Button -->
+                <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                    class="btn !rounded-[4px] btn--theme hover--tra-black">Demande de devis</a>
+                {{ /cta }}
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVIDER LINE -->
+    <hr
+        class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]" />
+
+    <!-- BLOG-1
+                     ============================================= -->
+
+    {{ blog_section }}
+    <section class="py--100 py-[100px] lg:max-xl:py-[80px] md:max-lg:py-[70px] blog-section division has-colored-bg">
+        <div class="container">
+            <!-- SECTION TITLE -->
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                <div class="md:w-10/12 lg:max-xl:w-9/12 xl:w-9/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full">
+                    <div
+                        class="section-title mb--70 xl:!mb-[70px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[50px] !text-center">
+                        <!-- Title -->
+                        <h2
+                            class="s-50 w--700 xl:!text-[3.125rem] lg:max-xl:!text-[2.875rem] md:max-lg:!text-[2.64705rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !tracking-[-0.5px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                            {{ headline }}
+                        </h2>
+                        <!-- Text -->
+                        <p
+                            class="s-21 color--grey xl:!text-[1.3125rem] xl:!mt-[18px] !mb-0 lg:max-xl:!mt-[15px] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.32352rem] md:max-lg:!mt-[12px] sm:max-md:!text-[1.21875rem] sm:max-md:!mt-[12px] xsm:max-sm:!text-[1.1875rem] xsm:max-sm:!mt-[12px] xsm:max-sm:px-[3%] xsm:max-sm:py-0">
+                            {{ subtitle }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] sm:max-md:!px-4 xsm:max-sm:!px-2">
+                {{ collection:blog limit="3" sort="date:desc" }}
+                <div
+                    class="md:w-6/12 lg:w-4/12 xl:w-4/12 w-full flex-none px-[calc(0.5*_1.5rem)] max-w-full sm:max-md:!mb-8 xsm:max-sm:!mb-6">
+                    <div id="bp-1-1" class="blog-post wow fadeInUp">
+                        <!-- BLOG POST IMAGE -->
+                        <div class="blog-post-img !mb-[35px] aspect-[4/3] overflow-hidden rounded-[16px]">
+                            {{ if featured_image }}
+                            <img class="img-fluid w-full h-full object-cover transition-transform duration-500 hover:scale-110 decor-line"
+                                src="{{ featured_image }}" alt="{{ title }}" loading="lazy"
+                                onerror="this.onerror=null;this.src='/images/no_image_placeholder.png';" />
+                            {{ else }}
+                            <img class="img-fluid w-full h-full object-cover decor-line"
+                                src="/images/no_image_placeholder.png" alt="{{ title }}" loading="lazy" />
+                            {{ /if }}
+                        </div>
+                        <!-- BLOG POST TEXT -->
+                        <div class="blog-post-txt">
+                            <h2
+                                class="s-20 w--700 xl:!text-[1.25rem] lg:max-xl:!text-[1.18755rem] md:max-lg:!text-[1.397058rem] sm:max-md:!text-[1.4375rem] xsm:max-sm:!text-[1.3125rem] !font-bold xl:!mb-[15px] lg:max-xl:!mb-[12px] md:max-lg:!mb-[12px] sm:max-md:!mb-[18px] xsm:max-sm:!mb-[14px] leading-[1.35] font-Jakarta sm:max-md:!leading-[1.4] xsm:max-sm:!leading-[1.4]">
+                                <a class="text-[#353f4f] hover:!underline" href="{{ url }}">{{ title }}</a>
+                            </h2>
+                            <!-- Post Meta -->
+                            <div class="blog-post-meta mt-[20px]">
+                                <ul class="post-meta-list ico-10">
+                                    <li class="w-auto inline-block align-top clear-none">
+                                        <p
+                                            class="p-sm w--500 font-medium text-[#353f4f] leading-none !mb-0 xsm:max-sm:!mb-0">
+                                            {{ author:name }}
+                                        </p>
+                                    </li>
+                                    <li
+                                        class="meta-list-divider w-auto inline-block align-top clear-none relative -rotate-90 px-px py-0 top-0 lg:max-xl:px-px lg:max-xl:py-0 md:max-lg:px-px md:max-lg:py-0">
+                                        <p class="text-[#353f4f] leading-none !mb-0 xsm:max-sm:!mb-0">
+                                            <span class="flaticon-minus"></span>
+                                        </p>
+                                    </li>
+                                    <li class="w-auto inline-block align-top clear-none">
+                                        <p class="p-sm text-[#353f4f] leading-none !mb-0 xsm:max-sm:!mb-0">
+                                            {{ date }}
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END BLOG POST TEXT -->
+                    </div>
+                </div>
+                {{ /collection:blog }}
+            </div>
+            <!-- End row -->
+        </div>
+
+        <div class="img-block-btn !text-center wow fadeInUp !mt-10">
+            {{ cta }}
+            <!-- Button -->
+            <a href="{{ link }}" class="btn !rounded-[4px] btn--theme hover--tra-black">{{ text }}</a>
+            {{ /cta }}
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- END BLOG-1 -->
+    {{ /blog_section }}
+
+    <!-- BANNER-1
+                ============================================= -->
+
+    <section id="banner-1" class="pt--100 pt-[100px] lg:max-xl:pt-[80px] md:max-lg:pt-[70px] banner-section mb-15">
+        <div class="container">
+            <!-- BANNER-1 WRAPPER -->
+            <div
+                class="banner-1-wrapper rounded-[16px] relative overflow-hidden !text-center sm:max-md:mr-[-15px] sm:max-md:ml-[-15px] sm:max-md:my-0 sm:max-md:rounded-[0_0] xsm:max-sm:mr-[-15px] xsm:max-sm:ml-[-15px] xsm:max-sm:my-0 xsm:max-sm:rounded-[0_0]">
+                <div
+                    class="cta-box banner-overlay bg-[url('/images/bg-05.jpg')] bg--fixed pt-[75px] !pb-[85px] px-[15%] lg:max-xl:pt-[60px] lg:max-xl:!pb-[70px] lg:max-xl:px-[15%] md:max-lg:pt-[45px] md:max-lg:!pb-[55px] md:max-lg:px-[12%] sm:max-md:pt-[55px] sm:max-md:!pb-[65px] sm:max-md:px-[60px] xsm:max-sm:pt-[60px] xsm:max-sm:!pb-[70px] xsm:max-sm:px-[30px] bg-scroll sm:max-md:w-auto xsm:max-sm:w-auto w-full bg-no-repeat bg-[center_center] bg-cover">
+                    <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                        <!-- BANNER-1 TEXT -->
+                        <div class="flex-none w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                            <div class="banner-1-txt color--white">
+                                <!-- Title -->
+                                <h2
+                                    class="s-45 w--700 xl:!text-[2.8125rem] lg:max-xl:!text-[2.5625rem] md:max-lg:!text-[2.20588rem] sm:max-md:!text-[2.25rem] xsm:max-sm:!text-[1.8125rem] !font-bold !tracking-[-0.5px] xl:!mb-[25px] lg:max-xl:!mb-[16px] md:max-lg:!mb-[16px] sm:max-md:!mb-[12px] xsm:max-sm:!mb-[12px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                                    {{ cta_large_box:headline }}
+                                </h2>
+                                <!-- Text -->
+                                <p
+                                    class="p-xl !mt-0 !mb-[25px] lg:max-xl:!mt-[15px] md:max-lg:!mt-3 sm:max-md:!mt-[14px] xsm:max-sm:!text-[1.125rem] xsm:max-sm:!mt-[14px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[20px]">
+                                    {{ cta_large_box:text }}
+                                </p>
+                                <div class="btns-group inline-block">
+                                    <!-- Button -->
+                                    <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                        class="btn !rounded-[4px] btn--theme hover--tra-white mr-2">Réservez
+                                    </a>
+                                    <a href="/contacter"
+                                        class="btn !rounded-[4px] btn--tra-white hover--theme hover--tra-white">Contactez-nous
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END BANNER-1 TEXT -->
+                    </div>
+                    <!-- End row -->
+                </div>
+                <!-- End banner overlay -->
+            </div>
+            <!-- END BANNER-1 WRAPPER -->
+        </div>
+        <!-- End container -->
+    </section>
+    <!-- END BANNER-1 -->
+
+    <!-- DIVIDER LINE -->
+    <hr
+        class="divider w-full h-px bg-transparent bg-[linear-gradient(90deg,rgba(206,211,246,0)_0,#bbb_38%,#bbb_64%,rgba(206,211,246,0)_99%)] opacity-40 !m-0 ![border:none]" />
+
+    {{ partial:modal }}
+</div>

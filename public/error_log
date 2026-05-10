@@ -1,0 +1,180 @@
+[11-Apr-2026 21:25:33 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:25:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:30:33 UTC] PHP Warning:  include(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../symfony/finder/Exception/DirectoryNotFoundException.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:30:33 UTC] PHP Warning:  include(): Failed opening '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../symfony/finder/Exception/DirectoryNotFoundException.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:30:33 UTC] PHP Warning:  include(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../laravel/framework/src/Illuminate/Cache/RateLimiting/Limit.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:30:33 UTC] PHP Warning:  include(): Failed opening '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../laravel/framework/src/Illuminate/Cache/RateLimiting/Limit.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:30:33 UTC] PHP Warning:  include(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../psr/log/src/LogLevel.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:30:33 UTC] PHP Warning:  include(): Failed opening '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../psr/log/src/LogLevel.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:30:33 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\LogLevel" not found in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php:1094
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(397): Illuminate\Foundation\Exceptions\Handler->mapLogLevel()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(365): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(562): Illuminate\Foundation\Exceptions\Handler->report()
+#3 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->reportException()
+#4 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1220): Illuminate\Foundation\Http\Kernel->handle()
+#5 /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php(20): Illuminate\Foundation\Application->handleRequest()
+#6 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 1094
+[11-Apr-2026 21:31:01 UTC] PHP Warning:  include(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../symfony/finder/Exception/DirectoryNotFoundException.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:31:01 UTC] PHP Warning:  include(): Failed opening '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../symfony/finder/Exception/DirectoryNotFoundException.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:31:01 UTC] PHP Warning:  include(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../laravel/framework/src/Illuminate/Cache/RateLimiting/Limit.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:31:01 UTC] PHP Warning:  include(): Failed opening '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../laravel/framework/src/Illuminate/Cache/RateLimiting/Limit.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:31:01 UTC] PHP Warning:  include(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../psr/log/src/LogLevel.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:31:01 UTC] PHP Warning:  include(): Failed opening '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/../psr/log/src/LogLevel.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/ClassLoader.php on line 576
+[11-Apr-2026 21:31:01 UTC] PHP Fatal error:  Uncaught Error: Class "Psr\Log\LogLevel" not found in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php:1094
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(397): Illuminate\Foundation\Exceptions\Handler->mapLogLevel()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(365): Illuminate\Foundation\Exceptions\Handler->reportThrowable()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(562): Illuminate\Foundation\Exceptions\Handler->report()
+#3 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(146): Illuminate\Foundation\Http\Kernel->reportException()
+#4 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1220): Illuminate\Foundation\Http\Kernel->handle()
+#5 /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php(20): Illuminate\Foundation\Application->handleRequest()
+#6 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php on line 1094
+[11-Apr-2026 21:36:27 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:36:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:36:29 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:36:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:36:54 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:36:54 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:41:01 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:41:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:45:33 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:45:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:45:35 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:45:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:46:06 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:46:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:46:56 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:46:56 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:47:03 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:47:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:50:33 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:50:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:03 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:33 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:38 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:44 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:51:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:57:33 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:57:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:57:39 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 21:57:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:01:04 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:01:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:03:47 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:03:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:10:35 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:10:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:11:06 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:11:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:15:33 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:15:33 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[11-Apr-2026 22:15:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/public/../vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php on line 14
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $decoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $decoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $decoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $decoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $encoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $encoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $decoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $encoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $encoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Gd\Driver::__construct(): Implicitly marking parameter $encoder as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php on line 16
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Image::__construct(): Implicitly marking parameter $driver as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Image.php on line 92
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Size::__construct(): Implicitly marking parameter $pivot as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Size.php on line 38
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Size::resize(): Implicitly marking parameter $callback as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Size.php on line 105
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Size::resizeWidth(): Implicitly marking parameter $callback as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Size.php on line 140
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Size::resizeHeight(): Implicitly marking parameter $callback as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Size.php on line 176
+[09-May-2026 17:26:10 UTC] PHP Deprecated:  Intervention\Image\Size::getConstraint(): Implicitly marking parameter $callback as nullable is deprecated, the explicit nullable type must be used instead in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/intervention/image/src/Intervention/Image/Size.php on line 364
+[10-May-2026 12:25:32 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php(14): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:25:34 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php(14): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:25:37 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/public/index.php(14): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26

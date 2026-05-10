@@ -1,0 +1,162 @@
+[11-Apr-2026 21:36:15 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:36:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:36:15 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:36:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:36:16 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:36:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:44:51 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:44:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:44:52 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:44:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:46:23 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:46:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:46:38 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/please on line 9
+[11-Apr-2026 21:46:38 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/please:9
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/please on line 9
+[11-Apr-2026 21:49:14 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:49:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:49:30 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:49:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:49:31 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:49:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:51:30 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:51:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:51:30 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:51:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:51:32 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 21:51:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:20 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:20 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:20 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:20 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:21 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:21 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:59 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:10:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:11:36 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:11:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:13:22 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:13:22 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:13:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:15:31 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:15:31 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:15:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:15:53 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:15:53 UTC] PHP Warning:  require(/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php): Failed to open stream: No such file or directory in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[11-Apr-2026 22:15:53 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php' (include_path='.:/opt/alt/php84/usr/share/pear:/opt/alt/php84/usr/share/php:/usr/share/pear:/usr/share/php') in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan:10
+Stack trace:
+#0 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/artisan on line 10
+[10-May-2026 12:16:10 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/please(9): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:19:39 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/artisan(10): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:19:50 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/please(9): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:24:12 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/artisan(10): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:24:12 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/please(9): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:24:20 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/artisan(10): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26
+[10-May-2026 12:24:20 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.4.0". You are running 8.3.30. in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/autoload_real.php(25): require()
+#1 /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/autoload.php(22): ComposerAutoloaderInit9780dd7f7d5585c6ea139050911fe6f6::getLoader()
+#2 /home3/sc3bala2667/statamic_projet/miroirmagic/please(9): require('/home3/sc3bala2...')
+#3 {main}
+  thrown in /home3/sc3bala2667/statamic_projet/miroirmagic/vendor/composer/platform_check.php on line 26

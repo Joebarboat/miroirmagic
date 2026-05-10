@@ -1,7 +1,7 @@
 name: 'Daniel Fodor'
 super: true
 id: 8c344063-dc01-48b3-90b2-f7b2949239af
-password_hash: $2y$12$NtrSgdMQ9aWP4HzM9WBy.ujnr1l60XAFJqhPRcjBaUk57up7ayniS
+password_hash: $2y$12$2H2cPOzUVTRnQMfHz72Y4ekIEVcQFMIA0fzxwWAOhhDtmCYLZnRlm
 preferences:
   theme: light
   assets:

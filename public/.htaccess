@@ -1,25 +1,90 @@
+# =============================================================================
+# 🚀 .htaccess — miroirmagic.fr (Fallback Origin + CF Proxy)
+# Stack: Laravel/Statamic + Cloudflare + Apache 2.4+
+# =============================================================================
+<IfModule mod_headers.c>
+  # 🚫 ETag désactivé (évite conflits cache CDN/navigateur)
+  FileETag None
+  Header unset ETag
+
+  # 🔥 Cache long pour assets statiques
+  <FilesMatch "\.(ico|jpe?g|png|gif|webp|svg|woff2?|ttf|css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # 🔄 Cache court pour HTML/PHP (synchronisé avec CF "Browser TTL")
+  <FilesMatch "\.(html|php|json|xml)$">
+    Header set Cache-Control "public, max-age=600, must-revalidate"
+  </FilesMatch>
+
+  # 🔒 Headers de sécurité
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# =============================================================================
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
+  Options -MultiViews -Indexes
+  RewriteEngine On
 
-    RewriteEngine On
+  # 🔐 Force HTTPS (Fallback si "Always Use HTTPS" CF désactivé ou accès IP direct)
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-    # Handle Authorization Header
-    RewriteCond %{HTTP:Authorization} .
-    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+  # 🌐 ❌ SUPPRIMÉ : La redirection www → non-www est déjà gérée par votre règle Cloudflare.
+  #      La conserver ici provoquerait une double redirection ou un conflit d'ordre.
 
-    # Handle X-XSRF-Token Header
-    RewriteCond %{HTTP:x-xsrf-token} .
-    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+  # 🔑 Headers d'authentification (Laravel/Statamic)
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+  RewriteCond %{HTTP:x-xsrf-token} .
+  RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
+  # ✂️ Suppression slash de fin (sauf dossiers réels)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} (.+)/$
+  RewriteRule ^ %1 [L,R=301]
 
-    # Send Requests To Front Controller...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ index.php [L]
+  # 🔗 Redirections SEO (TOUT en RewriteRule pour éviter les conflits mod_alias)
+  RewriteRule ^photobooth-cannes/?$ /photobooth/cannes [L,R=301]
+  RewriteRule ^contact/?$ /contacter [L,R=301]
+  RewriteRule ^wp-content/uploads/2023/05/Location-Photobooth-entreprise-Cannes\.jpg$ /images/Location-Photobooth-entreprise-Cannes.webp [L,R=301]
+  RewriteRule ^location-photobooth-monaco-miroir-magicpour-votre-mariage$ /location-photobooth-miroir-monaco-mariage [L,R=301]
+  RewriteRule ^borne-photo/?$ /photobooth [L,R=301]
+  RewriteRule ^devis/?$ /contacter [L,R=301]
+  RewriteRule ^photobooth-miroir-cannes/?$ /photobooth-cannes [L,R=301]
+  RewriteRule ^photobooth-miroir-nice/?$ /photobooth-nice [L,R=301]
+  RewriteRule ^photobooth-miroir-monaco/?$ /photobooth-monaco [L,R=301]
+  RewriteRule ^photobooth-miroir-saint-tropez/?$ /photobooth-saint-tropez [L,R=301]
+  RewriteRule ^photobooth-miroir-marseille/?$ /photobooth-marseille [L,R=301]
+  RewriteRule ^photobooth-miroir-antibes/?$ /photobooth-antibes [L,R=301]
+  RewriteRule ^photobooth/cannes/?$ /photobooth-cannes [L,R=301]
+  RewriteRule ^photobooth-impressions-photos/?$ /photobooth-impressions-photo [L,R=301]
+  RewriteRule ^location-photobooth-villefranche-sur-mer/?$ /photobooth-villefranche-sur-mer [L,R=301]
+  RewriteRule ^location-photobooth-saint-jean-cap-ferrat/?$ /photobooth-saint-jean-cap-ferrat [L,R=301]
+  RewriteRule ^location-photobooth-eze/?$ /photobooth-eze [L,R=301]
+
+  # 🖼️ WebP fallback (STOPPE le traitement après réécriture)
+  RewriteCond %{HTTP_ACCEPT} image/webp
+  RewriteCond %{REQUEST_FILENAME}\.webp -f
+  RewriteRule (.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,E=accept:1,L]
+
+  # 🎯 Front Controller Laravel/Statamic (PRÉSERVE ?param=... et STOPPE)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^ index.php [QSA,L]
+</IfModule>
+
+# =============================================================================
+# 📦 COMPRESSION (fallback local, Cloudflare gère déjà Brotli/Gzip à l'edge)
+# =============================================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json application/xml
+</IfModule>
+<IfModule mod_brotli.c>
+  AddOutputFilterByType BROTLI_COMPRESS text/html text/plain text/css application/javascript application/json application/xml
 </IfModule>

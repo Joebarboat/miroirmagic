@@ -36,49 +36,43 @@
 
                 <div class="form-holder mt-5 md:mt-10">
                     <div class="mx-[calc(-0.5*_1.5rem)] pb-8">
-                        {{ nocache }}
+                     {{ nocache }}
 
-                        {{ form:proposal_form redirect="/merci" }} {{ if success }}
+                        {{ form:proposal_form redirect="/merci" }}
+
+                        {{ if success }}
                         <div class="bg-green-500 text-white p-2 rounded-xl text-center">
                             Merci ! Nous vous contacterons bientôt pour vous
                             donner plus de détails.
                         </div>
-                        {{ else }} {{ fields }}
+                        {{ else }}
+                        {{ fields }}
                         <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mt-8">
                             <p
                                 class="p-lg text-[#353f4f] !text-[1.125rem] !leading-none font-medium !mb-[15px] pl-[8px]">
                                 {{ display }}
                             </p>
 
-                            {{ if type == "text" || type == "email" || type ==
-                            "phone" || tpye== "time" || type=="date"}}
+                            {{ if type == "text" || type == "email" || type == "phone" || type == "time"
+|| type == "date" }}
 
                             <input type="{{ input_type }}" name="{{ handle }}"
                                 class="form-control block w-full name h-[42px] xl:!h-[62px] bg-[#f5f6f8] border shadow-[0_0_0_0] !text-[#3a4a56] !text-[1rem] !font-normal p-[0_15px] rounded-[6px] border-solid border-transparent lg:max-xl:!h-[54px] md:max-lg:!h-[52px] sm:max-md:!h-[54px] xsm:max-sm:!h-[54px] focus:shadow-none focus:bg-[#fcfdfd] focus:border-[#1680fb] focus:[outline:0px_none]"
                                 placeholder="{{ placeholder }}" />
 
-                            {{ elseif type == "textarea"}}
+                            {{ elseif type == "textarea" }}
                             <textarea
                                 class="form-control block w-full message xl:!h-[62px] bg-[#f5f6f8] border shadow-[0_0_0_0] !text-[#3a4a56] !text-[1rem] !font-normal p-[0_15px] rounded-[6px] border-solid border-transparent lg:max-xl:!h-[54px] md:max-lg:!h-[52px] sm:max-md:!h-[54px] xsm:max-sm:!h-[54px] focus:shadow-none focus:bg-[#fcfdfd] focus:border-[#1680fb] focus:[outline:0px_none]"
                                 name="{{ handle }}" rows="6" placeholder="{{ placeholder }}"></textarea>
-                            {{ /if }} {{ if error }}
+                            {{ /if }}
+                            {{ if error }}
                             <div class="text-sm text-red-500">{{ error }}</div>
                             {{ /if }}
                         </div>
 
-                        {{ /fields }} {{ captcha }}
+                        {{ /fields }}
 
-                        <label for="check" class="!flex items-start justify-center gap-x-3">
-                            <input type="checkbox" name="disclaimer" id="check" class="mt-[10px]" required />
-                            <div class="!text-[#222] mb-0">
-                                {{ captcha:disclaimer }}
-                            </div>
-                        </label>
-
-                        {{ if error:captcha }}
-                        <p>{{ error:captcha }}</p>
-                        {{ /if }}
-
+                        {{ captcha }}
                         <!-- Contact Form Button -->
                         <div
                             class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full mt-[15px] form-btn text-center">
@@ -86,9 +80,11 @@
                                 Vérifier la disponibilité
                             </button>
                         </div>
-                        {{ /if }} {{ /form:proposal_form }}
+                       {{ /if }}
+                       
+                       {{ /form:proposal_form }}
+                       {{ /nocache }}                       
 
-                        {{ /nocache }}
                     </div>
                 </div>
 

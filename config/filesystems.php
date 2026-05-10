@@ -61,15 +61,12 @@ return [
             // 'visibility' => 'public', // https://statamic.dev/assets#visibility
         ],
 
-        'assets' => [
-            'driver' => 'local',
-            'root' => base_path('../assets'),
-            'url' => env('APP_URL') . '/assets',
-            'visibility' => 'public',
-            'throw' => false,
-            'report' => false,
-        ],
-
+            'assets' => [
+                'driver' => 'local',
+                'root' => public_path('assets'),
+                'url' => env('APP_URL') . '/assets',
+                'visibility' => 'public',
+            ],
     ],
 
     /*

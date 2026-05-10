@@ -1,0 +1,167 @@
+<section
+    class="gr--whitesmoke xl:!pb-[0] lg:max-xl:!pb-[60px] md:max-lg:!pb-[50px] inner-page-hero division pt-[180px] lg:max-xl:pt-[160px] md:max-lg:!mt-[80px] md:max-lg:pt-[70px]">
+    <div class="container">
+        <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+            <div class="xl:w-10/12 w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                <!-- INNER PAGE TITLE -->
+                <div
+                    class="inner-page-title !text-center xl:!mb-[80px] lg:max-xl:!mb-[60px] md:max-lg:!mb-[45px] sm:max-md:!mb-[50px] xsm:max-sm:!mb-[50px]">
+                    <h1
+                        class="s-52 w--700 xl:!text-[3.25rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold !mb-0 md:max-lg:!mb-0 sm:max-md:!mb-0 xsm:max-sm:!mb-0 leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                        {{ title }}
+                    </h1>
+                </div>
+
+                {{ if featured_image }}
+                <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)] justify-center">
+                    <div class="w-full flex-[0_0_auto] px-[calc(0.5*_1.5rem)] max-w-full">
+                        <div class="img-block !text-center wow fadeInUp mb-[20px] md:mb-[30px]">
+                            <img src="{{ featured_image:url }}" alt="{{ featured_image:alt or title }}"
+                                class="img-fluid rounded-lg"
+                                style="width: 100%; height: auto; min-height: 300px; max-height: 600px; object-fit: cover; object-position: center;">
+                        </div>
+                    </div>
+                </div>
+                {{ /if }}
+
+                <!-- TEXT BLOCK -->
+                {{ content }}
+                <div class="txt-block legal-info">
+                    {{ if type == "html" }}
+                    <article>{{ markup }} {{ code }}{{/markup }}</article>{{ /if }}
+
+                    {{ if type == "text" }}
+                    <article>{{ text | raw }}</< /article>
+                        {{ /if }}
+                </div>
+                {{ /content }}
+
+                <!-- END TEXT BLOCK -->
+                {{ if section }}
+                {{ section }} {{ if layout_type == 'image_text_cols' }}
+                <div class="py-10">
+                    <div class="flex flex-col md:flex-row justify-between mx-[calc(-0.5*_1.5rem)]">
+                        <div class="col w-full md:{{ column_left_width }} px-[calc(0.5*_1.5rem)]">
+                            {{ column_image }}
+                            <img class="img-fluid w-full decor-line" src="{{ url }}" alt="{{ alt }}" />
+                            {{ /column_image}}
+                        </div>
+                        <div class="col pt-5 w-full md:{{ column_right_width }} px-[calc(0.5*_1.5rem)]">
+                            {{ text_content }} {{ if type == "text" }}
+                            <article>{{ text }}</article>
+                            {{ /if }} {{ if type == "button" }}
+                            <div>
+                                <a class="btn !rounded-[4px] btn--theme hover--tra-black my-2" href="{{ link }}">{{ text
+                                    }}</a>
+                            </div>
+                            {{ /if }} {{ if type == "html" }} {{ html }} {{ /if
+                            }} {{ /text_content }}
+                        </div>
+                    </div>
+                </div>
+                {{ /if }} {{ if layout_type == 'text_image_cols' }}
+                <div class="py-10">
+                    <div class="flex flex-col md:flex-row justify-between mx-[calc(-0.5*_1.5rem)]">
+                        <div
+                            class="col order-1 md:order-0 pt-5 w-full md:{{ column_left_width }} px-[calc(0.5*_1.5rem)]">
+                            {{ text_content }} {{ if type == "text" }}
+                            <article>{{ text }}</article>
+                            {{ /if }} {{ if type == "button" }}
+                            <div>
+                                <a class="btn !rounded-[4px] btn--theme hover--tra-black my-2" href="{{ link }}">{{ text
+                                    }}</a>
+                            </div>
+                            {{ /if }} {{ if type == "html" }} {{ html }} {{ /if
+                            }} {{ /text_content }}
+                        </div>
+
+                        <div class="col w-full md:{{ column_right_width }} px-[calc(0.5*_1.5rem)]">
+                            {{ column_image }}
+                            <img class="img-fluid w-full decor-line" src="{{ url }}" alt="{{ alt }}" />
+                            {{ /column_image}}
+                        </div>
+                    </div>
+                </div>
+                {{ /if }} {{ if layout_type == 'full_width' }}
+                <div class="py-10">
+                    <h2
+                        class="s-52 w--700 !mb-[30px] xl:!text-[3rem] lg:max-xl:!text-[3rem] md:max-lg:!text-[2.79411rem] sm:max-md:!text-[2.375rem] xsm:max-sm:!text-[2.0625rem] !font-bold leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35] !tracking-[-0.5px] text-center">
+                        {{ headline }}
+                    </h2>
+                    <div class="col w-full px-[calc(0.5*_1.5rem)]">
+                        {{ main_image }}
+                        <img class="img-fluid w-full decor-line object-cover object-center" src="{{ url }}"
+                            alt="{{ alt }}" />
+                        {{ /main_image}}
+                    </div>
+
+                    <div class="pt-5 w-full px-[calc(0.5*_1.5rem)]">
+                        {{ text_content }} {{ if type == "text" }}
+                        <article>{{ text }}</article>
+                        {{ /if }} {{ if type == "button" }}
+                        <div>
+                            <a class="btn !rounded-[4px] btn--theme hover--tra-black my-2" href="{{ link }}">{{ text
+                                }}</a>
+                        </div>
+                        {{ /if }} {{ if type == "html" }} {{ html }} {{ /if }}
+                        {{ /text_content }}
+                    </div>
+                </div>
+                {{ /if }} {{ /section }}
+
+                {{ /if }}
+            </div>
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End container -->
+</section>
+
+<!-- BANNER-1
+                ============================================= -->
+<section class="pt--50 pt-[50px] lg:max-xl:pt-[50px] md:max-lg:pt-50px] banner-section mb-15">
+    <div class="container">
+        <!-- BANNER-1 WRAPPER -->
+        <div
+            class="banner-1-wrapper rounded-[16px] relative overflow-hidden !text-center sm:max-md:mr-[-15px] sm:max-md:ml-[-15px] sm:max-md:my-0 sm:max-md:rounded-[0_0] xsm:max-sm:mr-[-15px] xsm:max-sm:ml-[-15px] xsm:max-sm:my-0 xsm:max-sm:rounded-[0_0]">
+            <div
+                class="cta-box banner-overlay bg--05 bg--fixed pt-[75px] !pb-[85px] px-[15%] lg:max-xl:pt-[60px] lg:max-xl:!pb-[70px] lg:max-xl:px-[15%] md:max-lg:pt-[45px] md:max-lg:!pb-[55px] md:max-lg:px-[12%] sm:max-md:pt-[55px] sm:max-md:!pb-[65px] sm:max-md:px-[60px] xsm:max-sm:pt-[60px] xsm:max-sm:!pb-[70px] xsm:max-sm:px-[30px] bg-scroll sm:max-md:w-auto xsm:max-sm:w-auto w-full bg-no-repeat bg-[center_center] bg-cover bg-[url('/images/bg-05.jpg')]">
+                <div class="flex flex-wrap mx-[calc(-0.5*_1.5rem)]">
+                    <!-- BANNER-1 TEXT -->
+                    <div class="flex-[0_0_auto] w-full max-w-full px-[calc(0.5*_1.5rem)]">
+                        <div class="banner-1-txt color--white">
+                            <!-- Title -->
+                            <h2
+                                class="s-45 w--700 xl:!text-[2.8125rem] lg:max-xl:!text-[2.5625rem] md:max-lg:!text-[2.20588rem] sm:max-md:!text-[2.25rem] xsm:max-sm:!text-[1.8125rem] !font-bold !tracking-[-0.5px] xl:!mb-[15px] lg:max-xl:!mb-[16px] md:max-lg:!mb-[16px] sm:max-md:!mb-[12px] xsm:max-sm:!mb-[12px] leading-[1.25] font-Jakarta sm:max-md:!leading-[1.35] xsm:max-sm:!leading-[1.35]">
+                                Avez-vous des questions?
+                            </h2>
+                            <!-- Text -->
+                            <p
+                                class="p-xl !mt-0 !mb-[25px] lg:max-xl:!mt-[15px] md:max-lg:!mt-3 sm:max-md:!mt-[14px] xsm:max-sm:!text-[1.125rem] xsm:max-sm:!mt-[14px] lg:max-xl:!mb-[25px] md:max-lg:!mb-[20px] sm:max-md:!mb-[20px] xsm:max-sm:!mb-[20px]">
+                                Ne manquez pas cette occasion de rendre votre
+                                événement inoubliable avec le Photobooth Miroir
+                                Magic. Contactez-nous dès maintenant pour
+                                réserver votre animation.
+                            </p>
+                            <div class="btns-group inline-block">
+                                <!-- Button -->
+                                <a href="/nous-contacter-devis-photoboth-borne-miroir"
+                                    class="btn !rounded-[4px] btn--theme hover--tra-white mr-2">Réservez
+                                </a>
+                                <a href="/contacter"
+                                    class="btn !rounded-[4px] btn--tra-white hover--theme hover--tra-white">Contactez-nous
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END BANNER-1 TEXT -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End banner overlay -->
+        </div>
+        <!-- END BANNER-1 WRAPPER -->
+    </div>
+    <!-- End container -->
+</section>
+<!-- END BANNER-1 -->

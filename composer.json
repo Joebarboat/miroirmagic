@@ -14,7 +14,6 @@
         "aryehraber/statamic-captcha": "^1.14",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
-        "mitydigital/sitemapamic": "^3.4",
         "statamic/cms": "^5.69"
     },
     "require-dev": {

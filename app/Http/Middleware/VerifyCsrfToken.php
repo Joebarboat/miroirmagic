@@ -9,6 +9,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         'cp/utilities/cache',
         'cp/utilities/cache/*',
+        '!/forms/*',
     ];
 }
 

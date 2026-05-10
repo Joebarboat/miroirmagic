@@ -13,8 +13,9 @@ return [
     |
     */
 
-    'watcher' => env('STATAMIC_STACHE_WATCHER', 'auto'),
-
+/*    'watcher' => env('STATAMIC_STACHE_WATCHER', 'auto'),
+*/
+    'watcher' => false,
     /*
     |--------------------------------------------------------------------------
     | Cache Store
@@ -68,10 +69,15 @@ return [
     | https://statamic.dev/stache#locks
     |
     */
+    'lock' => [
+        'enabled' => false,
+        'timeout' => 30,
 
+    /*
     'lock' => [
         'enabled' => true,
         'timeout' => 30,
+    */
     ],
 
 ];
