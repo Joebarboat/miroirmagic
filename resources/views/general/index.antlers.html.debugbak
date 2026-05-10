@@ -27,7 +27,8 @@
                 <!-- TEXT BLOCK -->
                 {{ content }}
                 <div class="txt-block legal-info">
-<pre style="white-space:pre-wrap;">{{ dump }}</pre>
+                    {{ if attrs:values:type == "html" }}
+                    <article>{{ attrs:values:markup:code | raw }}</article>{{ /if }}
 
                     {{ if type == "text" }}
                     <article>{{ text | raw }}</article>
