@@ -25,17 +25,22 @@
                 {{ /if }}
 
                 <!-- TEXT BLOCK -->
-                {{ content }}
-                <div class="txt-block legal-info">
-<pre style="white-space:pre-wrap;">{{ dump }}</pre>
+<div class="txt-block legal-info">
 
-                    {{ if type == "text" }}
-                    <article>{{ text | raw }}</article>
-                        {{ /if }}
-                </div>
-                {{ /content }}
+{{ content }}
 
-                <!-- END TEXT BLOCK -->
+    {{ if type == "html" }}
+        {{ markup:code | raw }}
+    {{ /if }}
+
+    {{ if type == "text" }}
+        <article>{{ text | raw }}</article>
+    {{ /if }}
+
+{{ /content }}
+
+</div>
+<!-- END TEXT BLOCK -->
                 {{ if section }}
                 {{ section }} {{ if layout_type == 'image_text_cols' }}
                 <div class="py-10">
