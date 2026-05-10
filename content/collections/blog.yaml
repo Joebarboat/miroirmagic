@@ -1,0 +1,19 @@
+title: 'Blog Articles'
+template: blog/show
+layout: layout
+mount: 4d638291-2666-48df-8350-e21f2cbb5431
+taxonomies:
+  - tags
+  - categories
+revisions: false
+route: '/{slug}'
+date: true
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

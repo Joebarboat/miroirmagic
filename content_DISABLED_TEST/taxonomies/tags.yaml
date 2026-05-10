@@ -1,4 +1,0 @@
-title: Tags
-template: taxonomies/tags
-layout: layout
-route: '/blog-photobooth-miroirmagic/tags/{slug}'

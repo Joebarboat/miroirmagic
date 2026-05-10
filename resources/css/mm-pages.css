@@ -1,0 +1,453 @@
+/* ============================================================
+   MIROIR MAGIC — FEUILLE DE STYLE PAGES SERVICES
+   Fichier : mm-pages.css
+   Version : 2026.1
+   Usage   : classes préfixées .mm-* pour pages service / pilier
+   Polices : Playfair Display SC (titres) · Plus Jakarta Sans (corps)
+   Fond    : hérité du body (#f9f6f3)
+   ============================================================ */
+
+/* -----------------------------------------------------------
+   1. TOKENS
+   ----------------------------------------------------------- */
+:root {
+  --mm-color-text:          #1F2A2A;
+  --mm-color-title:         #2F4F4F;
+  --mm-color-accent:        #ca961d;
+  --mm-color-accent-light:  #e4c364;
+  --mm-color-accent-dark:   #966a1f;
+  --mm-color-border:        #e5e0d7;
+  --mm-color-surface:       #f4f1ea;
+  --mm-color-surface-alt:   #efeae0;
+
+  --mm-gradient-gold: linear-gradient(-140deg, #966a1f, #e4c364 42%, #ca961d 74%, #cfb884);
+
+  /* Polices héritées du site — ne pas changer */
+  --mm-font-sans:  "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+  --mm-font-serif: "Playfair Display SC", Georgia, serif;
+
+  --mm-radius-sm: 4px;
+  --mm-radius-md: 8px;
+  --mm-radius-lg: 16px;
+
+  --mm-space-xs: 0.5rem;
+  --mm-space-sm: 1rem;
+  --mm-space-md: 1.5rem;
+  --mm-space-lg: 2.5rem;
+  --mm-space-xl: 4rem;
+
+  --mm-shadow-soft: 0 2px 12px rgba(31, 42, 42, 0.06);
+  --mm-shadow-lift: 0 6px 24px rgba(31, 42, 42, 0.10);
+}
+
+/* -----------------------------------------------------------
+   2. WRAPPER PRINCIPAL
+   ----------------------------------------------------------- */
+.mm-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: var(--mm-space-lg) var(--mm-space-md);
+  color: var(--mm-color-text);
+  font-family: var(--mm-font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.mm-page h1,
+.mm-page h2,
+.mm-page h3 {
+  color: var(--mm-color-title);
+  font-family: var(--mm-font-serif);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.mm-page h1 { font-size: clamp(1.875rem, 4vw, 2.75rem); line-height: 1.15; margin: 0 0 var(--mm-space-md); }
+.mm-page h2 { font-size: clamp(1.5rem, 3vw, 2rem);      line-height: 1.2;  margin: var(--mm-space-lg) 0 var(--mm-space-sm); }
+.mm-page h3 { font-size: 1.25rem; line-height: 1.3; margin: var(--mm-space-md) 0 var(--mm-space-xs); font-family: var(--mm-font-sans); font-weight: 700; }
+
+.mm-page p { margin: 0 0 var(--mm-space-sm); }
+
+.mm-page a {
+  color: var(--mm-color-accent-dark);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+.mm-page a:hover {
+  color: var(--mm-color-accent);
+}
+
+/* -----------------------------------------------------------
+   3. HERO
+   ----------------------------------------------------------- */
+.mm-hero {
+  padding: var(--mm-space-xl) 0 var(--mm-space-lg);
+  border-bottom: 1px solid var(--mm-color-border);
+  margin-bottom: var(--mm-space-lg);
+}
+
+.mm-answer-box {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--mm-color-text);
+  background: #fff;
+  border-left: 3px solid var(--mm-color-accent);
+  padding: var(--mm-space-md);
+  border-radius: var(--mm-radius-sm);
+  margin-top: var(--mm-space-md);
+}
+
+/* -----------------------------------------------------------
+   4. SECTIONS ÉDITORIALES
+   ----------------------------------------------------------- */
+.mm-section {
+  margin: var(--mm-space-xl) 0;
+}
+
+/* -----------------------------------------------------------
+   5. ENCADRÉS EXPERTS
+   ----------------------------------------------------------- */
+.mm-expert-decision,
+.mm-expert-tip {
+  background: #fff;
+  border-radius: var(--mm-radius-md);
+  padding: var(--mm-space-md) var(--mm-space-lg);
+  margin: var(--mm-space-lg) 0;
+  position: relative;
+  box-shadow: var(--mm-shadow-soft);
+}
+
+.mm-expert-decision::before,
+.mm-expert-tip::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--mm-gradient-gold);
+  border-radius: var(--mm-radius-md) 0 0 var(--mm-radius-md);
+}
+
+.mm-expert-decision h3,
+.mm-expert-tip h3 {
+  margin-top: 0;
+  color: var(--mm-color-accent-dark);
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--mm-font-sans);
+  font-weight: 700;
+}
+
+/* -----------------------------------------------------------
+   6. COMPARAISON
+   ----------------------------------------------------------- */
+.mm-comparison-block {
+  padding: var(--mm-space-lg) 0;
+}
+
+.mm-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--mm-space-md) 0;
+  font-size: 0.95rem;
+  background: #fff;
+  border-radius: var(--mm-radius-md);
+  overflow: hidden;
+  box-shadow: var(--mm-shadow-soft);
+}
+
+.mm-compare-table th,
+.mm-compare-table td {
+  padding: var(--mm-space-sm) var(--mm-space-md);
+  text-align: left;
+  border-bottom: 1px solid var(--mm-color-border);
+  vertical-align: top;
+}
+
+.mm-compare-table th {
+  background: var(--mm-color-title);
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--mm-font-serif);
+  font-size: 1rem;
+}
+
+.mm-compare-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* -----------------------------------------------------------
+   7. GRILLE ÉVÉNEMENTS
+   ----------------------------------------------------------- */
+.mm-event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--mm-space-md);
+  margin: var(--mm-space-md) 0;
+}
+
+.mm-event-card {
+  background: #fff;
+  border: 1px solid var(--mm-color-border);
+  border-radius: var(--mm-radius-md);
+  padding: var(--mm-space-md);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.mm-event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--mm-shadow-lift);
+}
+
+.mm-event-card h3 {
+  margin-top: 0;
+  color: var(--mm-color-accent-dark);
+  font-size: 1.125rem;
+}
+
+/* -----------------------------------------------------------
+   8. FAQ — <details> / <summary>
+   ----------------------------------------------------------- */
+.mm-faq-natural {
+  margin: var(--mm-space-xl) 0;
+}
+
+.mm-faq-natural details {
+  border-bottom: 1px solid var(--mm-color-border);
+  padding: var(--mm-space-sm) 0;
+}
+.mm-faq-natural details[open] {
+  background: #fff;
+  padding: var(--mm-space-sm) var(--mm-space-md);
+  border-radius: var(--mm-radius-md);
+  border-bottom: none;
+  margin-bottom: var(--mm-space-xs);
+  box-shadow: var(--mm-shadow-soft);
+}
+
+.mm-faq-natural summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--mm-color-title);
+  list-style: none;
+  padding-right: var(--mm-space-md);
+  position: relative;
+}
+.mm-faq-natural summary::-webkit-details-marker { display: none; }
+.mm-faq-natural summary::after {
+  content: "+";
+  position: absolute;
+  right: 0; top: 0;
+  font-size: 1.5rem;
+  color: var(--mm-color-accent);
+  transition: transform 0.25s ease;
+  line-height: 1;
+}
+.mm-faq-natural details[open] summary::after {
+  content: "\2212";
+}
+
+.mm-faq-answer {
+  padding-top: var(--mm-space-xs);
+  color: var(--mm-color-text);
+}
+
+/* -----------------------------------------------------------
+   9. CTA DISCRET
+   ----------------------------------------------------------- */
+.mm-cta-discreet {
+  background: #fff;
+  border-radius: var(--mm-radius-lg);
+  padding: var(--mm-space-lg);
+  margin: var(--mm-space-xl) 0;
+  text-align: center;
+  box-shadow: var(--mm-shadow-soft);
+}
+
+.mm-cta-discreet h2 {
+  margin-top: 0;
+}
+
+.mm-cta-button {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  margin-top: var(--mm-space-sm);
+  background: var(--mm-gradient-gold);
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+.mm-cta-button:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.mm-cta-button.mm-cta-green {
+  background: var(--mm-color-title);
+}
+
+/* -----------------------------------------------------------
+   10. MAILLAGE VILLES
+   ----------------------------------------------------------- */
+.mm-location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--mm-space-md);
+  margin: var(--mm-space-xl) 0 var(--mm-space-lg);
+  padding-top: var(--mm-space-lg);
+  border-top: 1px solid var(--mm-color-border);
+}
+
+.mm-location-item {
+  padding: var(--mm-space-sm);
+}
+
+.mm-location-item h3 {
+  margin: 0 0 var(--mm-space-xs);
+  font-size: 1.0625rem;
+  font-family: var(--mm-font-sans);
+  font-weight: 700;
+}
+
+.mm-location-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: var(--mm-space-xs);
+}
+
+/* -----------------------------------------------------------
+   11. MAILLAGE HORIZONTAL (pages sœurs)
+   ----------------------------------------------------------- */
+.mm-service-links {
+  margin: var(--mm-space-xl) 0;
+  padding: var(--mm-space-md) 0;
+  border-top: 1px solid var(--mm-color-border);
+}
+
+.mm-service-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--mm-space-sm);
+}
+
+.mm-service-links li {
+  font-size: 0.95rem;
+}
+
+.mm-service-links a {
+  padding: 0.4rem 0.9rem;
+  background: #fff;
+  border: 1px solid var(--mm-color-border);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--mm-color-title);
+  transition: all 0.2s ease;
+}
+.mm-service-links a:hover {
+  background: var(--mm-color-accent);
+  color: #fff;
+  border-color: var(--mm-color-accent);
+}
+
+/* -----------------------------------------------------------
+   12. FIGURES
+   ----------------------------------------------------------- */
+.mm-figure {
+  margin: var(--mm-space-lg) 0;
+}
+
+.mm-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--mm-radius-md);
+  display: block;
+}
+
+.mm-figure figcaption {
+  font-size: 0.875rem;
+  font-style: italic;
+  color: #666;
+  margin-top: var(--mm-space-xs);
+  text-align: center;
+}
+
+/* -----------------------------------------------------------
+   13. TIMELINE (optionnelle — évolution 2017 → aujourd'hui)
+   ----------------------------------------------------------- */
+.mm-timeline {
+  border-left: 2px solid var(--mm-color-accent);
+  padding-left: var(--mm-space-md);
+  margin: var(--mm-space-lg) 0;
+}
+
+.mm-timeline-item {
+  margin-bottom: var(--mm-space-md);
+  position: relative;
+}
+
+.mm-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--mm-space-md) * -1 - 5px);
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--mm-color-accent);
+}
+
+.mm-timeline-year {
+  font-weight: 700;
+  color: var(--mm-color-accent-dark);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------------------------------
+   14. RESPONSIVE
+   ----------------------------------------------------------- */
+@media (max-width: 600px) {
+  .mm-page {
+    padding: var(--mm-space-md) var(--mm-space-sm);
+    font-size: 1rem;
+  }
+  .mm-hero {
+    padding: var(--mm-space-lg) 0 var(--mm-space-md);
+  }
+  .mm-expert-decision,
+  .mm-expert-tip {
+    padding: var(--mm-space-sm) var(--mm-space-md);
+  }
+  .mm-cta-discreet {
+    padding: var(--mm-space-md);
+  }
+  .mm-compare-table th,
+  .mm-compare-table td {
+    padding: var(--mm-space-xs) var(--mm-space-sm);
+    font-size: 0.9rem;
+  }
+}
+
+/* -----------------------------------------------------------
+   15. ACCESSIBILITÉ
+   ----------------------------------------------------------- */
+.mm-page :focus-visible {
+  outline: 2px solid var(--mm-color-accent);
+  outline-offset: 2px;
+  border-radius: var(--mm-radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mm-page * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

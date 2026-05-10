@@ -1,0 +1,5 @@
+title: Images
+disk: local
+path: public/images
+allow_uploads: true
+allow_downloading: true

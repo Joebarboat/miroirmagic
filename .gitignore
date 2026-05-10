@@ -44,3 +44,5 @@ Thumbs.db
 !/storage/framework/sessions/.gitignore
 /storage/framework/views/*
 !/storage/framework/views/.gitignore
+storage/statamic.tar
+storage/statamic.tar
