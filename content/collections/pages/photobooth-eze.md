@@ -6,7 +6,7 @@ template: general/index
 meta_title: 'Photobooth Èze | Location pour mariages et événements'
 meta_description: 'Location de photobooth à Èze pour mariages, événements privés et réceptions élégantes. Animation photo discrète adaptée aux lieux d’exception.'
 updated_by: 5e902e56-53cf-4b74-956e-59acb99a2636
-updated_at: 1768218438
+updated_at: 1778420680
 content:
   -
     type: set

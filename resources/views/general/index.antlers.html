@@ -28,7 +28,7 @@
                 {{ content }}
                 <div class="txt-block legal-info">
                     {{ if type == "html" }}
-                    <article>HTML BLOCK DISABLED</article>{{ /if }}
+                    <article>{{ markup:code | raw }}</article>{{ /if }}
 
                     {{ if type == "text" }}
                     <article>{{ text | raw }}</article>
