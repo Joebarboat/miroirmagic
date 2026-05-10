@@ -1,5 +1,11 @@
 title: Antibes
-author: 8c344063-dc01-48b3-90b2-f7b2949239af
-updated_by: 8c344063-dc01-48b3-90b2-f7b2949239af
-updated_at: 1765378647
-blueprint: tag
+updated_by: 5e902e56-53cf-4b74-956e-59acb99a2636
+updated_at: 1778448157
+blueprint: default
+texte_seo:
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: "Juan-les-Pins en saison, le Fort Carré pour les séminaires d'exception, les villas du Cap — Antibes concentre des formats événementiels très disparates dans un périmètre restreint. Nous y intervenons régulièrement sur des réceptions privées où l'accès au domaine impose un protocole de livraison anticipé. La configuration des terrasses en belvédère, fréquente sur le Cap, exige de positionner le miroir à l'écart des zones exposées au vent dominant. Les articles ici documentent ces contextes spécifiques."

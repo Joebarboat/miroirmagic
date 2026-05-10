@@ -58,6 +58,8 @@ return [
 
     'exclude' => [
 
+        '/sitemap.xml',
+
         'class' => null,
 
         'urls' => [

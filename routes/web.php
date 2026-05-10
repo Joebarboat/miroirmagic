@@ -6,4 +6,4 @@ use Statamic\Facades\User;
 Route::statamic('blog-photobooth-miroirmagic/tags/{slug}', 'taxonomies/tags');
 
 // Sitemap
-Route::statamic('sitemap.xml', 'sitemap', ['layout' => 'sitemap', 'content_type' => 'xml']);
+ Route::statamic('sitemap.xml', 'sitemap', ['layout' => 'sitemap', 'content_type' => 'xml']);

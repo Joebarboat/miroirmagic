@@ -5,7 +5,7 @@ title: 'Photobooth miroir à Mandelieu-la-Napoule : animation photo pour mariage
 meta_title: 'Photobooth Mandelieu-la-Napoule : miroir, mariage & événements | Miroir Magic'
 meta_description: "Location photobooth miroir à Mandelieu-la-Napoule (06). Reflex professionnel, sublimation thermique, signature tactile, installation clé en main pour mariages et événements corporate. Depuis 2017 sur la Côte d'Azur."
 updated_by: 5e902e56-53cf-4b74-956e-59acb99a2636
-updated_at: 1778412300
+updated_at: 1778422422
 template: general/index
 content:
   -

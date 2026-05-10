@@ -1,8 +1,2 @@
 title: Tags
-preview_targets:
-  -
-    label: Term
-    url: '{permalink}'
-    refresh: true
-term_template: blog/tag
-layout: layout
+slug: tags

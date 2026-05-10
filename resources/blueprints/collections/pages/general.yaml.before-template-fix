@@ -1,0 +1,206 @@
+title: General
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              remove_empty_nodes: false
+              container: assets
+              type: bard
+              display: Content
+              sets:
+                html:
+                  display: HTML
+                  icon: programming-script-code-brackets
+                  sets:
+                    html:
+                      display: html
+                      fields:
+                        -
+                          handle: markup
+                          field:
+                            type: code
+                            display: markup
+          -
+            handle: featured_image
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Featured Image'
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              options:
+                general/index: General
+                home: Home
+                concept: Concept
+                contact: Contact
+                contact-us: Contact Us
+                faq: FAQ
+                locations: Locations
+                portfolio: Portfolio
+                prices: Prices
+                thank-you: Thank You
+                legals/show: Legals
+                default: Default
+      -
+        display: Panels
+        instructions: 'You can add different kind of sections'
+        fields:
+          -
+            handle: section
+            field:
+              type: replicator
+              display: Section
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_block:
+                      display: 'New Block'
+                      fields:
+                        -
+                          handle: layout_type
+                          field:
+                            options:
+                              -
+                                key: full_width
+                                value: 'Full width'
+                              -
+                                key: image_text_cols
+                                value: 'Image-Text Columns'
+                              -
+                                key: text_image_cols
+                                value: 'Text-Image Columns'
+                            max_items: 1
+                            default: full_width
+                            type: select
+                            display: 'Layout Type'
+                        -
+                          handle: headline
+                          field:
+                            type: text
+                            display: Headline
+                            if:
+                              layout_type: 'equals full_width'
+                        -
+                          handle: main_image
+                          field:
+                            max_files: 1
+                            container: assets
+                            type: assets
+                            display: 'Main Image'
+                            if:
+                              layout_type: 'equals full_width'
+                        -
+                          handle: column_image
+                          field:
+                            container: assets
+                            type: assets
+                            display: 'Column Image'
+                            unless:
+                              layout_type: 'equals full_width'
+                            max_files: 1
+                        -
+                          handle: text_content
+                          field:
+                            buttons:
+                              - h2
+                              - h3
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                              - image
+                              - table
+                              - alignleft
+                              - aligncenter
+                              - alignright
+                            remove_empty_nodes: false
+                            type: bard
+                            display: Content
+                            container: assets
+                            sets:
+                              items:
+                                display: Items
+                                sets:
+                                  button:
+                                    display: Button
+                                    fields:
+                                      -
+                                        handle: text
+                                        field:
+                                          type: text
+                                          display: Text
+                                      -
+                                        handle: link
+                                        field:
+                                          type: link
+                                          display: Link
+                                  html:
+                                    display: HTML
+                                    icon: programming-script-code-brackets
+                                    fields:
+                                      -
+                                        handle: html
+                                        field:
+                                          type: code
+                                          display: HTML
+                        -
+                          handle: column_right_width
+                          field:
+                            type: width
+                            display: 'Column Right Width'
+                            instructions: 'Add the right columns width.'
+                            unless:
+                              layout_type: 'equals full_width'
+                        -
+                          handle: column_left_width
+                          field:
+                            type: width
+                            display: 'Column Left Width'
+                            instructions: 'Add the left columns width.'
+                            unless:
+                              layout_type: 'equals full_width'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+      -
+        display: SEO
+        fields:
+          -
+            import: seo_fields

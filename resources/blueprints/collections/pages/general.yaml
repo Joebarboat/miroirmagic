@@ -44,6 +44,20 @@ tabs:
             field:
               type: template
               display: Template
+              create: false
+              options:
+                general/index: General
+                home: Home
+                concept: Concept
+                contact: Contact
+                contact-us: Contact Us
+                faq: FAQ
+                locations: Locations
+                portfolio: Portfolio
+                prices: Prices
+                thank-you: Thank You
+                legals/show: Legals
+                default: Default
       -
         display: Panels
         instructions: 'You can add different kind of sections'

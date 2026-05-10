@@ -1,0 +1,26 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              validate: required
+          -
+            handle: texte_seo
+            field:
+              type: bard
+              display: Texte SEO Unique
+              instructions: 'Rédigez ici une description unique de vos services pour cette ville.'
+              buttons:
+                - bold
+                - italic
+                - h2
+                - h3
+                - bullet_list
+                - ordered_list
+                - link

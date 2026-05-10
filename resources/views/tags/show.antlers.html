@@ -1,0 +1,14 @@
+<h1 style="color:red;">TEST : Template Blog Detecte</h1>
+<h1>{{ title }}</h1>
+{{ if texte_seo }}
+    <div class="seo-content mt-4 mb-8">
+        {{ texte_seo }}
+    </div>
+{{ else }}
+    <p style="color:orange;">Le champ texte_seo est vide ou non reconnu.</p>
+{{ /if }}
+{{ collection:blog-photobooth-miroirmagic taxonomy:tags="{slug}" }}
+    <div class="mb-4">
+        <a href="{{ url }}" class="text-xl font-bold">{{ title }}</a>
+    </div>
+{{ /collection:blog-photobooth-miroirmagic }}
