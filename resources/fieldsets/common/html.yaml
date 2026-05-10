@@ -1,0 +1,9 @@
+title: HTML
+fields:
+  -
+    handle: code
+    field:
+      type: code
+      display: HTML
+      mode: htmlmixed
+      theme: material
